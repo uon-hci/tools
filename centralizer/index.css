@@ -1,0 +1,47 @@
+body {
+  background-color: #222222;
+}
+
+#links {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#links .shape {
+  align-self: center;
+}
+
+img {
+  width: 100px;
+}
+
+.overlayed {
+  opacity: 0.1;
+}
+
+.label {
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  margin: auto;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+a {
+  outline: none;
+}
