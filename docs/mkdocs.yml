@@ -1,0 +1,7 @@
+site_name: HCI Docs
+theme: cinder
+pages:
+  - Home: index.md
+  - Autumn: autumn.md
+  - Spring: spring.md
+  - Summer: summer.md
