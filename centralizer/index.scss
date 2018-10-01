@@ -15,6 +15,20 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
 
+  #books {
+
+    .link {
+
+      width: 170px;
+      height: 170px;
+      img {
+        width: 150px;
+      }
+    }
+
+
+  }
+
   a {
     display: block;
     align-self: center;
