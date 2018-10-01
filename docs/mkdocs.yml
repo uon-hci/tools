@@ -1,7 +1,8 @@
 site_name: HCI Docs
-theme: cinder
+theme: material
 pages:
   - Home: index.md
-  - Autumn: autumn.md
-  - Spring: spring.md
-  - Summer: summer.md
+  - Design Ethnography: design-ethnography.md
+  - Studying Human Performance: studying-human-performance.md
+  - Cognitive Ergonomics in Design: cognitive-ergonomics-in-design.md
+  - Simulation and Digital Human Modeling: simulation-and-digital-human-modeling.md

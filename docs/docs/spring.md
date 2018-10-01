@@ -1,3 +1,0 @@
-# Compulsory courses
-
-# Optional courses
