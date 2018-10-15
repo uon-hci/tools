@@ -29,3 +29,27 @@ Topic ideas:
 - Hair dresser
 
 ## Lecture (11/10/2018)
+
+--
+
+## Tutorial 2 (15/08/2018)
+
+> What confidentiality document can I present to support my request?
+
+"Hello [escape game],
+
+My name is Andy Pagès and I am a student at the University of Nottingham. I currently study Design Ethnography,
+which aims to observe and understand basic social interactions. As part of a research project, I am interested
+in doing an observation session in your establishment.
+
+I would like to bring a group of individuals at [escape game] that I will observe while they try to solve a room.
+To support my research, I will require some kind of recording (video/audio) that I could either record myself or if possible,
+get from your own recordings.
+
+I understand the confidentiality issues this request may rise, but please be reassured that an official request will be made
+(if you are interested) backed up with official documents that will ensure that this experiment is conducted in your terms only.
+In addition, no element regarding the solving of the room will be used in this study, but only the interactions among the participants.
+
+
+data, protected, university,
+"
