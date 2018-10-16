@@ -43,13 +43,15 @@ which aims to observe and understand basic social interactions. As part of a res
 in doing an observation session in your establishment.
 
 I would like to bring a group of individuals at [escape game] that I will observe while they try to solve a room.
-To support my research, I will require some kind of recording (video/audio) that I could either record myself or if possible,
-get from your own recordings.
-
-I understand the confidentiality issues this request may rise, but please be reassured that an official request will be made
-(if you are interested) backed up with official documents that will ensure that this experiment is conducted in your terms only.
+To support my research, I will require to record some parts of the session. I understand the confidentiality issues this request may rise,
+but please be reassured that an official request will be made (if you are interested) backed up with official documents that will ensure that
+this experiment is conducted in your terms only.
 In addition, no element regarding the solving of the room will be used in this study, but only the interactions among the participants.
 
+Conducting this experiment in your establishment would be a great addition to the ethnographic studies and a significant help for my research.
 
-data, protected, university,
+In the hope of a positive response,
+
+Best regards,
+Andy Pagès
 "
