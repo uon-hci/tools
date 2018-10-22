@@ -16,6 +16,11 @@ html {
 body {
   margin: 0; }
 
+h2 {
+  color: #ff6416 !important;
+  font-weight: bold !important;
+}
+
 hr {
   overflow: visible;
   box-sizing: content-box; }

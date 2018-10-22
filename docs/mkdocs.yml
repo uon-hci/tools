@@ -2,9 +2,10 @@ site_name: HCI Docs
 theme: material
 pages:
   - Home: index.md
-  - Design Ethnography: design-ethnography.md
-  - Studying Human Performance: studying-human-performance.md
-  - Cognitive Ergonomics in Design: cognitive-ergonomics-in-design.md
-  - Simulation and Digital Human Modeling: simulation-and-digital-human-modeling.md
+  - DE Notebook: design-ethnography.md
+  - SHP Notebook: studying-human-performance.md
+  - CED Notebook: cognitive-ergonomics-in-design.md
+  - SDHM Notebook: simulation-and-digital-human-modeling.md
+  - SDHM Course: SDHM-course.md
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'

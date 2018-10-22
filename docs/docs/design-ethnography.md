@@ -16,6 +16,8 @@
 
 > **Topic**: Music band interaction ?
 
+---
+
 ## Tutorial 1 (08/10/2018)
 
 Topic ideas:
@@ -30,9 +32,9 @@ Topic ideas:
 
 ## Lecture (11/10/2018)
 
---
+---
 
-## Tutorial 2 (15/08/2018)
+## Tutorial 2 (15/10/2018)
 
 > What confidentiality document can I present to support my request?
 
@@ -55,3 +57,11 @@ In the hope of a positive response,
 Best regards,
 Andy Pagès
 "
+
+---
+
+## Lecture 2 (18/10/2018)
+
+Written consent for escape game, very focused environment.
+
+> To do: Read the slides thoroughly 

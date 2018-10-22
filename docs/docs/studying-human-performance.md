@@ -46,3 +46,11 @@ $$
 - **H1**: The training scheme has an impact on the operators' performances
 - **H0**: The training scheme has no impact on the operators' performances
 - **ST**: ANOVA
+
+### Lecture (19/10/2018)
+
+- Repeated measures design = Within
+- Simple two-group design = between
+
+> **TO DO**: sum up the example questions into résumé
+> **TO DO**: Coursework 1 due **22 November 2018**
