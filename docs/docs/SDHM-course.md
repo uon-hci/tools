@@ -97,3 +97,72 @@ conflict:
 - *Canal-otolith*: conflict within the Vestibular System.
 
 For most simulations, the **Visual-inertial** conflict is the main consideration.
+
+### Measuring sickness
+
+Sickness can be observed with three major techniques:
+
+- *Asking participants*: using questionnaires such as the Simulation Sickness Questionnaire (SSQ, Kennedy),
+- *Observing participants*: watch for signs of drowsiness, skin pallor,
+- *Measuring participants*: measure postural instability and physiological characteristics.
+
+---
+
+## 3. Fidelity of Simulation
+
+Fidelity is *the degree of exactness with which something is copied or reproduced*. In simulators,
+it is the degree to which a model or simulation reproduces the **state and behaviour** of a **real world object**
+or perception of a real world object, feature, condition or standard in a **measurable or perceivable** manner.
+
+### Importance of fidelity
+
+Fidelity in a simulator is an important aspect for the following reasons:
+
+- *Cost*: more fidelity requires more cost,
+- *Motivation*: more fidelity will improve motivation, performance and general
+behavior to the simulations.
+
+### Types of fidelity
+
+There are two types of fidelity in a simulator:
+
+- *Physical*: accuracy with which the simulation provides input to human senses (visual/audio, inertial),
+- *Psychological*: replication of the relevant cognitive factors involved.
+
+### Measuring fidelity
+
+Measuring fidelity boils down to making comparisons with reality. There are three major ways to do that:
+
+- *Mathematical modeling*: simple and strict, but too subjective and arbitrary,
+- *Benefits*: a relationship between the quantity of benefits (utility, validity, transfer training..etc) and the fidelity,
+- *Theoretical perspectives*: the number of common elements between the simulation and the real world ; and the accuracy of the mapping
+between the task stimuli and the response.
+
+---
+
+## 4. Benefits
+
+Simulators should provide advantages and benefits such as validity, transfer of training, usability and more.
+
+### Validity
+
+There are 5 types of validity:
+
+- *Face*: extent to which a simulation appears to be real, particularly relevant to a participant's motivation,
+- *Internal*: extent to which changes in a dependent variable can be related to an independent variable,
+- *Ecological*: extent to which the results can be applied in real-world situations,
+- *Absolute*: measured derived from the simulator are the same/similar as in the real world,
+- *Relative*: relative effect of a condition is the same in magnitude and direction as in the real word (more used than absolute).
+
+### Transfer of Training
+
+The transfer of training in a simulator is a very important aspect in novice users training for real world situations.
+This transfer can be either positive or negative:
+
+- *Positive*: after training with the simulator, the person correctly applies the acquired knowledge, skills, and abilities in real word situations,
+- *Negative*: after training with the simulator, the person does not apply or incorrectly applies the proper knowledge, skills, and abilities in real word situations.
+
+<!-- To measure the effect of the training in simulators, the following group studies are usually arranged:
+
+- *Forward transfer*: a simulation group (novices) and a real world group (proficient) both use the simulator and their performance are compared,
+- *Backward transfer* -->
