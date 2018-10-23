@@ -54,3 +54,13 @@ $$
 
 > **TO DO**: sum up the example questions into résumé
 > **TO DO**: Coursework 1 due **22 November 2018**
+
+### Lecture (23/10/2018)
+
+#### Wilcoxon
+
+![Wilcoxon](img/Wilcoxon.png)
+
+#### Mann-Whitney
+
+![Mann-Whitney](img/mann-whitney*.png)
