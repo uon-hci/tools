@@ -16,10 +16,22 @@ html {
 body {
   margin: 0; }
 
+/* CUSTOM */
+
 h2 {
   color: #ff6416 !important;
   font-weight: bold !important;
 }
+
+h3 {
+  text-transform: uppercase;
+  font-weight: bold !important;
+}
+
+.md-typeset ul li, .md-typeset ol li {
+  margin-bottom: 0 !important;
+}
+
 
 hr {
   overflow: visible;

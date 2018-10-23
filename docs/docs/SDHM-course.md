@@ -52,3 +52,48 @@ The disadvantages of simulation are:
 - *Sickness*: people getting sick in the simulator,
 - *Costs*: start-up, maintenance,
 - *Software*: difficult to use/learn.
+
+---
+
+## 2. Sickness in Simulators
+
+### Symptoms of sickness
+
+Symptoms of sickness during a simulation can be:
+
+- *Eye strain*,
+- *Headache*,
+- *Diziness*
+- *Sweating*,
+- *Disorientation*,
+- *Drowsiness/Fatigue*,
+- *Vertigo*,
+- *Pallor*,
+- *Nausea*,
+- *Vomiting*.
+
+### Importance in understanding sickness
+
+Understanding sickness in a simulator is very important for the following reasons:
+
+- *Ethics*: subject participants to discomfort,
+- *Representativeness of the sample*: defining who can/can't use/participate in the simulator and/or the product,
+- *Negative transfer of training*: sickness implies difficult teaching/learning conditions,
+- *Validity of results*: sick participants can interfere with practical performance results,
+- *Design*: a simulator that makes most people sick needs to be redesigned (so is the product).
+
+### Sensor Conflict Theory
+
+During a simulator session, three major spatial senses are challenged:
+
+- the *Visual System*,
+- the *Vestibular System*,
+- the *Non-Vestibular System*.
+
+If these senses are conflicted, sickness is bound to appear. There are two types of
+conflict:
+
+- *Visual-inertial*: conflict between the Visual System and the Vestibular/Non-Vestibular System,
+- *Canal-otolith*: conflict within the Vestibular System.
+
+For most simulations, the **Visual-inertial** conflict is the main consideration.
