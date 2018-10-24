@@ -38,13 +38,15 @@ in a motorbike experience is significant.
 - **What are the relevant aspects for a simulator to achieve comfort evaluation?**: If the primary objective is to test the comfort of a bike, the main goal of
 the simulator is to present the physical configuration of the motorbike being tested (seat, handlebar position, footplate/gears position) with a virtual
 riding experience entertaining enough to allow the participant to stay on the bike for a prolonged period of time. That entertaining riding experience
-does not need to have a high fidelity to the real-world riding, as the goal is only to test the physical comfort of the motorbike. There are no transfer
-of training to teach how to ride, or to improve skills, but only a test on the impact of the motorbike on the participant's physical comfort. However,
+does not need to have a high fidelity to the real-world riding, as the goal is only to test the physical comfort of the motorbike (the visual aspect is not indispensable).
+There are no transfer of training to teach how to ride, or to improve skills, but only a test on the impact of the motorbike on the participant's physical comfort. However,
 that entertaining-enough riding experience, to last a longer period of time, needs to present minimum sickness effects. In addition, the physical
 configuration of the motorbike needs to present a very import aspect of riding: the leaning motion. Even with fidelity not being the principal goal,
 a leaning mechanism is absolutely necessary for any real-world rider to have a minimal enjoying and replicating experience of a real motorbike. Finally, the leaning motion
 influences the position of the rider on the motorbike, which influences his comfort. Expecting a rider to test a seat with a motorbike constantly remaining in a straight line
 would be a complete lack of validity.
+
+<!-- https://advrider.com/f/threads/why-are-some-motorcycle-seats-so-uncomfortable.797935/ -->
 
 <!-- - **Resources: is it gonna improve manufacturing and design? does it have to be the complete bike? Or just the elements responsible for comfort/discomfort?**
 - **Utility: can the experiment be easily targeted? repeated? can the variables (seat, handlebar configuration..etc) be controlled easily?**
