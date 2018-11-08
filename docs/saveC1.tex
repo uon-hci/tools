@@ -1,0 +1,192 @@
+%-----------------------------------------------------------------------------
+% Template for seminar 'Program Analysis' at TU Darmstadt.
+%
+% Adapted from template for sigplanconf LaTeX Class, which is a LaTeX 2e
+% class file for SIGPLAN conference proceedings (by Paul C.
+% Anagnostopoulos).
+%
+%-----------------------------------------------------------------------------
+
+
+\documentclass[authoryear,preprint]{sigplanconf}
+
+% A couple of packages that may be useful
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{algorithm2e}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{subfigure}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+\setcitestyle{numbers}
+
+\begin{document}
+
+\special{papersize=a4}
+\setlength{\pdfpageheight}{\paperheight}
+\setlength{\pdfpagewidth}{\paperwidth}
+
+
+\title{Simulation and Digital Human Modelling\\Coursework 1}
+
+\authorinfo{Andy Pag\`es}{Msc. Human Computer Interaction}{psxap8@nottingham.ac.uk}
+
+\maketitle
+
+\section{Introduction}
+
+Simulators have become more and more common over the years with the evolution of technology. Active in many different applications areas, these artificial replications of real-world scenarios are now reaching levels of fidelity like never before. Although the access to new technologies is made easier, designing and engineering simulated environments to solve specific problematics remains a complex challenge.
+
+Considering factors like \textit{fidelity}, \textit{validity}, \textit{transfer of training} or \textit{sickness} is a demanding task. While it could be expected that high-fidelity simulators would be appropriate in any situation, it is very important to understand that the aim of a simulation and its target users entirely defines the required level of fidelity (evidently outside of cost and economic restrictions). Analyzing the expected outcomes and results that a simulator must provide defines the physical and cognitive aspects that should be implemented.
+
+This report tries to demonstrate the complexity of designing simulators by approaching two scenarios that at first appear like similar contexts: they both revolve around vehicle simulation. The first one is the design of a motorcycle simulator with the purpose to improve physical comfort, the second one aims to enhance the educational experience in museums with a WWII's Spitfire flight simulator. By exploring existing solutions, analyzing the problematics and the expectations of each context and finally recommending a solution for both situations, this coursework illustrates the difficulty and differences in the process of   elaborating simulators.
+
+
+\section{Comfort of Sports Motorbikes}
+
+Designing and manufacturing sports motorbikes involve many complex problematics such as safety, stability, maneuverability, speed or comfort. While some of these aspects can be approached with classic scientific methods,
+the notion of comfort often raises personal, cultural and subjective issues \cite{Comfort1}. A motorbike can feel comfortable to one individual and uncomfortable to another one. To deal with these issues, designers and manufacturers can make use of simulators.
+
+\subsection{Physical comfort on motorbikes}
+
+Relying on studies and the definitions of general physical comfort and discomfort, a comfortable motorbike can be defined as a motorbike that, during and after a prolonged use, does not lead to any form of physical pain and does not affect the general well being of the rider in ways such as irritation, soreness, muscular cramp, back issues and many more \cite{Discomfort1}. To improve comfort on motorbikes with simulation, it is important to understand what affects it and creates physical discomfort for riders.
+
+Comfort on a motorbike does not only rely on the motorbike itself, but also on the rider (posture) and the road (vibrations, shock). Regarding the design of the motorbike, several key elements affect the sensation of comfort: the seat, the handlebar and the foot elements (footrest, gears, grips). These three elements affect the riding posture and therefore the comfort of the rider on prolonged use \cite{Posture1}. Generally speaking, the human body is not made for staying still on the same part of the body for long periods of time. Because of a decreased supply of blood to the skin, the area that is being compressed for a long time starts to ache \cite{SkinPressure1} (this is what happens when people roll over and change position while sleeping). This principle implies that for a rider to feel comfortable on a motorbike for a long period of time, it is important to be able to often move and change positions on the seat. That includes moving forward, backward, widening the legs opening, relieving the weight by pressing the tank, etc. The seat is therefore a very important part of the bike that will considerably affect the rider's comfort \cite{SeatingComfort}. For example, a seat angled forward will constantly push the rider into the lowest spot, always putting pressure on the same parts of his body. Similarly, a seat too soft will seem comfortable at first, but during longer use the rider might pressure through and hit the plastic base pan of the bike, rendering it uncomfortable.
+
+Studies in India \cite{IndiaStudy} show that more than 25\% of motorcycle users reported severe discomfort in low back and buttocks and that comfort is one of the top three considerations when buying a motorcycle. These numbers come from a study where usage patterns, body morphology and general characteristics of the rider affect the feeling of comfort. Age, height, weight, usage of the motorcycle (work, household, long rides, leisure..) are examples of variables impacting comfort along with the design of the motorcycle and the type of road. The fact that these variables are so important to take into account while being very hard to identify and define makes the use of simulators even more necessary.
+
+The final factor for comfort and discomfort with motorbikes is the type and quality of the road being used. As sports motorbikes are only made for tarmac, the quality of the road is therefore the major aspect to consider in this context. Two variables are relevant: vibrations and shocks. Studies \cite{Vibrations1} \cite{Vibrations2} show that the effect of vibrations on the human body can be significant. When riders are exposed to what are called "\textit{whole-body vibrations}" for
+long periods of time, health issues like low back pain, finger ache, shoulder symptoms and erectile dysfunction are observed.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.45]{vibrations.png}
+\caption{Frequency of vibration and its affects on the human body (S.  BS  and  S.  V.   Study  of  vibration  and  its  effect  on  health  of  the motorcycle rider)}
+\label{simconcept}
+\end{figure}
+
+\subsection{Evaluation physical comfort with simulation}
+
+Existing simulators for motorbikes mostly focus on two applications areas: training \cite{SimuTraining} \cite{Lander} and entertainment \cite{Lean}. For these simulators, fidelity is the main objective: it is important that the degree of exactness of the driving experience is very high. Otherwise, negative transfer of training and low participant motivation will be observed. On the other hand, a simulator with the aim to test and improve comfort should focus more on the physical validity of riding a motorbike \cite{ValiditySimu}, while maintaining fidelity high enough to entertain and motivate the participant into staying longer on the bike.
+
+The concept of simulator presented in this coursework attempts to present a flexible and cost-effective solution: a configurable motorbike including only the key elements relevant to comfort: seat, handlebar and foot elements (absolute validity), that can lean in different directions to simulate inertial or centrifugal forces, vibrate to simulate road and engine effects, paired with a large screen projecting the virtual riding experience  (relative validity). The choices made for this simulator fall within the goal to present an experience entertaining enough so that the participants spend a prolonged time on the motorbike (to uncover long-time-induced discomfort), while minimizing sickness and allowing the manufacturers to easily modify the physical configuration of the motorbike (placing a new seat model, changing the footplate positions, lowering the general motorbike height, etc). By doing that, designers will be able to study the comfort of their product even if other parts of the motorbike are not yet complete \cite{TasksIndustry}. Regarding the virtual driving experience, crucial elements that convey riding fidelity like graphics, forces and physics exactness are not a priority. Using a large screen instead of a head mounter display decreases the risks of sickness for a longer experience. Indeed, as the leaning motion is necessary to have better physical validity, combining it with a head mounter display would increase the cases of sickness symptoms \cite{DiffVRS}. However, if costs allow it, it would also be possible to integrate a head mounter display set as an alternative to the screen for participants with no sickness issues.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.23]{Motorcycle-Simulator.png}
+\caption{Motorcycle Simulator Concept Illustrated}
+\label{simconcept}
+\end{figure}
+
+\subsection{Measured data}
+
+To maximize and make the best use of the data generated during simulator sessions, it is important to target a specific population: accustomed and experienced motorbike riders, familiar with the notion of comfort and discomfort on a bike, capable of judging accordingly to experience in short, medium an long trips with a motorbike, as well as a general knowledge and interest into the type of motorbike being tested (sports motorbikes in this coursework). In addition, the more diverse the participants are (gender, age, height, and weight), the more maximized the data will be. To measure comfort and make sense of the data, the following variables should be gathered or captured:
+\begin{enumerate}
+    \item Participant's usage patterns, physical attributes (age, weight, height), relevant medical issues and if any, general concerns with sports motorbike comfort.
+    \item Current configuration of the motorbike simulator: seat model, handlebar setup and position, footplates and gears position, simulated weight, simulated vibration strength, general height.
+    \item Session's conduct: time spent on the simulator, average speed, signs of comfort or discomfort, posture.
+    \item Post-session questionnaire: why the participant stopped the simulation, general feeling of comfort, scaling comfort for each physical variable (the simulator current configuration), issues with the design, issues with the simulation,  general comments.
+\end{enumerate}
+
+It is important to note that if many participants stop the simulation after a short time due to a lack of fidelity (not entertaining enough, not realistic enough), it will be in the best interest for the data generated to improve the fidelity of the simulator (better graphics and physics, software more interactive, visuals and sound system more immersive) \cite{GraphicsFidelity}.
+
+\subsection{Limitations}
+
+The major limitation of this simulator is the lack of a very important aspect of motorbikes comfort: the road. While it is hardly conceivable to integrate true road vibrations (the principle of simulator itself makes it impossible), it is still a limitation because discomfort scenarios are left out \cite{BumpRoad}.
+A second limitation is the complex relationship between fidelity and sickness \cite{RelationFS} present in this context. With new technologies like head mounted displays becoming more and more advanced, the possibility to create high-fidelity simulators for motorcycles is easier than before \cite{Cruden}. Although in the context of comfort evaluation, the sickness factors caused by motion simulators and head mounted displays raise an issue. It is therefore very important to find the correct balance between entertainment and low sickness effects so that the participant remains longer on the simulator. This complex balance renders this concept harder to implement and prone to iterative amelioration.
+
+\section{Historical Education in Museums}
+
+Museums are establishments collecting, preserving and exposing objects that tell the story of our world. From children to the elderly, they are places welcoming a significant amount of visitors. While the educational impact of museums is important to many, studies \cite{Mattention} show that visitors typically spend less than 20 minutes in exhibitions, and the majority of them pay attention to only half of the content displayed. Can the educational impact in museums be maximized? The answer lies in immersive experiences: simulators \cite{ImmerEmo} \cite{HistoryImm}.
+
+\subsection{World War II's most famous plane: Spitfire}
+
+Introduced in 1938, the Supermarine Spitfire was the most widely produced and strategically important single-seat plane fighter during World War II \cite{Spitfire}. It was designed in response to a 1934 Air Ministry specification calling for a high-performance fighter with an armament of eight wing-mounted machine guns. With stressed skin aluminum structure and an elliptical wing with a thin airfoil, the Spitfire had exceptional performance at high altitudes, playing a crucial part in the war \cite{SpitfireGood}.
+
+Existing flight simulators in museums are numerous and while they all provide educational experiences to the participants, they vary in two categories: scientific and historic. Scientific flight simulators \cite{Exist1} focus on recreating the most accurate flying experience by using $360^{\circ}$ movements and total physical fidelity. They usually isolate the participant(s) in a sealed environment with a screen, obstructing external visual diversions and improving the inertial sensations. Providing the participants with nothing but joysticks, these simulators really aim to recreate the physical experience of flying a small aircraft. On the other hand, historic flight simulators \cite{Exist2} focus on recreating the experience of a specific plane that marked history. They present an accurate replication of the plane or parts of the plane paired with an entertaining virtual simulation. Using authentic controls (often simplified) and sometimes costumes (helmet, jacket), they take the participants in a historical journey back in time, with a physical fidelity less important but a greater educational impact: they are memorials.
+
+Enhancing that educational impact regarding the Spitfire and its flight experience encompasses two main aspects: the physical restitution of the machine and the virtual simulation of flight. Physical faithfulness is necessary for participants to feel like they are in a Spitfire, understand what it was like to fly one and relate to the WWII"s pilots experience (notion of presence): the simulator environment must match the complex machinery and the dimensions of the original plane. In particular, the cockpit should be closely replicated to the original one to demonstrate the level of expertise that was required to fly the plane.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.25]{cockpit.jpeg}
+\caption{Spitfire Cockpit (Manual extract)}
+\label{simconcept}
+\end{figure}
+
+The second educational aspect focuses on the actual flight experience. Spitfires were very fast and maneuverable planes, the simulator should convey the physical and psychological factors that recreate the feeling of controlling such powerful machines. This implies sensations of speed and motion with realistic graphics.
+
+Essentially, a simulator aiming to immerse individuals in a historical experience such as flying an iconic plane must focus on fidelity. Both physical and psychological fidelity are important: physical impression of the actual plane, visual/audio and inertial cues of flying and historical immersion must take back the participant to another time and space in history.
+
+\subsection{Simulating an immersive and educational experience}
+
+The first matter in creating a Spitfire simulator is to define the degree of completeness of the physical reconstruction. Most existing solutions only reproduce the fuselage. While elements less visible to the pilot when he flies are certainly disposable for cost or space reasons, the immersion and fidelity are affected by the choice to replicate or not the wings, nose and the propellers of the Spitfire. There are three ways to approach this issue:
+\begin{itemize}
+    \item Omitting the wings, nose, and propellers but graphically represent them in the virtual simulation: improves the fidelity but requires a very close and surround screen (projection domes) \cite{ProjectionDome},
+    \item Omitting the wings, nose, and propellers both physically and virtually: reduces the fidelity but simplifies the implementation and the simulator complexity,
+    \item Physically replicating the nose and propellers although the propellers are not active for safety reasons: improves the fidelity when the simulator is inactive but reduces it while flying.
+\end{itemize}
+
+The appropriate choice depends on the environment the simulator is set in, the targeted users and evidently the costs. In a museum, the targeted users are the general population, which refers to all individuals without reference to any specific characteristic, that is, everyone visiting the museum (excluding special physical limitations).  With that vision, the simulator must offer an accessible experience with minimum sickness effects while keeping an educational simulation through fidelity. To that end, the simulator concept presented in this document only includes an accurate fuselage with no virtual recreation of the wings, nose, and propellers.
+
+In another context such as flight training with targeted users in need of the highest fidelity, despite the risk of sickness and elevated costs, the use of virtual nose, helices, and wings with projection domes show exceptional results for physical and psychological restitution \cite{Boultbee}.
+
+When building a fuselage replication, the next concern is the degree of fidelity of the complex cockpit of the Spitfire. Two approaches are usually observed in flight simulators: completely recreating every gauge, lever, and buttons or using a screen displaying virtual machinery. In the interest of a historic experience and a convincing physical restitution, physically recreating every element of the cockpit is more appropriate. Of course, while every element of this cockpit was and is necessary to fly a real Spitfire, the simulator controls will be simplified so that only a few elements of the cockpit are actually functional and used to fly (the rest is for fidelity purpose). For the general population, it is important that the controls are accessible and do not require intensive skills.
+
+Another aspect to define is the inertial restitution of the flight experience. Unlike simulators like the \textit{Fly 360}$^{\circ}$ set in scientific contexts (focused on total inertial and visual fidelity), a historic simulator cannot include such motion cues (environment not sealed, general population more prone to sickness \cite{SimuCont}). However, motion and force feedback \cite{FFeed} systems can be installed so that engine vibrations, turbulence or bumps on the runway can be felt while flying, which is an important part of what it is really like to fly a Spitfire.
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.23]{Spitfire-Simulator.png}
+\caption{Spitfire Simulator Concept Illustrated}
+\label{simconcept}
+\end{figure}
+
+Finally, the virtual simulation and its content must be defined properly to provide the desired educational impact for museums. Regarding the software and graphics, the more realistic the better. Depending on costs, implementations such as dynamic cloud simulation \cite{Cloud} can be integrated for a more immersive environment. While graphics determine and improve the visual sensations, the content and
+sequence of the session impact the actual educational outcome. It could include either of the two:
+\begin{itemize}
+    \item Start by taking off, flying a few minutes then attempting landing: improves fidelity but is more challenging and time demanding,
+    \item Start in an already "flying" position: reduces fidelity but lets the participants enjoy the flight experience and results in shorter sessions.
+\end{itemize}
+
+Once again, with a context of museums and the targeted users being general population, a session starting directly with the plane already "flying" could be more appropriate to provide a more accessible and efficient educational simulation. With a  significant visitors traffic, shorter sessions would result in more visitors experiencing what it is like to fly a Spitfire and allow inexperienced participants of all age to control the simulator with simplified flight sequences.
+
+\subsection{Measured data}
+
+Measuring the educational impact of a simulator on the general population is a complicated task \cite{MemoMus} \cite{Zoo}. In museums, visitors have the aim the learn and discover things at their own pace and move on from exposition to another when they desire. If some accept to spend more time answering questionnaires, it is still hard to quantify and determine historical knowledge. However, what can be done is measuring if the simulator provides the proper feelings and experience intended. The following data should be gathered:
+\begin{enumerate}
+    \item Question the participants about their knowledge of the plane, what they think it was like to fly it, what it could feel like to be in the cockpit,
+    \item Observe their reactions during the flight simulation,
+    \item Question about what they felt during the session, what marked them particularly, and what they now think it was like to fly a Spitfire during the war.
+\end{enumerate}
+
+\subsection{Limitations}
+
+The primary limitation of this simulator is the compromise made on fidelity to ensure an accessible and educational experience for the general population. Choosing a distanced flat screen instead of projection dome screens reduces the risk of sickness and simplifies the installation, however it affects the fidelity and hence the immersion of this simulator.
+
+Additional limitations are the physical restrictions imposed by the dimensions of the plane. By choosing to perfectly replicate the plane's original dimensions, characteristics such as height, weight, and physical agility determine if a visitor is capable to go in the cockpit. Generally, very tall person and the elderly might be restricted for this simulator.
+
+Finally, a concern not addressed in this concept is the integration of war elements in the simulation. While the flight simulation of a Spitfire is already immersive and educational, an authentic experience of what it was to fly this plane during the war could include elements such as pursuits, evasive maneuvers and many other war elements. Of course, this raises ethics issues: How far can the simulation go? Is it appropriate for the general population? These questions should be approached with further studies and analyses.
+
+\section{Conclusion}
+
+This report addressed two situations where simulators can be of high usefulness. While they both replicate real-world experiences of vehicles, each are implemented with different objectives.
+
+The principal contrast is evidently what each simulator tries to achieve. In the first context, simulating a motorbike experience has the main goal to evaluate and improve comfort of motorbikes being manufactured (focus on validity). On the other hand, the aviation museum Spitfire simulator attempts to create an immersive and historic experience that will help the participants relate to pilots during WWII, providing an educational impact (focus on fidelity). These two contexts then differs greatly in the targeted participants, where the evaluation of comfort on motorbikes requires experienced riders to maximize results, the Spitfire simulator must be designed to provide accessibility to everybody. This demonstrates the intricate relation between aim and population, and the importance of appropriate solutions. Likewise, both experiences observe and analyze the participants in different ways and precision. Measuring and quantifying comfort turns out to be an easier task than quantifying educational impact (cite zoo). The contrast is even sharper when considering that motorbike simulator acts in favor of private product design whereas the Spitfire simulator aims to facilitate and improve the educational impact for the general population. Finally, both simulator present a similar constraint for different reasons: an imperative need to avoid sickness symptoms. For comfort evaluation, avoiding sickness is necessary to allow participants to remain longer on the simulator while the Spitfire simulator targets participants more prone to sickness in a environment with a significant flow. Despite these distinct intentions, their design hold similarities in the final concept to reduce sickness: no head mounted display, simplification of physical replication, use of a large screen/projection.
+
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+
+
+\bibliographystyle{abbrvnat}
+
+
+
+\end{document}
