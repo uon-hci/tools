@@ -64,3 +64,7 @@ $$
 #### Mann-Whitney
 
 ![Mann-Whitney](img/mann-whitney*.png)
+
+### Lecture (30/10/2018)
+
+> TODO: program non-parametrics

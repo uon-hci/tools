@@ -67,22 +67,31 @@ the participants are motivated enough to remain longer on the motorbike.
 It only takes in account the participant and the motorbike, with basic leaning forces and motion. In addition, the fidelity may be too low on the first versions
 for prolonged sessions.
 
-<!--
-- **What are the advantages?**
-- **What are the disadvantages/limitations?**: can't reproduce the real vibrations and impact of the road, suspensions
--->
 
-<!--
-https://www.vocabulary.com/dictionary/comfortable
-https://www.vocabulary.com/dictionary/discomfort
-https://www.motorcyclecruiser.com/understanding-motorcycle-passengers-pain
-http://www.abc.net.au/science/articles/2014/01/28/3861788.htm
-http://www.swopperusa.com/lack-of-movement/
-https://www.motorcyclecruiser.com/handlebars-body-position
-https://www.motorcyclecruiser.com/motorcycle-riding-position-is-important-for-comfort
-https://advrider.com/f/threads/why-are-some-motorcycle-seats-so-uncomfortable.797935/
-Study of vibration and its effect on health of the motorcycle rider (Shivakumara BS, Sridhar V)
-Whole-body vibration exposure experienced by motorcycle riders (Hsieh-Ching Chen a,*, Wei-Chyuan Chen a, Yung-Ping Liu a, Chih-Yong Chen b, Yi-Tsong Pan)
-Frequency-domain method for evaluating the ride comfort of a motorcycle (Vittore Cossalter, Alberto Doria, Roberto Lot)
 
- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Aviation museum
+
+- **Objective**: Enhance educational impact of museums for the Spitfire plane from WWII flight experience using a simulator.
+- **What is the population targeted**: No specific population is targeted. This simulator is for the general public: children, adults, elderly, any individual
+visiting the museum.
+- **What is the Spitfire?**: Spitfire, also called Supermarine Spitfire, the most widely produced and strategically important British single-seat fighter of World War II. It was designed in response to a 1934 Air Ministry specification calling for a high-performance fighter with an armament of eight wing-mounted 0.303-inch machine guns.
+ It had a stressed-skin aluminum structure and a graceful elliptical wing with a thin airfoil that gave it exceptional performance at high altitudes. It was designed as a short-range, high-performance interceptor aircraft.
+- **What elements from the Spitfire are relevant for general public education?**: The Spitfire is iconic in the WWII, both for its physical shape that is very famous and the role it played in the war. Educating the general public about how flying with a Spitfire with a simulator implies two aspects: the plane in itself (cockpit, materials, technical elements) and the virtual flying experience (screen, speed, flight simulator, forces). The plane in itself replicated with precision would educated the public on what it felt like to sit in that plane, to have to handle all the different complex commands and gears, while the virtual flying experience would educated people on how it was to actually fly the plane, understand its speed and performance, why it was so useful during the war.
+- **What should be integrated into the simulator for maximized education?**: If the museum already exposes a model of a Spitfire, it is not necessary to replicate the entire plane, but only the seat and cockpit parts. Generally speaking, the front part of the plane, from pilot seat to nose, is enough for physical fidelity of the plane. While most of the parts of the simulator can use practical and cost-effective materials, the most important part of it is the cockpit. When participants sit inside the plane, they must witness the complexity of the Spitfire cockpit to feel and relate to the pilot's field of view. Of course, among the many elements of the cockpit, only some of them would be actually functional and connected to the simulator. For even more immersion and physical fidelity, no screen to represent the gauges, instead use fake physical gauges. Concerning the nose of the plane and its helices, it is obvious that making them actually turn would be very dangerous to the public. To overcome that problem, a glass could be put to prevent people from reaching to the helices. If possible, turning the helices would really improve fidelity (think of a big fan in front of the plane). Finally, in front of the simulator, a large screen simulating the flight virtually. The cockpit should be able to open/close. The focus here is to really make them feel that they ARE in a spitfire, reproduced but physically recreating a real experience. From this point, there should be a choice between trying the liftoff (complex, requires caution) or be directly set in the air (for younger or older people). A helmet of a pilot should be available for people to really fit in the character of a pilot in the WWII. A question of ethics is raised: should the virtual simulation include elements from the war ? (other planes, explosions etc). For the fidelity, this would greatly improve the educational aspect of the simulator. For younger and fragile it could be different. Once again there should be a mode as option between "quiet" (just flying) and "war" (explosions, parachutes, storm, attacks).
