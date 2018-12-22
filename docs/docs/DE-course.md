@@ -177,7 +177,8 @@ Talk tends to occur in responsive pairs; however, the pairs may be split over a 
 and *second* **pair part**. Examples can be Question/Answer, Greeting/Response, Invitation/Acceptance-Refusal, Offering/Taking.
 While adjencent pairing was brought in the context of talk analysis, it is actually the building block of many forms of modalities of interaction. Not only talk,
 but embodied interaction, physical interaction and digital interaction are of importance in adjacent pairs.
-Adjacent pairing helps to locate the procedural ways in which the work of the setting is ordered.
+Adjacent pairing helps to l
+ocate the procedural ways in which the work of the setting is ordered.
 
 #### Turn taking
 
@@ -192,3 +193,18 @@ If the current speaker stops or pauses, these behaviors can occur:
 
 - if the current speaker nominates the next speaker, the latter has to right and is obliged to speak,
 - if the current speaker doesn't nominate the next speaker, other speakers may self-select, or the current speaker can continue.
+
+---
+
+## Representing interactional order
+
+Representing interactional order consists of:
+
+1. Representing the sequential organisation in an **activity map**
+    - This represents the phases and activities, **WHAT** is done, also called *accounts about interaction*
+2. Unpacking the world in and through **praxeological accounts**
+    - This represents **HOW** it is done, also called *accounts in and of interaction*,
+    - **Praxeological accounts** = **Vivid exhibits** + **Thick description**
+    - **Vivid exhibits**: photos, sequences of images, transcripts,
+    - **Thick description**: higlighting the member's methods implicated in the production and recognition of accounts in and of interaction
+3. Assembling the collection of **members' methods** to describe the **machinery of interaction**
