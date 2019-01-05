@@ -175,8 +175,8 @@ Once the data is collected, analyzing it is a complex process. A common way to d
 
 ### Presenting results and drawing conclusions
 
-Results can be represented visually through charts, figures and tables. *Descriptive* and *inferential* statistics are also usually used.
-Based on the conslusions drawned (*reject*, *fail to reject*), a wider discussion must be made regarding the strength of the findings, and how they can be generalized to other contexts.
+Results can be represented visually through charts, figures and tables. *Descriptive* and *inferential* statistics are also commonly used.
+Based on the drawn conslusions (*reject*, *fail to reject*), a wider discussion must be made regarding the strength of the findings, and how they can be generalized to other contexts.
 
 --- 
 
