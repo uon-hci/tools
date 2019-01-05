@@ -181,3 +181,58 @@ Based on the drawn conslusions (*reject*, *fail to reject*), a wider discussion 
 --- 
 
 ## Self report methods
+
+### Questionnaire
+
+Questionnaires are good tools to survey large populations, while ensuring a high response rate.
+It is however a complex method that requires careful planning and proper question wording. Designing a questionnaire implies
+the following aspects to consider:
+
+- **Planning**: as the questionnaire is an indirect method (no face to face), it is crucial to properly plan it to make the most of it,
+- **Sampling**: thoroughly target the correct sample to optimize the results on the research question, 
+- **General instructions**: clear outline of what is expected from people filling the questionnaire,
+- **Question wording**: make questions simple, specific, unambiguous, clear, not misleading,
+- **Type of response required**: clarity on the structuring of responses (open, categories, multiple-choice, rating),
+- **Sequencing of questions**: intuitive flow on the sequence of questions,
+- **Layout**: easy of use, clear and appealing,
+- **Demographic details**: defining what personal information is really needed,
+- **Piloting**: trials to identify ambiguities, issues and errors,
+- **Administration**: process to get access to the desired sample (distribution),
+- **Data collection**:  process to collect the completed questionnaires (postage, internet),$
+- **Data entry and screening**: conversion from questionnaire to usable data.
+
+There are also many factors to take into consideration to make sure people fill the questionnaire appropriately to obtain good data. Generally, people might not be aware of specific aspects of a task (they don't realize everything they do, and how) or not recall certain information about a task (frequency, exposure). The time since exposure may also affect what can be observed as memory could be altered. Finally, observers and participants can have differences in their understanding and perception of certain aspects.
+
+### Interview
+
+Interviews, unlike questionnaires, happen face to face (or through vocal exchange) with a participant. It is a useful tool to collect detailed task related information, and thoroughly collect data with flexibility. However this method requires more time, and can be costly. Interviews are usually targeted to smaller samples. 
+
+The aspects to consider for an interview are very similar to those for the questionnaires, but from a more practical point of view. Generally, an interview will require different planning regarding the instructions, the administration, and the data collection. Setting up the meeting, the location and the recording is important. It is also essential to prepare for the interaction with the participant, and behave appropriately to make sure the results are optimized. Finally, choosing the right type of interview is crucial. There are four types of interview:
+
+- **Exploratory**: free-style in-depth,
+- **Structured**: each interview is presented with exactly the same questions in the same order (no diversion),
+- **Semi-structured**: open, allowing new ideas to be brought up during the interview, generally through a framework of themes to be explored,
+- **Group**: multiple participants at once.
+
+#### Exploratory
+
+Exploratory interviews are used to "*probe*" participants and develop concepts by understanding how people think and feel about specific topics.
+These interviews are "*free-style*" and spontaneous, with minimal intervention from the researcher.
+
+#### Structured 
+
+A structured interview is the most quantitative type of interview, providing a strong confidence in the results. By asking the exact same questions to every interviewee, a consistency is kept and the risk of diverting is the lowest.
+
+#### Semi-structured
+
+Semi-structured interviews address general themes and core questions, but allow for the interview to divert to broader and external contexts. Generally these interviews still require a set of questions regarding certain topics to always ensure a beneficial method. Being less "*accurate*", these interviews are widely used in qualitative research.
+
+#### Group
+
+Group interviews gather multiple participants, and sometimes multiple interviewers. The first benefit in doing such an interview is the obvious saving of time by combining participants. Of course a potential issue with this is the lack of depth, and the difficulty to maintain a structured interview. It is hence very important to limit the group interview to a maximum amount of participants and interviewers. The practical aspects must also be considered: group disposition, turn taking and general order.
+
+#### Other interview techniques
+
+- **Critical incident technique**: set of procedures used for collecting direct observations of human behavior that have critical significance and meet methodically defined criteria. These observations are used to solve practical problems and develop broad psychological principles. A critical incident can be described as one that makes a contribution, either positively or negatively, to an activity.
+- **Critical decision method**: retrospective interview method that employs a set of cognitive probes to non-routine incidents that required expert judgment or decision making.
+- **Verbal protocol reports**: concurrent and retrospective protocol reports used with cognitive tasks, to determine what workers are thinking about during tasks.
