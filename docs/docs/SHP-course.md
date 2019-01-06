@@ -339,3 +339,37 @@ to look out for the following details:
 - **Interviews**: contextual interviews (not scripted), conversations about the the action conducted while observing it being done,
 - **Aduio-visual recordings**: video cameras, audio recorders, still photography.
 - **Digital logs**: messages, social media, conversations, systems, etc.
+
+--- 
+
+## Analysis of work and work systems
+
+> Analyzing work is another important aspect of doing ergonomics work. But why do we analyze work? It is relevant to **understand the existing systems**, the task demands, its description, performance and the capabilities of people, to properly **design new systems**. It provides different ways of looking at work and systems through what must be done (*normative*), what is actually done (*descriptive*) and what could be done (*formative*).
+
+### Terminology
+
+Understanding concepts such as *task*, *goal* and *operation* is the first step towards work analysis:
+
+- **Task**: a set of activities occuring about the same time, sharing some common purpose that is recognised by a task performer. Tasks are usually seen as the smallest useful description of a work activity, and can be defined as a goal to be achieved under certain conditions and with certain resources,
+- **Goal**: a state to be achieved or maintained by an actor at a particular time, a goal is the object or aim of an action,
+- **Operation**: units of behaviour undertaken in order to achieve a goal, specified in terms of a target system state,
+- **Function**: a mode of action or activity by which a product fulfills its purpose,
+- **Activity**: various actions or conduct in a given context, sometimes distinct from the term *task*.
+
+### Task analysis
+
+A task analysis is a study of what an operator is required to do, in terms of **actions** and **cognitive processes** to achieve a system goal. It is about describing activities, concerned with the examination of **human performance** in systems, both from the perspective of the **behaviour** of the human and the **factors** that shape performance.
+
+The fundamental components of task analysis are:
+
+- **Clarifying** the problem and **collecting** relevant information,
+- **Analazing** and **representing** the information,
+- **Defining** future use, solutions and outputs.
+
+There are multiple forms of task analysis:
+
+- **Data collection methods**: observation, critical incident, etc,
+- **Task description**: representing data in specific formats (chart, hiearichical task analysis (HTA): decomposig a task into goals, sub-goals, operations an plans),
+- **Task simulation**: computer modelling, computations, walk-throughs,
+- **Task behaviour assessment**: eventualities, failures, effects,
+- **Task requirements evaluation**: environment, checklists, surveys.
