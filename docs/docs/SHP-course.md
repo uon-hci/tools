@@ -241,6 +241,8 @@ Group interviews gather multiple participants, and sometimes multiple interviewe
 
 ## Eliciting preferences
 
+> Understanding the way people perceive, compare and prefer systems and products is an essential part of a design process. There are tools and methods used to identify these aspects in diverse contexts.
+
 ### Paired comparisons
 
 When comparing multiple systems, the *paired comparisons* method can be used to *rank and identify general user preferences*. 
@@ -295,10 +297,45 @@ The last row, the mean of the *z-scores*, represents a relative ranking:
 
 ### Repertory grid
 
-The repertory grid is a tool to identify what constructs are important to a person in a system, product, job or establishement. It helps to understand 
-and indivual's interpretation of his or her environment. Using a method of *triads*, this method compares elements of a topic (better, worse, extremes). These elements are put in a table that represents a person's perception of a certain topic. The data used to rate and rank the elements can be qualitative and quantitative. In practice, the repertory grid is a structured ad thorough method, and can be applied to many contexts. Ideally used early in the design process, it might required more time to train the participaints and make sure the results are valid and reliable.
+The repertory grid is a tool to identify what **constructs are important** to a person in a system, product, job or establishement. It helps to understand 
+and indivual's **interpretation** of his or her environment. Using a method of *triads*, this method compares elements of a topic (better, worse, extremes). These elements are put in a table that represents a person's perception of a certain topic. The data used to rate and rank the elements can be qualitative and quantitative. In practice, the repertory grid is a **structured and thorough method**, and can be applied to many contexts. Ideally used early in the design process, it might required more time to train the participaints and make sure the results are valid and reliable.
 
 ### Card sorting
 
-The technique of card sorting, also called *concept sorting*, aims to understand how an individual sees the relationships between a set of concepts.
-By sorting cards (items, elements) into piles, the participant explores the different ways in which concept are similar or different, using diverse system of sorting (categories, ordered hierarchy). Repeated many times, it can demonstrate many views of how knowledge is organised. The results can then be examined and analyzed to reveal relationships between concepts.
+The technique of card sorting, also called *concept sorting*, aims to understand how an individual sees the **relationships between a set of concepts**.
+By sorting cards (items, elements) into piles, the participant explores the different ways in which concept are similar or different, using diverse system of sorting (categories, ordered hierarchy). Repeated many times, it can demonstrate many views of how **knowledge is organised**. The results can then be examined and analyzed to reveal relationships between concepts.
+
+---
+
+## Observartional methods
+
+> Observing is an important skill when doing ergonomics work. It is important to understant *what* should be observed, and *how*?
+
+### What?
+
+Observation is first useful to become familiar with a task, get experience of work in a natural situation, a real setting. It is about observing the actions, postures, bahaviours, techniques, reactions and many more aspects of an activity. More than just observing the participants, it also essential to note the task sequences, timings, equipments and diverse resources, and the interactions between people.
+
+### How?
+
+Observing of an activity and collecting data can be done in many ways. An observation session can either be *formal* or *informal*, where a formal approach imposes a large amount of **structure** and direction on what is to be observed, whereas an informal session is less structured and allows the observer considerable **freedom** in what information is gathered ad how it is recorded. The observation can also be either *direct* or *indirect*. A direct observation is when the observer is present during the experiment, in real time. Indirect observation happens by accessing previous recording.
+
+The role of the observer is a complex notion that can vary from **simple observer to complete participant**. While sometimes frowned upon from a scientifical point of view, the observer can decide to become a participant in the experiment. *Participant observation* presents advantages such as real experience for the observer (subjective experience), but also presents issues such as the analysis, that should already take place while collecting data. Participant observers can either hide the fact that they are carrying out a research (*the complete participant*), or make it clear from the start what is being observed (*the participant as observer*). Other possible roles are *the marginal participant*, when the observer plays the role of a passive participant in the "background", or *the observer-as-participant*, where the observer does not take part in the activity, but whose status as researcher is known to the participants.
+
+### Issues
+
+Whichever observation scheme is chosen, issues regarding ethics are raised. It is necessary to obtain permission from those who are being observed and recorded. In the context of *covert* studies (when the participants are not informed), there are obvious and strong ethical objections, that make that kind of activity more and more rare. Another issue the possible lengthy periods of observations necessary, followed by a large amount of information to analyze, requiring sufficient skills in the subject. There might also be practical issues, like getting the right point of view, access to spectific equipement, etc. Finally, the risk of a bias due to participant being aware of the experience and changing their usual methods is high.
+
+### Collecting data
+
+Collecting data during the experiment can be done with the following tools:
+
+- **Notes**: writing down observations, thoughts and reflections, snippets of conservations, etc. While observing the activity, it is important
+to look out for the following details:
+    - *Ecology*: where the action takes place, layout of the space, location of actors and roles, equipments and artefacts used,
+    - *Formal organisation*: plans or procedures,
+    - *Transitions events*: important transition moments (arriving, leaving, etc),
+    - *Arrangements of collaboration*: interactions between members (who talks to whom about what),
+    - *Audio-visual data indexing*: times, sequence, making sense of digital data.
+- **Interviews**: contextual interviews (not scripted), conversations about the the action conducted while observing it being done,
+- **Aduio-visual recordings**: video cameras, audio recorders, still photography.
+- **Digital logs**: messages, social media, conversations, systems, etc.
