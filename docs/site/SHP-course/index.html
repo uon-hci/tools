@@ -437,6 +437,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#eliciting-preferences" title="Eliciting preferences" class="md-nav__link">
+    Eliciting preferences
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifying-the-pairs" title="Identifying the pairs" class="md-nav__link">
+    Identifying the pairs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filling-the-preference-matrix" title="Filling the preference matrix" class="md-nav__link">
+    Filling the preference matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computing-the-probability-matrix" title="Computing the probability matrix" class="md-nav__link">
+    Computing the probability matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relative-ranking" title="Relative ranking" class="md-nav__link">
+    Relative ranking
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -711,6 +752,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#eliciting-preferences" title="Eliciting preferences" class="md-nav__link">
+    Eliciting preferences
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifying-the-pairs" title="Identifying the pairs" class="md-nav__link">
+    Identifying the pairs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filling-the-preference-matrix" title="Filling the preference matrix" class="md-nav__link">
+    Filling the preference matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computing-the-probability-matrix" title="Computing the probability matrix" class="md-nav__link">
+    Computing the probability matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relative-ranking" title="Relative ranking" class="md-nav__link">
+    Relative ranking
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -931,7 +1013,7 @@ Based on the drawn conslusions (<em>reject</em>, <em>fail to reject</em>), a wid
 <hr />
 <h2 id="self-report-methods">Self report methods</h2>
 <h3 id="questionnaire">Questionnaire</h3>
-<p>Questionnaires are good tools to survey large populations, while ensuring a high response rate.
+<p>Questionnaires are good tools to survey <strong>large populations</strong>, while ensuring a <strong>high response rate</strong>.
 It is however a complex method that requires careful planning and proper question wording. Designing a questionnaire implies
 the following aspects to consider:</p>
 <ul>
@@ -950,8 +1032,8 @@ the following aspects to consider:</p>
 </ul>
 <p>There are also many factors to take into consideration to make sure people fill the questionnaire appropriately to obtain good data. Generally, people might not be aware of specific aspects of a task (they don't realize everything they do, and how) or not recall certain information about a task (frequency, exposure). The time since exposure may also affect what can be observed as memory could be altered. Finally, observers and participants can have differences in their understanding and perception of certain aspects.</p>
 <h3 id="interview">Interview</h3>
-<p>Interviews, unlike questionnaires, happen face to face (or through vocal exchange) with a participant. It is a useful tool to collect detailed task related information, and thoroughly collect data with flexibility. However this method requires more time, and can be costly. Interviews are usually targeted to smaller samples. </p>
-<p>The aspects to consider for an interview are very similar to those for the questionnaires, but from a more practical point of view. Generally, an interview will require different planning regarding the instructions, the administration, and the data collection. Setting up the meeting, the location and the recording is important. It is also essential to prepare for the interaction with the participant, and behave appropriately to make sure the results are optimized. Finally, choosing the right type of interview is crucial. There are four types of interview:</p>
+<p>Interviews, unlike questionnaires, happen <strong>face to face</strong> (or through vocal exchange) with a participant. It is a useful tool to collect detailed task related information, and thoroughly collect data with <strong>flexibility</strong>. However this method requires more time, and can be costly. Interviews are usually targeted to <strong>smaller samples</strong>. </p>
+<p>The aspects to consider for an interview are very similar to those for the questionnaires, but from a more practical point of view. Generally, an interview will require different planning regarding the instructions, the administration, and the data collection. Setting up the meeting, the location and the recording is important. It is also essential to prepare for the <strong>interaction</strong> with the participant, and behave appropriately to make sure the results are optimized. Finally, choosing the right type of interview is crucial. There are four types of interview:</p>
 <ul>
 <li><strong>Exploratory</strong>: free-style in-depth,</li>
 <li><strong>Structured</strong>: each interview is presented with exactly the same questions in the same order (no diversion),</li>
@@ -973,6 +1055,160 @@ These interviews are "<em>free-style</em>" and spontaneous, with minimal interve
 <li><strong>Critical decision method</strong>: retrospective interview method that employs a set of cognitive probes to non-routine incidents that required expert judgment or decision making.</li>
 <li><strong>Verbal protocol reports</strong>: concurrent and retrospective protocol reports used with cognitive tasks, to determine what workers are thinking about during tasks.</li>
 </ul>
+<hr />
+<h2 id="eliciting-preferences">Eliciting preferences</h2>
+<p>When comparing multiple systems, the <em>paired comparisons</em> method can be used to <em>rank and identify general user preferences</em>. 
+This method consists in presenting all possible pairs of the system (product) to every participant, in a random sequence. Each time, the participant
+must indicate which system was preferred between the two.</p>
+<h3 id="identifying-the-pairs">Identifying the pairs</h3>
+<p>For \(n\) objects, there are \( \frac{1}{2} \cdot n \cdot (n - 1)\) possible pairs. In the example of 4 chairs, there a \(1/2 * 4 * 3 = 6\) possible pairs, that can be \({AB, AC, BD, CB, CD, DA}.\)</p>
+<h3 id="filling-the-preference-matrix">Filling the preference matrix</h3>
+<p>The preference matrix represents every pair and how many participants prefered one object to another (\(x\) prefered to \(y\)). The following preference matrix for the chairs, with 14 participants, is given:</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th><strong>A</strong></th>
+<th><strong>B</strong></th>
+<th><strong>C</strong></th>
+<th><strong>D</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>A</strong></td>
+<td>-</td>
+<td>6</td>
+<td>8</td>
+<td>12</td>
+</tr>
+<tr>
+<td align="left"><strong>B</strong></td>
+<td>8</td>
+<td>-</td>
+<td>10</td>
+<td>14</td>
+</tr>
+<tr>
+<td align="left"><strong>C</strong></td>
+<td>6</td>
+<td>4</td>
+<td>-</td>
+<td>13</td>
+</tr>
+<tr>
+<td align="left"><strong>D</strong></td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="computing-the-probability-matrix">Computing the probability matrix</h3>
+<p>To obtain results and identify the most (or least) preferred object, the probability matrix must be computed.
+From the preference matrix, every item must be divided by the total number of objects \(n\), and empty items (same objects) replaced by \(0.50\).</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th><strong>A</strong></th>
+<th><strong>B</strong></th>
+<th><strong>C</strong></th>
+<th><strong>D</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>A</strong></td>
+<td>0.50</td>
+<td>0.43</td>
+<td>0.57</td>
+<td>0.86</td>
+</tr>
+<tr>
+<td align="left"><strong>B</strong></td>
+<td>0.57</td>
+<td>0.50</td>
+<td>0.71</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td align="left"><strong>C</strong></td>
+<td>0.43</td>
+<td>0.29</td>
+<td>0.50</td>
+<td>0.93</td>
+</tr>
+<tr>
+<td align="left"><strong>D</strong></td>
+<td>0.14</td>
+<td>0.00</td>
+<td>0.07</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td align="left">\(\sum\)</td>
+<td>1.64</td>
+<td>1.22</td>
+<td>1.85</td>
+<td>3.29</td>
+</tr>
+</tbody>
+</table>
+<p>Using the last row, the sum of probabilities, the most preferred chaid is \(D\), and the least preferred one is \(B\).</p>
+<h3 id="relative-ranking">Relative ranking</h3>
+<p>To rank the objects in relative levels, the use of standard scores, or <em>z-scores</em>, is required. To do so, the distance from the mean, here \(0.50\) must be extracted and used in the <em>normal distribution</em> table to get the <em>z-score</em>. If an item is above the mean, the <em>z-score</em> is positive, if it is under the mean the <em>z-score</em> is negative, and null otherwise.</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th><strong>A</strong></th>
+<th><strong>B</strong></th>
+<th><strong>C</strong></th>
+<th><strong>D</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>A</strong></td>
+<td>0.00</td>
+<td>-0.18</td>
+<td>0.18</td>
+<td>1.06</td>
+</tr>
+<tr>
+<td align="left"><strong>B</strong></td>
+<td>0.18</td>
+<td>0.00</td>
+<td>0.55</td>
+<td>4.00</td>
+</tr>
+<tr>
+<td align="left"><strong>C</strong></td>
+<td>-0.18</td>
+<td>-0.55</td>
+<td>0.00</td>
+<td>1.48</td>
+</tr>
+<tr>
+<td align="left"><strong>D</strong></td>
+<td>-1.08</td>
+<td>-4.00</td>
+<td>-1.48</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td align="left">\(\bar{z}\)</td>
+<td>-0.27</td>
+<td>-1.18</td>
+<td>-0.19</td>
+<td>1.64</td>
+</tr>
+</tbody>
+</table>
+<p>The last row, the mean of the <em>z-scores</em>, represents a relative ranking:</p>
+<p>\[ B(-1.18) &lt; A(-0.27) &lt; C(-0.19) &lt; D(1.64) \]</p>
                 
                   
                 

@@ -184,7 +184,7 @@ Based on the drawn conslusions (*reject*, *fail to reject*), a wider discussion 
 
 ### Questionnaire
 
-Questionnaires are good tools to survey large populations, while ensuring a high response rate.
+Questionnaires are good tools to survey **large populations**, while ensuring a **high response rate**.
 It is however a complex method that requires careful planning and proper question wording. Designing a questionnaire implies
 the following aspects to consider:
 
@@ -205,9 +205,9 @@ There are also many factors to take into consideration to make sure people fill 
 
 ### Interview
 
-Interviews, unlike questionnaires, happen face to face (or through vocal exchange) with a participant. It is a useful tool to collect detailed task related information, and thoroughly collect data with flexibility. However this method requires more time, and can be costly. Interviews are usually targeted to smaller samples. 
+Interviews, unlike questionnaires, happen **face to face** (or through vocal exchange) with a participant. It is a useful tool to collect detailed task related information, and thoroughly collect data with **flexibility**. However this method requires more time, and can be costly. Interviews are usually targeted to **smaller samples**. 
 
-The aspects to consider for an interview are very similar to those for the questionnaires, but from a more practical point of view. Generally, an interview will require different planning regarding the instructions, the administration, and the data collection. Setting up the meeting, the location and the recording is important. It is also essential to prepare for the interaction with the participant, and behave appropriately to make sure the results are optimized. Finally, choosing the right type of interview is crucial. There are four types of interview:
+The aspects to consider for an interview are very similar to those for the questionnaires, but from a more practical point of view. Generally, an interview will require different planning regarding the instructions, the administration, and the data collection. Setting up the meeting, the location and the recording is important. It is also essential to prepare for the **interaction** with the participant, and behave appropriately to make sure the results are optimized. Finally, choosing the right type of interview is crucial. There are four types of interview:
 
 - **Exploratory**: free-style in-depth,
 - **Structured**: each interview is presented with exactly the same questions in the same order (no diversion),
@@ -236,3 +236,57 @@ Group interviews gather multiple participants, and sometimes multiple interviewe
 - **Critical incident technique**: set of procedures used for collecting direct observations of human behavior that have critical significance and meet methodically defined criteria. These observations are used to solve practical problems and develop broad psychological principles. A critical incident can be described as one that makes a contribution, either positively or negatively, to an activity.
 - **Critical decision method**: retrospective interview method that employs a set of cognitive probes to non-routine incidents that required expert judgment or decision making.
 - **Verbal protocol reports**: concurrent and retrospective protocol reports used with cognitive tasks, to determine what workers are thinking about during tasks.
+
+---
+
+## Eliciting preferences
+
+When comparing multiple systems, the *paired comparisons* method can be used to *rank and identify general user preferences*. 
+This method consists in presenting all possible pairs of the system (product) to every participant, in a random sequence. Each time, the participant
+must indicate which system was preferred between the two.
+
+### Identifying the pairs
+
+For \\(n\\) objects, there are \\( \frac{1}{2} \cdot n \cdot (n - 1)\\) possible pairs. In the example of 4 chairs, there a \\(1/2 * 4 * 3 = 6\\) possible pairs, that can be \\({AB, AC, BD, CB, CD, DA}.\\)
+
+### Filling the preference matrix
+
+The preference matrix represents every pair and how many participants prefered one object to another (\\(x\\) prefered to \\(y\\)). The following preference matrix for the chairs, with 14 participants, is given:
+
+|  | **A** | **B** | **C** | **D**
+| :- | - | - | - | -
+| **A** | - | 6 | 8 | 12
+| **B** | 8 | - | 10 | 14
+| **C** | 6 | 4 | - | 13
+| **D** | 2 | 0 | 1 | -
+
+### Computing the probability matrix
+
+To obtain results and identify the most (or least) preferred object, the probability matrix must be computed.
+From the preference matrix, every item must be divided by the total number of objects \\(n\\), and empty items (same objects) replaced by \\(0.50\\).
+
+|  | **A** | **B** | **C** | **D**
+| :- | - | - | - | -
+| **A** | 0.50 | 0.43 | 0.57 | 0.86
+| **B** | 0.57 | 0.50 | 0.71 | 1.00
+| **C** | 0.43 | 0.29 | 0.50 | 0.93
+| **D** | 0.14 | 0.00 | 0.07 | 0.50
+| \\(\sum\\) | 1.64 | 1.22 | 1.85 | 3.29
+
+Using the last row, the sum of probabilities, the most preferred chaid is \\(D\\), and the least preferred one is \\(B\\).
+
+### Relative ranking
+
+To rank the objects in relative levels, the use of standard scores, or *z-scores*, is required. To do so, the distance from the mean, here \\(0.50\\) must be extracted and used in the *normal distribution* table to get the *z-score*. If an item is above the mean, the *z-score* is positive, if it is under the mean the *z-score* is negative, and null otherwise.
+
+|  | **A** | **B** | **C** | **D**
+| :- | - | - | - | -
+| **A** | 0.00 | -0.18 | 0.18 | 1.06
+| **B** | 0.18 | 0.00 | 0.55 | 4.00
+| **C** | -0.18 | -0.55 | 0.00 | 1.48
+| **D** | -1.08 | -4.00 | -1.48 | 0.00
+| \\(\bar{z}\\) | -0.27 | -1.18 | -0.19 | 1.64
+
+The last row, the mean of the *z-scores*, represents a relative ranking:
+
+\\[ B(-1.18) < A(-0.27) < C(-0.19) < D(1.64) \\]
