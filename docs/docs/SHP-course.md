@@ -241,15 +241,17 @@ Group interviews gather multiple participants, and sometimes multiple interviewe
 
 ## Eliciting preferences
 
+### Paired comparisons
+
 When comparing multiple systems, the *paired comparisons* method can be used to *rank and identify general user preferences*. 
 This method consists in presenting all possible pairs of the system (product) to every participant, in a random sequence. Each time, the participant
 must indicate which system was preferred between the two.
 
-### Identifying the pairs
+#### Identifying the pairs
 
 For \\(n\\) objects, there are \\( \frac{1}{2} \cdot n \cdot (n - 1)\\) possible pairs. In the example of 4 chairs, there a \\(1/2 * 4 * 3 = 6\\) possible pairs, that can be \\({AB, AC, BD, CB, CD, DA}.\\)
 
-### Filling the preference matrix
+#### Filling the preference matrix
 
 The preference matrix represents every pair and how many participants prefered one object to another (\\(x\\) prefered to \\(y\\)). The following preference matrix for the chairs, with 14 participants, is given:
 
@@ -260,7 +262,7 @@ The preference matrix represents every pair and how many participants prefered o
 | **C** | 6 | 4 | - | 13
 | **D** | 2 | 0 | 1 | -
 
-### Computing the probability matrix
+#### Computing the probability matrix
 
 To obtain results and identify the most (or least) preferred object, the probability matrix must be computed.
 From the preference matrix, every item must be divided by the total number of objects \\(n\\), and empty items (same objects) replaced by \\(0.50\\).
@@ -275,7 +277,7 @@ From the preference matrix, every item must be divided by the total number of ob
 
 Using the last row, the sum of probabilities, the most preferred chaid is \\(D\\), and the least preferred one is \\(B\\).
 
-### Relative ranking
+#### Relative ranking
 
 To rank the objects in relative levels, the use of standard scores, or *z-scores*, is required. To do so, the distance from the mean, here \\(0.50\\) must be extracted and used in the *normal distribution* table to get the *z-score*. If an item is above the mean, the *z-score* is positive, if it is under the mean the *z-score* is negative, and null otherwise.
 
@@ -290,3 +292,13 @@ To rank the objects in relative levels, the use of standard scores, or *z-scores
 The last row, the mean of the *z-scores*, represents a relative ranking:
 
 \\[ B(-1.18) < A(-0.27) < C(-0.19) < D(1.64) \\]
+
+### Repertory grid
+
+The repertory grid is a tool to identify what constructs are important to a person in a system, product, job or establishement. It helps to understand 
+and indivual's interpretation of his or her environment. Using a method of *triads*, this method compares elements of a topic (better, worse, extremes). These elements are put in a table that represents a person's perception of a certain topic. The data used to rate and rank the elements can be qualitative and quantitative. In practice, the repertory grid is a structured ad thorough method, and can be applied to many contexts. Ideally used early in the design process, it might required more time to train the participaints and make sure the results are valid and reliable.
+
+### Card sorting
+
+The technique of card sorting, also called *concept sorting*, aims to understand how an individual sees the relationships between a set of concepts.
+By sorting cards (items, elements) into piles, the participant explores the different ways in which concept are similar or different, using diverse system of sorting (categories, ordered hierarchy). Repeated many times, it can demonstrate many views of how knowledge is organised. The results can then be examined and analyzed to reveal relationships between concepts.
