@@ -140,6 +140,110 @@ On the other hand, a **non-parametric test** has no know information about the p
 
 Statistical tests try to answer a question, based on the available data. When rejecting a null hypothesis (observing that there is indeed a relation between variables), there is a probability that this rejection is due to **chance**, that the random variables happen to **misrepresent the reality**. This probability, called **p-value**, represents the chance to reject a null hypothesis when it is **actually true**. Subsequently, the lower the p-value, the more meaningful the result because it is less likely to be caused by **noise**. 
 
-The action to reject the null hypothesis when it is actually true is called an **incorrect conclusion** and more precisely a **Type I error**. It is an experimental error that analysts wants to **avoid** in priority, to not make any false claim. To that end, before conducting the test, a **significance threshold** called \\(\alpha\\) is set, that if exceeded, indicantes a non-significant result. That threshold is usually \\(\alpha = 0.05\\), but particular contexts and fiels of study often require a more strict value, such as \\(\alpha = 0.001\\).
+The action to reject the null hypothesis when it is actually true is called an **incorrect conclusion** and more precisely a **Type I error**. It is an experimental error that analysts wants to **avoid** in priority, to not make any false claim. To that end, before conducting the test, a **significance threshold** called \\(\alpha\\) is set, that if exceeded, indicates a non-significant result. That threshold is usually \\(\alpha = 0.05\\), but particular contexts and fields of study often require a more strict value, such as \\(\alpha = 0.001\\).
 
 Of course, the opposite action of **failing to reject a null hypothesis** when it is **actually false** is another experimental error called **Type II error**, but is often seen as less serious than the Type I error. The chance to make a Type II error is represented by the probability called \\(\beta\\). The **statistical power** is the probability of correctly rejecting the null hypothesis, because it is **indeed false**.
+
+---
+
+## Non-parametric tests
+
+### One IV, Two Levels: Wilcoxon
+
+A set of \\(n = 12\\) subjects are asked to rate two designs of screwdriver handle for ease of use on a seven point ordinal scale **(7 = easiest, 1 = most difficult)** and the data obtained are shown in the table below:
+
+| Subject | Handle A (\\(X_1\\)) | Handle B (\\(X_2\\))
+| -- | -- | --
+| S1 | 6 | 3
+| S2 | 5 | 6
+| S3 | 7 | 4
+| S4 | 4 | 4
+| S5 | 6 | 5
+| S6 | 4 | 1
+| S7 | 3 | 5
+| S8 | 5 | 2
+| S9 | 7 | 2
+| S10 | 5 | 2
+| S11 | 6 | 2
+| S12 | 6 | 4
+
+First start by **calculating the differences between each pair of scores**:
+
+| Subject | Handle A (\\(X_1\\)) | Handle B (\\(X_2\\)) | \\(X_1\\) - \\(X_2\\)
+| -- | -- | -- | --
+| S1 | 6 | 3 | 3
+| S2 | 5 | 6 | -1
+| S3 | 7 | 4 | 3
+| S4 | 4 | 4 | `0`
+| S5 | 6 | 5 | 1
+| S6 | 4 | 1 | 3
+| S7 | 3 | 5 | -2
+| S8 | 5 | 2 | 3
+| S9 | 7 | 2 | 5
+| S10 | 5 | 2 | 3
+| S11 | 6 | 2 | 4
+| S12 | 6 | 4 | 2
+
+The next step is to **ignore null differences** (such as for S4), and hence decrease to \\(n = 11\\) subjects. The differences
+must then be ranked in order of magnitude (take mean for similar differences) in \\([1, n]\\), as follows:
+
+<table align="center">
+    <thead>
+        <th>Order</th>
+        <th style="text-align: center;">1</th>
+        <th style="text-align: center;">2</th>
+        <th style="text-align: center;">3</th>
+        <th style="text-align: center;">4</th>
+        <th style="text-align: center;">5</th>
+        <th style="text-align: center;">6</th>
+        <th style="text-align: center;">7</th>
+        <th style="text-align: center;">8</th>
+        <th style="text-align: center;">9</th>
+        <th style="text-align: center;">10</th>
+        <th style="text-align: center;">11</th>
+    </thead>
+    <tr>
+        <td>Difference</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">4</td>
+        <td style="text-align: center;">5</td>
+    </tr>
+    <tr>
+        <td>Rank</td>
+        <td style="text-align: center;" colspan="2">1.5</td>
+        <td style="text-align: center;" colspan="2">3.5</td>
+        <td style="text-align: center;"colspan="5">7</td>
+        <td style="text-align: center;">10</td>
+        <td style="text-align: center;">11</td>
+    </tr>
+</table>
+
+Then, assign in the previous table the rank to each difference, conserving their sign:
+
+| Subject | Handle A (\\(X_1\\)) | Handle B (\\(X_2\\)) | \\(X_1\\) - \\(X_2\\) | Rank
+| -- | -- | -- | -- | --
+| S1 | 6 | 3 | 3 | 7 (+)
+| S2 | 5 | 6 | -1 | 1.5 (-)
+| S3 | 7 | 4 | 3 | 7 (+)
+| S4 | 4 | 4 | `0`
+| S5 | 6 | 5 | 1 | 1.5 (+)
+| S6 | 4 | 1 | 3 | 7 (+)
+| S7 | 3 | 5 | -2 | 3.5 (-)
+| S8 | 5 | 2 | 3 | 7 (+)
+| S9 | 7 | 2 | 5 | 11 (+)
+| S10 | 5 | 2 | 3 | 7(+)
+| S11 | 6 | 2 | 4 | 10 (+)
+| S12 | 6 | 4 | 2 | 3.5 (+)
+
+Calculate the total of negative ranks \\(T_n\\) and the total of positive ranks \\(T_p\\):
+
+- \\(T_n = 5\\)
+- \\(T_p = 61\\)

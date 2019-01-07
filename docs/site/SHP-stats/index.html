@@ -366,6 +366,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#non-parametric-tests" title="Non-parametric tests" class="md-nav__link">
+    Non-parametric tests
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#one-iv-two-levels-wilcoxon" title="One IV, Two Levels: Wilcoxon" class="md-nav__link">
+    One IV, Two Levels: Wilcoxon
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -557,6 +577,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#non-parametric-tests" title="Non-parametric tests" class="md-nav__link">
+    Non-parametric tests
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#one-iv-two-levels-wilcoxon" title="One IV, Two Levels: Wilcoxon" class="md-nav__link">
+    One IV, Two Levels: Wilcoxon
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -671,8 +711,312 @@ A study design can however further predictions by using <strong>assumptions</str
 <p>On the other hand, a <strong>non-parametric test</strong> has no know information about the population and is not based on any known distribution. Because non-parametric tests don't require assumptions about the nature of their distributions, they are also called <strong>distribution-free</strong>. These tests hence assume that the variables are measured on a <strong>nominal</strong> (categorical) or <strong>ordinal</strong> level, with the median as the measure of central tendency.</p>
 <h3 id="significance">Significance</h3>
 <p>Statistical tests try to answer a question, based on the available data. When rejecting a null hypothesis (observing that there is indeed a relation between variables), there is a probability that this rejection is due to <strong>chance</strong>, that the random variables happen to <strong>misrepresent the reality</strong>. This probability, called <strong>p-value</strong>, represents the chance to reject a null hypothesis when it is <strong>actually true</strong>. Subsequently, the lower the p-value, the more meaningful the result because it is less likely to be caused by <strong>noise</strong>. </p>
-<p>The action to reject the null hypothesis when it is actually true is called an <strong>incorrect conclusion</strong> and more precisely a <strong>Type I error</strong>. It is an experimental error that analysts wants to <strong>avoid</strong> in priority, to not make any false claim. To that end, before conducting the test, a <strong>significance threshold</strong> called \(\alpha\) is set, that if exceeded, indicantes a non-significant result. That threshold is usually \(\alpha = 0.05\), but particular contexts and fiels of study often require a more strict value, such as \(\alpha = 0.001\).</p>
+<p>The action to reject the null hypothesis when it is actually true is called an <strong>incorrect conclusion</strong> and more precisely a <strong>Type I error</strong>. It is an experimental error that analysts wants to <strong>avoid</strong> in priority, to not make any false claim. To that end, before conducting the test, a <strong>significance threshold</strong> called \(\alpha\) is set, that if exceeded, indicates a non-significant result. That threshold is usually \(\alpha = 0.05\), but particular contexts and fields of study often require a more strict value, such as \(\alpha = 0.001\).</p>
 <p>Of course, the opposite action of <strong>failing to reject a null hypothesis</strong> when it is <strong>actually false</strong> is another experimental error called <strong>Type II error</strong>, but is often seen as less serious than the Type I error. The chance to make a Type II error is represented by the probability called \(\beta\). The <strong>statistical power</strong> is the probability of correctly rejecting the null hypothesis, because it is <strong>indeed false</strong>.</p>
+<hr />
+<h2 id="non-parametric-tests">Non-parametric tests</h2>
+<h3 id="one-iv-two-levels-wilcoxon">One IV, Two Levels: Wilcoxon</h3>
+<p>A set of \(n = 12\) subjects are asked to rate two designs of screwdriver handle for ease of use on a seven point ordinal scale <strong>(7 = easiest, 1 = most difficult)</strong> and the data obtained are shown in the table below:</p>
+<table>
+<thead>
+<tr>
+<th>Subject</th>
+<th>Handle A (\(X_1\))</th>
+<th>Handle B (\(X_2\))</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>6</td>
+<td>3</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>7</td>
+<td>4</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>S5</td>
+<td>6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>S6</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr>
+<td>S7</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td>S8</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>S9</td>
+<td>7</td>
+<td>2</td>
+</tr>
+<tr>
+<td>S10</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>S11</td>
+<td>6</td>
+<td>2</td>
+</tr>
+<tr>
+<td>S12</td>
+<td>6</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>First start by <strong>calculating the differences between each pair of scores</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Subject</th>
+<th>Handle A (\(X_1\))</th>
+<th>Handle B (\(X_2\))</th>
+<th>\(X_1\) - \(X_2\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>6</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>5</td>
+<td>6</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>7</td>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>4</td>
+<td>4</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td>S5</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td>S6</td>
+<td>4</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td>S7</td>
+<td>3</td>
+<td>5</td>
+<td>-2</td>
+</tr>
+<tr>
+<td>S8</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>S9</td>
+<td>7</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr>
+<td>S10</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>S11</td>
+<td>6</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>S12</td>
+<td>6</td>
+<td>4</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>The next step is to <strong>ignore null differences</strong> (such as for S4), and hence decrease to \(n = 11\) subjects. The differences
+must then be ranked in order of magnitude (take mean for similar differences) in \([1, n]\), as follows:</p>
+<table align="center">
+    <thead>
+        <th>Order</th>
+        <th style="text-align: center;">1</th>
+        <th style="text-align: center;">2</th>
+        <th style="text-align: center;">3</th>
+        <th style="text-align: center;">4</th>
+        <th style="text-align: center;">5</th>
+        <th style="text-align: center;">6</th>
+        <th style="text-align: center;">7</th>
+        <th style="text-align: center;">8</th>
+        <th style="text-align: center;">9</th>
+        <th style="text-align: center;">10</th>
+        <th style="text-align: center;">11</th>
+    </thead>
+    <tr>
+        <td>Difference</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">4</td>
+        <td style="text-align: center;">5</td>
+    </tr>
+    <tr>
+        <td>Rank</td>
+        <td style="text-align: center;" colspan="2">1.5</td>
+        <td style="text-align: center;" colspan="2">3.5</td>
+        <td style="text-align: center;"colspan="5">7</td>
+        <td style="text-align: center;">10</td>
+        <td style="text-align: center;">11</td>
+    </tr>
+</table>
+
+<p>Then, assign in the previous table the rank to each difference, conserving their sign:</p>
+<table>
+<thead>
+<tr>
+<th>Subject</th>
+<th>Handle A (\(X_1\))</th>
+<th>Handle B (\(X_2\))</th>
+<th>\(X_1\) - \(X_2\)</th>
+<th>Rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>6</td>
+<td>3</td>
+<td>3</td>
+<td>7 (+)</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>5</td>
+<td>6</td>
+<td>-1</td>
+<td>1.5 (-)</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>7</td>
+<td>4</td>
+<td>3</td>
+<td>7 (+)</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>4</td>
+<td>4</td>
+<td><code>0</code></td>
+<td></td>
+</tr>
+<tr>
+<td>S5</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+<td>1.5 (+)</td>
+</tr>
+<tr>
+<td>S6</td>
+<td>4</td>
+<td>1</td>
+<td>3</td>
+<td>7 (+)</td>
+</tr>
+<tr>
+<td>S7</td>
+<td>3</td>
+<td>5</td>
+<td>-2</td>
+<td>3.5 (-)</td>
+</tr>
+<tr>
+<td>S8</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+<td>7 (+)</td>
+</tr>
+<tr>
+<td>S9</td>
+<td>7</td>
+<td>2</td>
+<td>5</td>
+<td>11 (+)</td>
+</tr>
+<tr>
+<td>S10</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+<td>7(+)</td>
+</tr>
+<tr>
+<td>S11</td>
+<td>6</td>
+<td>2</td>
+<td>4</td>
+<td>10 (+)</td>
+</tr>
+<tr>
+<td>S12</td>
+<td>6</td>
+<td>4</td>
+<td>2</td>
+<td>3.5 (+)</td>
+</tr>
+</tbody>
+</table>
+<p>Calculate the total of negative ranks \(T_n\) and the total of positive ranks \(T_p\):</p>
+<ul>
+<li>\(T_n = 5\)</li>
+<li>\(T_p = 61\)</li>
+</ul>
                 
                   
                 
