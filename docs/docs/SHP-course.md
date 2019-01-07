@@ -1,4 +1,4 @@
-# Studying Human Performance
+# Studying Human Performance - Methods
 
 **COURSE**
 
