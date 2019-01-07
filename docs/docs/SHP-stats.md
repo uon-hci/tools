@@ -148,9 +148,11 @@ Of course, the opposite action of **failing to reject a null hypothesis** when i
 
 ## Non-parametric tests
 
-### Wilcoxon (One IV, Two Levels)
+### Wilcoxon
 
-A set of \\(n = 12\\) subjects are asked to rate two designs of screwdriver handle for ease of use on a seven point ordinal scale **(7 = easiest, 1 = most difficult)** and the data obtained are shown in the table below:
+`One IV, Two Levels, Within`
+
+A set of \\(N = 12\\) subjects are asked to rate two designs of screwdriver handle for ease of use on a seven point ordinal scale **(7 = easiest, 1 = most difficult)** and the data obtained are shown in the table below:
 
 | Subject | Handle A (\\(X_1\\)) | Handle B (\\(X_2\\))
 | -- | -- | --
@@ -184,8 +186,8 @@ First start by **calculating the differences between each pair of scores**:
 | S11 | 6 | 2 | 4
 | S12 | 6 | 4 | 2
 
-The next step is to **ignore null differences** (such as for S4), and hence decrease to \\(n = 11\\) subjects. The differences
-must then be ranked in order of magnitude (take mean for similar differences) in \\([1, n]\\), as follows:
+The next step is to **ignore null differences** (such as for S4), and hence decrease to \\(N = 11\\) subjects. The differences
+must then be ranked in order of magnitude (take mean for similar differences) in \\([1, N]\\), as follows:
 
 <table align="center">
     <thead>
@@ -250,6 +252,186 @@ Calculate the total of negative ranks \\(T_n\\) and the total of positive ranks 
 
 Finally, select from these two totals the **lowest one**, that is the value \\(W_{obs}\\). In this example \\(min(T_n, T_p) = 5\\), therefore \\(W_{obs}  = 5\\).
 
-In the table, search for \\(N = 11\\), with a level of significance for a two-tailed test of \\(\alpha = 0.05\\), that value is \\(W_{crit} = 11\\).
+In the table **A**, search for \\(N = 11\\), with a level of significance for a two-tailed test of \\(\alpha = 0.05\\), that value is \\(W_{crit} = 11\\).
 
 Because \\(W_{obs} < W_{crit}\\), **the null hypothesis is rejected** (there is a difference of ease of use between the two designs of handles).
+
+---
+
+### Mann-Whitney
+
+`One IV, Two Levels, Between`
+
+Two groups of 7 subjects (total of \\(N = 14\\)) are asked to complete a maintenance task using either a **paper based** manual for instructions or a **head mounted display** on a “private eye”.  After the task they rate how **easy** they found several aspects of the task, giving an overall usability rating of between 4 and 20 **(20 = easiest to use, 4 = most difficult)**.
+
+| **Subject** | Paper based | **Subect** | Private eye
+| -- | -- | -- | --
+| **S1** | 8 | **S8** | 11
+| **S2** | 10 | **S9** | 15
+| **S3** | 6 | **S10** | 18
+| **S4** | 15 | **S11** | 14
+| **S5** | 14 | **S12** | 16
+| **S6** | 9 | **S13** | 12 
+| **S7** | 10 | **S14** | 9
+
+First rank the scores by order of magnitude (take mean for similar differences) in \\([1, N]\\) as follows:
+
+<table align="center">
+    <thead>
+        <th>Order</th>
+        <th style="text-align: center;">1</th>
+        <th style="text-align: center;">2</th>
+        <th style="text-align: center;">3</th>
+        <th style="text-align: center;">4</th>
+        <th style="text-align: center;">5</th>
+        <th style="text-align: center;">6</th>
+        <th style="text-align: center;">7</th>
+        <th style="text-align: center;">8</th>
+        <th style="text-align: center;">9</th>
+        <th style="text-align: center;">10</th>
+        <th style="text-align: center;">11</th>
+        <th style="text-align: center;">12</th>
+        <th style="text-align: center;">13</th>
+        <th style="text-align: center;">14</th>
+    </thead>
+    <tr>
+        <td>Score</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;">8</td>
+        <td style="text-align: center;">9</td>
+        <td style="text-align: center;">9</td>
+        <td style="text-align: center;">10</td>
+        <td style="text-align: center;">10</td>
+        <td style="text-align: center;">11</td>
+        <td style="text-align: center;">12</td>
+        <td style="text-align: center;">14</td>
+        <td style="text-align: center;">14</td>
+        <td style="text-align: center;">15</td>
+        <td style="text-align: center;">15</td>
+        <td style="text-align: center;">16</td>
+        <td style="text-align: center;">18</td>
+    </tr>
+    <tr>
+        <td>Rank</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;" colspan="2">3.5</td>
+        <td style="text-align: center;" colspan="2">5.5</td>
+        <td style="text-align: center;">7</td>
+        <td style="text-align: center;">8</td>
+        <td style="text-align: center;" colspan="2">9.5</td>
+        <td style="text-align: center;" colspan="2">11.5</td>
+        <td style="text-align: center;">13</td>
+        <td style="text-align: center;">14</td>
+    </tr>
+</table>
+
+Assign the rank to each score in the previous table and compute the totals:
+
+| **Subject** | Paper based | Rank | **Subect** | Private eye | Rank
+| -- | -- | -- | -- | -- | --
+| **S1** | 8 | 2 | **S8** | 11 | 7
+| **S2** | 10 | 5.5 | **S9** | 15 | 11.5
+| **S3** | 6 | 1 | **S10** | 18 | 14
+| **S4** | 15 | 11.5 | **S11** | 14 | 9.5
+| **S5** | 14 | 9.5 | **S12** | 16 | 13
+| **S6** | 9 | 3.5 | **S13** | 12 | 8
+| **S7** | 10 | 5.5 | **S14** | 9 | 3.5
+| **TOTAL** |  | **38.5** | |  | **66.5**
+
+The total rank for *paper based* is \\(T_{pb} = 38.5\\), and the total rank for *private eye* is \\(T_{pe} = 66.5\\).
+
+Select from the two rank totals the **highest one** and assign to the variable \\(T_x\\).
+\\[T_x = max(T_{pb}, T_{pe}) = 66.5\\]
+
+Using the following formulate, calculate the value of \\(U_{obs}\\):
+
+\\[U_{obs} = n_1 \cdot n_2 + \frac{n_x \cdot (n_x + 1)}{2} - T_x\\]
+
+where:
+
+- \\(n_1\\) is the number of subjects in the group 1 (here \\(n_1 = 7\\)),
+- \\(n_2\\) is the number of subjects in the group 2 (here \\(n_2 = 7\\)),
+- \\(n_x\\) is the number of subjects in the group with the the highest rank total (here \\(n_x = 7\\)).
+
+Therefore:
+
+
+\\[U_{obs} = 7 \cdot 7 + \frac{7 \cdot (7 + 1)}{2} - 66.5 = 10.5\\]
+
+In the table **B**, search for \\(n_1 = n_2 = 7\\), with a level of significance for a two-tailed test of \\(\alpha = 0.05\\), that value is \\(U_{crit} = 8\\).
+
+Because \\(U_{obs} > U_{crit}\\), we fail to reject the null hypothesis (it can't be said that there is a difference between the two conditions).
+
+--- 
+
+### Friedman
+
+`One IV, Three+ levels, Within`
+
+A group of \\(n = 6\\) students are asked to use three different types of computer interface one which is solely **command line** based, one which uses a **combination** of command line and pull down menus, and one which only uses pull down **menus**. They are then asked to rate the usability of these interfaces on a five point scale **(5 = most usable)**.  The following scores are obtained:
+
+| Subject | Cmd line | Combination | Menus
+| -- | -- | -- | --
+| S1 | 2 | 4 | 2
+| S2 | 1 | 5 | 3
+| S3 | 3 | 5 | 2
+| S4 | 2 | 3 | 3
+| S5 | 2 | 4 | 3
+| S6 | 1 | 3 | 4
+
+
+For each separate subect, rank the three scores by order of magnitude as follows for **Subject 1 (S1)**:
+
+<table>
+    <thead>
+        <th>Order</th>
+        <th style="text-align: center;">1</th>
+        <th style="text-align: center;">2</th>
+        <th style="text-align: center;">3</th>
+    </thead>
+    <tr>
+        <td>Score</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">4</td>
+    </tr>
+    <tr>
+        <td>Rank</td>
+        <td style="text-align: center;" colspan="2">1.5</td>
+        <td style="text-align: center;">3</td>
+    </tr>
+</table>
+
+Assign the ranks to every score in the previous table and compute the rank totals:
+
+|  | Cmd line | | Combination | | Menus | |
+| -- | -- | -- | -- | -- | -- | -- 
+| **Subject** | **Score** | **Rank** | **Score** | **Rank** | **Score** | **Rank**
+| S1 | 2 | 1.5 | 4 | 3 | 2 | 1.5
+| S2 | 1 | 1 | 5 | 3 | 3 | 2
+| S3 | 3 | 2 | 5 | 3 | 2 | 1
+| S4 | 2 | 1 | 3 | 2.5 | 3 | 2.5
+| S5 | 2 | 1 | 4 | 3 | 3 | 2
+| S6 | 1 | 1 | 3 | 2 | 4 | 3
+| **Total** | | **7.5** | | **16.5** | | **12**
+
+We note the rank totals for each condition \\(T_{c1} = 7.5\\), \\(T_{c2} = 16.5\\), \\(T_{c3} = 12\\).
+
+The next step is to calculate the value \\(Xr^2\\) with the following formula:
+\\[Xr^2 = \bigg[ \frac{12}{N \cdot C \cdot (C + 1)} \cdot \sum T_c^2 \bigg] - 3 \cdot N \cdot (C + 1)\\]
+
+where:
+
+- \\(N\\) is the number of subjects (here \\(N = 6\\)), 
+- \\(C\\) is the number of levels (here \\(C = 3\\)),
+-  \\(\sum T_c^2\\) is the sum of the square rank totals for each condition.
+
+Therefore:
+
+\\[\sum T_c^2 = T_{c1}^2 + T_{c2}^2 + T_{c3}^2 = 7.5^2 + 16.5^2 + 12^2 = 472.5\\]
+\\[Xr^2 = \bigg[ \frac{12}{6 \cdot 3 \cdot (3 + 1)} \cdot 472.5 \bigg] - 3 \cdot 6 \cdot (3 + 1) = 6.75\\]
+
+In the table **C**, search for \\(N = 6\\) and \\(C = 3\\), that value is \\(Xr^2_{crit} = 6.33\\).
+
+Because \\(Xr^2_{obs} > Xr^2_{crit}\\), we can reject the null hypothesis (there is a difference between the three conditions).
