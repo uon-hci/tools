@@ -70,6 +70,6 @@ To convert a value to a standard deviation value (also called a **standard score
 Hence for a value \\(x\\), the z-score \\(z\\) is:
 \\[z = \frac{x - \mu}{\sigma}\\]
 
-Doing that operation is called **standardizing**, or converting a *normal distribution* into a *standard normal distribution*. Usually, the entire
+Doing that operation is called **standardizing**, or converting a *normal distribution* into a *standard normal distribution*. Usually, the entire sample
 is standardized at once to simplify the calculations by simply looking up standardized pre-computed tables. The table **D. Normal distribution table** allows
 to convert from standard scores to percents, and vice versa.
