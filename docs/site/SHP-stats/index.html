@@ -375,8 +375,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#one-iv-two-levels-wilcoxon" title="One IV, Two Levels: Wilcoxon" class="md-nav__link">
-    One IV, Two Levels: Wilcoxon
+  <a href="#wilcoxon-one-iv-two-levels" title="Wilcoxon (One IV, Two Levels)" class="md-nav__link">
+    Wilcoxon (One IV, Two Levels)
   </a>
   
 </li>
@@ -586,8 +586,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#one-iv-two-levels-wilcoxon" title="One IV, Two Levels: Wilcoxon" class="md-nav__link">
-    One IV, Two Levels: Wilcoxon
+  <a href="#wilcoxon-one-iv-two-levels" title="Wilcoxon (One IV, Two Levels)" class="md-nav__link">
+    Wilcoxon (One IV, Two Levels)
   </a>
   
 </li>
@@ -715,7 +715,7 @@ A study design can however further predictions by using <strong>assumptions</str
 <p>Of course, the opposite action of <strong>failing to reject a null hypothesis</strong> when it is <strong>actually false</strong> is another experimental error called <strong>Type II error</strong>, but is often seen as less serious than the Type I error. The chance to make a Type II error is represented by the probability called \(\beta\). The <strong>statistical power</strong> is the probability of correctly rejecting the null hypothesis, because it is <strong>indeed false</strong>.</p>
 <hr />
 <h2 id="non-parametric-tests">Non-parametric tests</h2>
-<h3 id="one-iv-two-levels-wilcoxon">One IV, Two Levels: Wilcoxon</h3>
+<h3 id="wilcoxon-one-iv-two-levels">Wilcoxon (One IV, Two Levels)</h3>
 <p>A set of \(n = 12\) subjects are asked to rate two designs of screwdriver handle for ease of use on a seven point ordinal scale <strong>(7 = easiest, 1 = most difficult)</strong> and the data obtained are shown in the table below:</p>
 <table>
 <thead>
@@ -914,7 +914,7 @@ must then be ranked in order of magnitude (take mean for similar differences) in
     </tr>
 </table>
 
-<p>Then, assign in the previous table the rank to each difference, conserving their sign:</p>
+<p>Then, assign in the previous table the rank to each difference, <strong>conserving their sign</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -1017,6 +1017,9 @@ must then be ranked in order of magnitude (take mean for similar differences) in
 <li>\(T_n = 5\)</li>
 <li>\(T_p = 61\)</li>
 </ul>
+<p>Finally, select from these two totals the <strong>lowest one</strong>, that is the value \(W_{obs}\). In this example \(min(T_n, T_p) = 5\), therefore \(W_{obs}  = 5\).</p>
+<p>In the table, search for \(N = 11\), with a level of significance for a two-tailed test of \(\alpha = 0.05\), that value is \(W_{crit} = 11\).</p>
+<p>Because \(W_{obs} &lt; W_{crit}\), <strong>the null hypothesis is rejected</strong> (there is a difference of ease of use between the two designs of handles).</p>
                 
                   
                 

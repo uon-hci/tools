@@ -148,7 +148,7 @@ Of course, the opposite action of **failing to reject a null hypothesis** when i
 
 ## Non-parametric tests
 
-### One IV, Two Levels: Wilcoxon
+### Wilcoxon (One IV, Two Levels)
 
 A set of \\(n = 12\\) subjects are asked to rate two designs of screwdriver handle for ease of use on a seven point ordinal scale **(7 = easiest, 1 = most difficult)** and the data obtained are shown in the table below:
 
@@ -226,7 +226,7 @@ must then be ranked in order of magnitude (take mean for similar differences) in
     </tr>
 </table>
 
-Then, assign in the previous table the rank to each difference, conserving their sign:
+Then, assign in the previous table the rank to each difference, **conserving their sign**:
 
 | Subject | Handle A (\\(X_1\\)) | Handle B (\\(X_2\\)) | \\(X_1\\) - \\(X_2\\) | Rank
 | -- | -- | -- | -- | --
@@ -247,3 +247,9 @@ Calculate the total of negative ranks \\(T_n\\) and the total of positive ranks 
 
 - \\(T_n = 5\\)
 - \\(T_p = 61\\)
+
+Finally, select from these two totals the **lowest one**, that is the value \\(W_{obs}\\). In this example \\(min(T_n, T_p) = 5\\), therefore \\(W_{obs}  = 5\\).
+
+In the table, search for \\(N = 11\\), with a level of significance for a two-tailed test of \\(\alpha = 0.05\\), that value is \\(W_{crit} = 11\\).
+
+Because \\(W_{obs} < W_{crit}\\), **the null hypothesis is rejected** (there is a difference of ease of use between the two designs of handles).
