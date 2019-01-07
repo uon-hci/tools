@@ -73,3 +73,67 @@ Hence for a value \\(x\\), the z-score \\(z\\) is:
 Doing that operation is called **standardizing**, or converting a *normal distribution* into a *standard normal distribution*. Usually, the entire sample
 is standardized at once to simplify the calculations by simply looking up standardized pre-computed tables. The table **D. Normal distribution table** allows
 to convert from standard scores to percents, and vice versa.
+
+-- 
+
+## Statistical tests
+
+When doing an experiment, choosing the correct statistical test is very important to obtain significant results. The first step
+in doing so is to understand every factor affecting the choice, and how to implement **study design**.
+
+### Experiment outline
+
+An experiment, (or study or research), can be outlined by the following steps:
+
+1. **Research question**: objective, aim, question asked,
+2. **Study design**: describing the experiment through hypothesis, variables, data types and participants,
+3. **Test selection**: choosing the correct test(s) based on the study design,
+4. **Conducting the experiment**: doing the described experiment and collecting data,
+5. **Doing the test**: using the data to obtain results through the selected test(s),
+6. **Interpretation and conclusion**: making sense of the result and concluding on the research question.
+
+### Study design
+
+#### Defining the problem, aim and hypotheses
+
+The first step in designing a study is to clearly define the problem and issues that require investigation, and what will
+be achived by doing it. This is usually represented by a system of **hypotheses**, or *statements of the predicted outcome*. As 
+studies manipulate variables and data, the aim of these hypotheses is to predict, understand and validate the relationships between said variables.
+Conventionally, there are two types of hypothesis:
+
+- **Experimental**, or *H1*, that predicts a dependent relationship between variables,
+- **Null**, or *H0*, that states that variables are not dependent (one does not impact the other).
+
+#### Identify the research variables
+
+The said variables are split in three categories:
+
+- **Independant variables** (*IV*): variables manipulated by the experimented, related to the individual, task, system or environment,
+- **Dependant varaibles** (*DV*): varaibles being measured in the experiment, not under the control of the experimenter, possibly affected by the IVs,
+- **Controlled variables**: variables that need to be kept constant during the experiment.
+
+#### Allocate participants to the experimental conditions
+
+There are two ways to allocate and distribute the participants across the IVs:
+
+- **Within**: every participant completes every experimental condition,
+- **Between**: different participants are allocated to each experimental condition.
+
+#### Assumptions
+
+The experimental hypothesis predicts a dependant relationship between variables, or in other words, independant variables impacting dependant variables. 
+A study design can however further predictions by using **assumptions**.
+
+A **one-tailed** hypothesis predicts *how* and in *which direction* an independant variable impacts a dependant variable. For example, if an experimental hypothesis predicts that *music* (IV) impacts *performance* (DV), a one-tailed extension would add that *music* **improves** *performance*, or that *music* **impairs** *performance*. One-tailed tests must be justified: it is for example justified to predict that constant loud noise impairs performance.
+
+In addition, **contrasts** are other assumptions that can be integrated to a study design. Unlike one-tailed assumptions that predict in *which direction* an independant variable affects a dependant variable, contrasts compare the **levels** of an independant variable. For example, if an experimental hypothesis predicts that *music* (IV) impacts *performance* (DV), and that this independant variable has three levels (*classical*, *rock*, *rap*), contrasts could be that *classical* music affects *performance* differently than *rap music*.
+
+#### Data types and analysis
+
+Based on the data types and the variables, a test can either be **parametric** or **non-parametric**.
+
+A **parametric test** is a test that is carried out with the assumption that the data collected follows a well-known distribution (usually the normal distribution), which can be boiled down to the knowledge of just a couple of **parameters**. A parametric test provides generalisations for making statements about the mean of the parent population. Because parametric test are based on a distribution, the measurement of varaibles on **interval** or **ratio** level, with the mean used as the measure of central tendency.
+
+On the other hand, a **non-parametric test** has no know information about the population and is not based on any known distribution. Because non-parametric tests don't require assumptions about the nature of their distributions, they are also called **distribution-free**. These tests hence assume that the variables are measured on a **nominal** (categorical) or **ordinal** level, with the median as the measure of central tendency.
+
+### Significance
