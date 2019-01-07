@@ -3,7 +3,8 @@ theme: material
 pages:
   - Home: index.md
   - Simulation and Digital Human Modeling: SDHM-course.md
-  - Studying Human Performance: SHP-course.md
+  - Studying Human Performance - Methods: SHP-course.md
+  - Studying Human Performance - Statistics: SHP-stats.md
   - Cognitive Ergonomics in Design: CEID-course.md
   - Design Ethnography: DE-course.md
 extra_javascript:
