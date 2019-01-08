@@ -395,6 +395,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#kruskal-wallis" title="Kruskal-Wallis" class="md-nav__link">
+    Kruskal-Wallis
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -616,6 +623,13 @@
           <li class="md-nav__item">
   <a href="#friedman" title="Friedman" class="md-nav__link">
     Friedman
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kruskal-wallis" title="Kruskal-Wallis" class="md-nav__link">
+    Kruskal-Wallis
   </a>
   
 </li>
@@ -1414,8 +1428,8 @@ must then be ranked in order of magnitude (take mean for similar differences) in
 </tbody>
 </table>
 <p>We note the rank totals for each condition \(T_{c1} = 7.5\), \(T_{c2} = 16.5\), \(T_{c3} = 12\).</p>
-<p>The next step is to calculate the value \(Xr^2\) with the following formula:
-\[Xr^2 = \bigg[ \frac{12}{N \cdot C \cdot (C + 1)} \cdot \sum T_c^2 \bigg] - 3 \cdot N \cdot (C + 1)\]</p>
+<p>The next step is to calculate the value \(Xr^2_{obs}\) with the following formula:
+\[Xr^2_{obs} = \bigg[ \frac{12}{N \cdot C \cdot (C + 1)} \cdot \sum T_c^2 \bigg] - 3 \cdot N \cdot (C + 1)\]</p>
 <p>where:</p>
 <ul>
 <li>\(N\) is the number of subjects (here \(N = 6\)), </li>
@@ -1424,9 +1438,280 @@ must then be ranked in order of magnitude (take mean for similar differences) in
 </ul>
 <p>Therefore:</p>
 <p>\[\sum T_c^2 = T_{c1}^2 + T_{c2}^2 + T_{c3}^2 = 7.5^2 + 16.5^2 + 12^2 = 472.5\]
-\[Xr^2 = \bigg[ \frac{12}{6 \cdot 3 \cdot (3 + 1)} \cdot 472.5 \bigg] - 3 \cdot 6 \cdot (3 + 1) = 6.75\]</p>
+\[Xr^2_{obs} = \bigg[ \frac{12}{6 \cdot 3 \cdot (3 + 1)} \cdot 472.5 \bigg] - 3 \cdot 6 \cdot (3 + 1) = 6.75\]</p>
 <p>In the table <strong>C</strong>, search for \(N = 6\) and \(C = 3\), that value is \(Xr^2_{crit} = 6.33\).</p>
 <p>Because \(Xr^2_{obs} &gt; Xr^2_{crit}\), we can reject the null hypothesis (there is a difference between the three conditions).</p>
+<hr />
+<h3 id="kruskal-wallis">Kruskal-Wallis</h3>
+<p><code>One IV, Three+ levels, Between</code></p>
+<p><strong>Three groups of seven subjects</strong>  (total of \(N = 21\)) were asked to rate any discomfort they experienced after typing on a keyboard for 20 minutes. The keyboards were set up so that they required three different levels of force to be exerted onto the keys. Therefore the three conditions were <strong>low force</strong>, <strong>medium force</strong> and <strong>high force</strong>.  The subjects rated their discomfort on a 9 point scale, where a <strong>high score indicated a greater degree of discomfort</strong>.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Subject</strong></th>
+<th>Low force</th>
+<th><strong>Subect</strong></th>
+<th>Medium force</th>
+<th><strong>Subject</strong></th>
+<th>High force</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S1</strong></td>
+<td>4</td>
+<td><strong>S8</strong></td>
+<td>5</td>
+<td><strong>S15</strong></td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>S2</strong></td>
+<td>3</td>
+<td><strong>S9</strong></td>
+<td>4</td>
+<td><strong>S16</strong></td>
+<td>8</td>
+</tr>
+<tr>
+<td><strong>S3</strong></td>
+<td>1</td>
+<td><strong>S10</strong></td>
+<td>2</td>
+<td><strong>S17</strong></td>
+<td>9</td>
+</tr>
+<tr>
+<td><strong>S4</strong></td>
+<td>2</td>
+<td><strong>S11</strong></td>
+<td>5</td>
+<td><strong>S18</strong></td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>S5</strong></td>
+<td>2</td>
+<td><strong>S12</strong></td>
+<td>4</td>
+<td><strong>S19</strong></td>
+<td>9</td>
+</tr>
+<tr>
+<td><strong>S6</strong></td>
+<td>3</td>
+<td><strong>S13</strong></td>
+<td>3</td>
+<td><strong>S20</strong></td>
+<td>9</td>
+</tr>
+<tr>
+<td><strong>S7</strong></td>
+<td>1</td>
+<td><strong>S14</strong></td>
+<td>6</td>
+<td><strong>S21</strong></td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>First rank the scores by order of magnitude (take mean for similar differences) in \([1, N]\) as follows:</p>
+<table align="center">
+    <thead>
+        <th>Order</th>
+        <th style="text-align: center;">1</th>
+        <th style="text-align: center;">2</th>
+        <th style="text-align: center;">3</th>
+        <th style="text-align: center;">4</th>
+        <th style="text-align: center;">5</th>
+        <th style="text-align: center;">6</th>
+        <th style="text-align: center;">7</th>
+        <th style="text-align: center;">8</th>
+        <th style="text-align: center;">9</th>
+        <th style="text-align: center;">10</th>
+        <th style="text-align: center;">11</th>
+        <th style="text-align: center;">12</th>
+        <th style="text-align: center;">13</th>
+        <th style="text-align: center;">14</th>
+        <th style="text-align: center;">15</th>
+        <th style="text-align: center;">16</th>
+        <th style="text-align: center;">17</th>
+        <th style="text-align: center;">18</th>
+        <th style="text-align: center;">19</th>
+        <th style="text-align: center;">20</th>
+        <th style="text-align: center;">21</th>
+    </thead>
+    <tr>
+        <td>Score</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">4</td>
+        <td style="text-align: center;">4</td>
+        <td style="text-align: center;">4</td>
+        <td style="text-align: center;">5</td>
+        <td style="text-align: center;">5</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;">7</td>
+        <td style="text-align: center;">8</td>
+        <td style="text-align: center;">8</td>
+        <td style="text-align: center;">9</td>
+        <td style="text-align: center;">9</td>
+        <td style="text-align: center;">9</td>
+    </tr>
+    <tr>
+        <td>Rank</td>
+        <td style="text-align: center;" colspan="2">1.5</td>
+        <td style="text-align: center;" colspan="3">4</td>
+        <td style="text-align: center;" colspan="3">7</td>
+        <td style="text-align: center;" colspan="3">10</td>
+        <td style="text-align: center;" colspan="2">12.5</td>
+        <td style="text-align: center;" colspan="2">14.5</td>
+        <td style="text-align: center;">16</td>
+        <td style="text-align: center;" colspan="2">17.5</td>
+        <td style="text-align: center;" colspan="3">20</td>
+    </tr>
+</table>
+
+<p>Assign the rank to each score in the previous table and compute the totals:</p>
+<table>
+<thead>
+<tr>
+<th>Low force</th>
+<th></th>
+<th></th>
+<th>Medium force</th>
+<th></th>
+<th></th>
+<th>High force</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Subject</strong></td>
+<td><strong>Score</strong></td>
+<td><strong>Rank</strong></td>
+<td><strong>Subject</strong></td>
+<td><strong>Score</strong></td>
+<td><strong>Rank</strong></td>
+<td><strong>Subject</strong></td>
+<td><strong>Score</strong></td>
+<td><strong>Rank</strong></td>
+</tr>
+<tr>
+<td><strong>S1</strong></td>
+<td>4</td>
+<td>10</td>
+<td><strong>S8</strong></td>
+<td>5</td>
+<td>12.5</td>
+<td><strong>S15</strong></td>
+<td>6</td>
+<td>14.5</td>
+</tr>
+<tr>
+<td><strong>S2</strong></td>
+<td>3</td>
+<td>7</td>
+<td><strong>S9</strong></td>
+<td>4</td>
+<td>10</td>
+<td><strong>S16</strong></td>
+<td>8</td>
+<td>17.5</td>
+</tr>
+<tr>
+<td><strong>S3</strong></td>
+<td>1</td>
+<td>1.5</td>
+<td><strong>S10</strong></td>
+<td>2</td>
+<td>4</td>
+<td><strong>S17</strong></td>
+<td>9</td>
+<td>20</td>
+</tr>
+<tr>
+<td><strong>S4</strong></td>
+<td>2</td>
+<td>4</td>
+<td><strong>S11</strong></td>
+<td>5</td>
+<td>12.5</td>
+<td><strong>S18</strong></td>
+<td>7</td>
+<td>16</td>
+</tr>
+<tr>
+<td><strong>S5</strong></td>
+<td>2</td>
+<td>4</td>
+<td><strong>S12</strong></td>
+<td>4</td>
+<td>10</td>
+<td><strong>S19</strong></td>
+<td>9</td>
+<td>20</td>
+</tr>
+<tr>
+<td><strong>S6</strong></td>
+<td>3</td>
+<td>7</td>
+<td><strong>S13</strong></td>
+<td>3</td>
+<td>7</td>
+<td><strong>S20</strong></td>
+<td>9</td>
+<td>20</td>
+</tr>
+<tr>
+<td><strong>S7</strong></td>
+<td>1</td>
+<td>1.5</td>
+<td><strong>S14</strong></td>
+<td>6</td>
+<td>14.5</td>
+<td><strong>S21</strong></td>
+<td>8</td>
+<td>17.5</td>
+</tr>
+<tr>
+<td><strong>TOTAL</strong></td>
+<td></td>
+<td><strong>35</strong></td>
+<td></td>
+<td></td>
+<td><strong>70.5</strong></td>
+<td></td>
+<td></td>
+<td><strong>125.5</strong></td>
+</tr>
+</tbody>
+</table>
+<p>We note the rank totals for each condition \(T_{c1} = 35\), \(T_{c2} = 70.5\), \(T_{c3} = 125.5\), and the number of subjects for each
+condition \(n_1 = n_2 = n_3 = 7\).</p>
+<p>The next step is to calculate the value \(H_{obs}\) with the following formula:
+\[H_{obs} = \bigg[ \frac{12}{N \cdot (N + 1)} \cdot \sum \frac{T_c^2}{n_c} \bigg] - 3 \cdot (N + 1)\]</p>
+<p>where:</p>
+<ul>
+<li>\(N\) is the total number of subjects (here \(N = 21\)),</li>
+<li>\(\sum \frac{T_c^2}{n_c}\) is the sum of squared rank totals for each condition divided by the number of participants in that condition.</li>
+</ul>
+<p>\[\sum \frac{T_c^2}{n_c} = \frac{35^2}{7} + \frac{70.5^2}{7} + \frac{125.5^2}{7} = 3135.08\]</p>
+<p>Therefore:</p>
+<p>\[H_{obs} = \bigg[ \frac{12}{21 \cdot (21 + 1)} \cdot 3135.08 \bigg] - 3 \cdot (21 + 1) = 15.51\]</p>
+<p>Finally the number of degrees of freedom must be computed as \(df = C - 1 = 3 - 1 = 2\), where \(C\) is the number of conditions (levels).</p>
+<p>To find \(H_{crit}\) the number of participants in each group determines the table to use: if all groups have more than 5 subjects, the Chi-square table should be used, otherwise the Kruskal-Wallis one.</p>
+<p>Here \(n_1 = n_2 = n_3 &gt; 5\), so the Chi-square table should be used. In the table <strong>D</strong>, search for \(df = 2\) and a significance level of \(\alpha = 0.05\), that value is \(H_{crit} = 5.99\).</p>
+<p>Because \(H_{obs} &gt; H_{crit}\), we can reject the null hypothesis (keyboard force does affect comfort).</p>
                 
                   
                 

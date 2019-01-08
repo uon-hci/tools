@@ -418,8 +418,8 @@ Assign the ranks to every score in the previous table and compute the rank total
 
 We note the rank totals for each condition \\(T_{c1} = 7.5\\), \\(T_{c2} = 16.5\\), \\(T_{c3} = 12\\).
 
-The next step is to calculate the value \\(Xr^2\\) with the following formula:
-\\[Xr^2 = \bigg[ \frac{12}{N \cdot C \cdot (C + 1)} \cdot \sum T_c^2 \bigg] - 3 \cdot N \cdot (C + 1)\\]
+The next step is to calculate the value \\(Xr^2_{obs}\\) with the following formula:
+\\[Xr^2_{obs} = \bigg[ \frac{12}{N \cdot C \cdot (C + 1)} \cdot \sum T_c^2 \bigg] - 3 \cdot N \cdot (C + 1)\\]
 
 where:
 
@@ -430,8 +430,131 @@ where:
 Therefore:
 
 \\[\sum T_c^2 = T_{c1}^2 + T_{c2}^2 + T_{c3}^2 = 7.5^2 + 16.5^2 + 12^2 = 472.5\\]
-\\[Xr^2 = \bigg[ \frac{12}{6 \cdot 3 \cdot (3 + 1)} \cdot 472.5 \bigg] - 3 \cdot 6 \cdot (3 + 1) = 6.75\\]
+\\[Xr^2_{obs} = \bigg[ \frac{12}{6 \cdot 3 \cdot (3 + 1)} \cdot 472.5 \bigg] - 3 \cdot 6 \cdot (3 + 1) = 6.75\\]
 
 In the table **C**, search for \\(N = 6\\) and \\(C = 3\\), that value is \\(Xr^2_{crit} = 6.33\\).
 
 Because \\(Xr^2_{obs} > Xr^2_{crit}\\), we can reject the null hypothesis (there is a difference between the three conditions).
+
+---
+
+### Kruskal-Wallis
+
+`One IV, Three+ levels, Between`
+
+**Three groups of seven subjects**  (total of \\(N = 21\\)) were asked to rate any discomfort they experienced after typing on a keyboard for 20 minutes. The keyboards were set up so that they required three different levels of force to be exerted onto the keys. Therefore the three conditions were **low force**, **medium force** and **high force**.  The subjects rated their discomfort on a 9 point scale, where a **high score indicated a greater degree of discomfort**.
+
+| **Subject** | Low force | **Subect** | Medium force | **Subject** | High force
+| -- | -- | -- | -- | -- | --
+| **S1** | 4 | **S8** | 5  | **S15** | 6
+| **S2** | 3 | **S9** | 4 | **S16** | 8
+| **S3** | 1 | **S10** | 2 | **S17** | 9
+| **S4** | 2 | **S11** | 5 | **S18** | 7
+| **S5** | 2 | **S12** | 4 | **S19** | 9
+| **S6** | 3 | **S13** | 3  | **S20** | 9
+| **S7** | 1 | **S14** | 6 | **S21** | 8
+
+
+First rank the scores by order of magnitude (take mean for similar differences) in \\([1, N]\\) as follows:
+
+<table align="center">
+    <thead>
+        <th>Order</th>
+        <th style="text-align: center;">1</th>
+        <th style="text-align: center;">2</th>
+        <th style="text-align: center;">3</th>
+        <th style="text-align: center;">4</th>
+        <th style="text-align: center;">5</th>
+        <th style="text-align: center;">6</th>
+        <th style="text-align: center;">7</th>
+        <th style="text-align: center;">8</th>
+        <th style="text-align: center;">9</th>
+        <th style="text-align: center;">10</th>
+        <th style="text-align: center;">11</th>
+        <th style="text-align: center;">12</th>
+        <th style="text-align: center;">13</th>
+        <th style="text-align: center;">14</th>
+        <th style="text-align: center;">15</th>
+        <th style="text-align: center;">16</th>
+        <th style="text-align: center;">17</th>
+        <th style="text-align: center;">18</th>
+        <th style="text-align: center;">19</th>
+        <th style="text-align: center;">20</th>
+        <th style="text-align: center;">21</th>
+    </thead>
+    <tr>
+        <td>Score</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">4</td>
+        <td style="text-align: center;">4</td>
+        <td style="text-align: center;">4</td>
+        <td style="text-align: center;">5</td>
+        <td style="text-align: center;">5</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;">7</td>
+        <td style="text-align: center;">8</td>
+        <td style="text-align: center;">8</td>
+        <td style="text-align: center;">9</td>
+        <td style="text-align: center;">9</td>
+        <td style="text-align: center;">9</td>
+    </tr>
+    <tr>
+        <td>Rank</td>
+        <td style="text-align: center;" colspan="2">1.5</td>
+        <td style="text-align: center;" colspan="3">4</td>
+        <td style="text-align: center;" colspan="3">7</td>
+        <td style="text-align: center;" colspan="3">10</td>
+        <td style="text-align: center;" colspan="2">12.5</td>
+        <td style="text-align: center;" colspan="2">14.5</td>
+        <td style="text-align: center;">16</td>
+        <td style="text-align: center;" colspan="2">17.5</td>
+        <td style="text-align: center;" colspan="3">20</td>
+    </tr>
+</table>
+
+Assign the rank to each score in the previous table and compute the totals:
+
+| Low force | | | Medium force | | | High force | | |
+| -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| **Subject** | **Score** | **Rank** | **Subject** | **Score** | **Rank** | **Subject** | **Score** | **Rank**
+| **S1** | 4 | 10 | **S8** | 5 | 12.5 | **S15** | 6 | 14.5
+| **S2** | 3 | 7 | **S9** | 4 | 10 | **S16** | 8 | 17.5
+| **S3** | 1 | 1.5 | **S10** | 2 | 4 | **S17** | 9 | 20
+| **S4** | 2 | 4 | **S11** | 5 | 12.5 | **S18** | 7 | 16
+| **S5** | 2 | 4 | **S12** | 4 | 10 | **S19** | 9 | 20
+| **S6** | 3 | 7 | **S13** | 3  | 7 | **S20** | 9 | 20
+| **S7** | 1 | 1.5 | **S14** | 6 | 14.5 | **S21** | 8 | 17.5
+| **TOTAL** | | **35** | | | **70.5** | | | **125.5**
+
+We note the rank totals for each condition \\(T_{c1} = 35\\), \\(T_{c2} = 70.5\\), \\(T_{c3} = 125.5\\), and the number of subjects for each
+condition \\(n_1 = n_2 = n_3 = 7\\).
+
+The next step is to calculate the value \\(H_{obs}\\) with the following formula:
+\\[H_{obs} = \bigg[ \frac{12}{N \cdot (N + 1)} \cdot \sum \frac{T_c^2}{n_c} \bigg] - 3 \cdot (N + 1)\\]
+
+where:
+
+- \\(N\\) is the total number of subjects (here \\(N = 21\\)),
+- \\(\sum \frac{T_c^2}{n_c}\\) is the sum of squared rank totals for each condition divided by the number of participants in that condition.
+
+\\[\sum \frac{T_c^2}{n_c} = \frac{35^2}{7} + \frac{70.5^2}{7} + \frac{125.5^2}{7} = 3135.08\\]
+
+Therefore:
+
+\\[H_{obs} = \bigg[ \frac{12}{21 \cdot (21 + 1)} \cdot 3135.08 \bigg] - 3 \cdot (21 + 1) = 15.51\\]
+
+Finally the number of degrees of freedom must be computed as \\(df = C - 1 = 3 - 1 = 2\\), where \\(C\\) is the number of conditions (levels).
+
+To find \\(H_{crit}\\) the number of participants in each group determines the table to use: if all groups have more than 5 subjects, the Chi-square table should be used, otherwise the Kruskal-Wallis one.
+
+Here \\(n_1 = n_2 = n_3 > 5\\), so the Chi-square table should be used. In the table **D**, search for \\(df = 2\\) and a significance level of \\(\alpha = 0.05\\), that value is \\(H_{crit} = 5.99\\).
+
+Because \\(H_{obs} > H_{crit}\\), we can reject the null hypothesis (keyboard force does affect comfort).
