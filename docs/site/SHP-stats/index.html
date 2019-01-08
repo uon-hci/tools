@@ -36,7 +36,7 @@
     
     
       
-        <title>Studying Human Performance - Statistics - HCI Docs</title>
+        <title>SHP - Statistics - HCI Docs</title>
       
     
     
@@ -97,7 +97,7 @@
                 HCI Docs
               </span>
               <span class="md-header-nav__topic">
-                Studying Human Performance - Statistics
+                SHP - Statistics
               </span>
             
           
@@ -180,8 +180,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../SDHM-course/" title="Simulation and Digital Human Modeling" class="md-nav__link">
-      Simulation and Digital Human Modeling
+    <a href="../SDHM-course/" title="SDHM" class="md-nav__link">
+      SDHM
     </a>
   </li>
 
@@ -192,8 +192,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../SHP-course/" title="Studying Human Performance - Methods" class="md-nav__link">
-      Studying Human Performance - Methods
+    <a href="../SHP-course/" title="SHP - Methods" class="md-nav__link">
+      SHP - Methods
     </a>
   </li>
 
@@ -213,11 +213,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Studying Human Performance - Statistics
+        SHP - Statistics
       </label>
     
-    <a href="./" title="Studying Human Performance - Statistics" class="md-nav__link md-nav__link--active">
-      Studying Human Performance - Statistics
+    <a href="./" title="SHP - Statistics" class="md-nav__link md-nav__link--active">
+      SHP - Statistics
     </a>
     
       
@@ -407,6 +407,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#parametric-tests" title="Parametric tests" class="md-nav__link">
+    Parametric tests
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#t-test-between" title="T-Test (Between)" class="md-nav__link">
+    T-Test (Between)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#t-test-within" title="T-Test (Within)" class="md-nav__link">
+    T-Test (Within)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -424,8 +451,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../CEID-course/" title="Cognitive Ergonomics in Design" class="md-nav__link">
-      Cognitive Ergonomics in Design
+    <a href="../CEID-course/" title="CEID" class="md-nav__link">
+      CEID
     </a>
   </li>
 
@@ -436,8 +463,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../DE-course/" title="Design Ethnography" class="md-nav__link">
-      Design Ethnography
+    <a href="../DE-course/" title="DE" class="md-nav__link">
+      DE
     </a>
   </li>
 
@@ -630,6 +657,33 @@
           <li class="md-nav__item">
   <a href="#kruskal-wallis" title="Kruskal-Wallis" class="md-nav__link">
     Kruskal-Wallis
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametric-tests" title="Parametric tests" class="md-nav__link">
+    Parametric tests
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#t-test-between" title="T-Test (Between)" class="md-nav__link">
+    T-Test (Between)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#t-test-within" title="T-Test (Within)" class="md-nav__link">
+    T-Test (Within)
   </a>
   
 </li>
@@ -1712,6 +1766,605 @@ condition \(n_1 = n_2 = n_3 = 7\).</p>
 <p>To find \(H_{crit}\) the number of participants in each group determines the table to use: if all groups have more than 5 subjects, the Chi-square table should be used, otherwise the Kruskal-Wallis one.</p>
 <p>Here \(n_1 = n_2 = n_3 &gt; 5\), so the Chi-square table should be used. In the table <strong>D</strong>, search for \(df = 2\) and a significance level of \(\alpha = 0.05\), that value is \(H_{crit} = 5.99\).</p>
 <p>Because \(H_{obs} &gt; H_{crit}\), we can reject the null hypothesis (keyboard force does affect comfort).</p>
+<hr />
+<h2 id="parametric-tests">Parametric tests</h2>
+<h3 id="t-test-between">T-Test (Between)</h3>
+<p><code>One IV, Two Levels, Between</code></p>
+<p>The efficiency of two different methods of assembling an electronic component was compared. Two groups of subjects are tested, one using Method A and one using Method B. The time taken for the assembly task to be completed is measured in seconds. The following results were obtained:</p>
+<table>
+<thead>
+<tr>
+<th>Method A</th>
+<th></th>
+<th>Method B</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Subject</strong></td>
+<td><strong>Score</strong></td>
+<td><strong>Subject</strong></td>
+<td><strong>Score</strong></td>
+</tr>
+<tr>
+<td><strong>S1</strong></td>
+<td>72</td>
+<td><strong>S11</strong></td>
+<td>65</td>
+</tr>
+<tr>
+<td><strong>S2</strong></td>
+<td>65</td>
+<td><strong>S12</strong></td>
+<td>56</td>
+</tr>
+<tr>
+<td><strong>S3</strong></td>
+<td>89</td>
+<td><strong>S13</strong></td>
+<td>67</td>
+</tr>
+<tr>
+<td><strong>S4</strong></td>
+<td>87</td>
+<td><strong>S14</strong></td>
+<td>45</td>
+</tr>
+<tr>
+<td><strong>S5</strong></td>
+<td>65</td>
+<td><strong>S15</strong></td>
+<td>47</td>
+</tr>
+<tr>
+<td><strong>S6</strong></td>
+<td>67</td>
+<td><strong>S16</strong></td>
+<td>68</td>
+</tr>
+<tr>
+<td><strong>S7</strong></td>
+<td>54</td>
+<td><strong>S17</strong></td>
+<td>72</td>
+</tr>
+<tr>
+<td><strong>S8</strong></td>
+<td>65</td>
+<td><strong>S18</strong></td>
+<td>58</td>
+</tr>
+<tr>
+<td><strong>S9</strong></td>
+<td>79</td>
+<td><strong>S19</strong></td>
+<td>81</td>
+</tr>
+<tr>
+<td><strong>S10</strong></td>
+<td>80</td>
+<td><strong>S20</strong></td>
+<td>62</td>
+</tr>
+</tbody>
+</table>
+<p>Start by calculating the squared scores for each score as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Method A</th>
+<th></th>
+<th></th>
+<th>Method B</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Subject</strong></td>
+<td><strong>Score</strong></td>
+<td><strong>Score²</strong></td>
+<td><strong>Subject</strong></td>
+<td><strong>Score</strong></td>
+<td><strong>Score²</strong></td>
+</tr>
+<tr>
+<td><strong>S1</strong></td>
+<td>72</td>
+<td>5184</td>
+<td><strong>S11</strong></td>
+<td>65</td>
+<td>4225</td>
+</tr>
+<tr>
+<td><strong>S2</strong></td>
+<td>65</td>
+<td>4225</td>
+<td><strong>S12</strong></td>
+<td>56</td>
+<td>3136</td>
+</tr>
+<tr>
+<td><strong>S3</strong></td>
+<td>89</td>
+<td>7921</td>
+<td><strong>S13</strong></td>
+<td>67</td>
+<td>4489</td>
+</tr>
+<tr>
+<td><strong>S4</strong></td>
+<td>87</td>
+<td>7569</td>
+<td><strong>S14</strong></td>
+<td>45</td>
+<td>2025</td>
+</tr>
+<tr>
+<td><strong>S5</strong></td>
+<td>65</td>
+<td>4225</td>
+<td><strong>S15</strong></td>
+<td>47</td>
+<td>2209</td>
+</tr>
+<tr>
+<td><strong>S6</strong></td>
+<td>67</td>
+<td>4489</td>
+<td><strong>S16</strong></td>
+<td>68</td>
+<td>4624</td>
+</tr>
+<tr>
+<td><strong>S7</strong></td>
+<td>54</td>
+<td>2916</td>
+<td><strong>S17</strong></td>
+<td>72</td>
+<td>5184</td>
+</tr>
+<tr>
+<td><strong>S8</strong></td>
+<td>65</td>
+<td>4225</td>
+<td><strong>S18</strong></td>
+<td>58</td>
+<td>3364</td>
+</tr>
+<tr>
+<td><strong>S9</strong></td>
+<td>79</td>
+<td>6241</td>
+<td><strong>S19</strong></td>
+<td>81</td>
+<td>6561</td>
+</tr>
+<tr>
+<td><strong>S10</strong></td>
+<td>80</td>
+<td>6400</td>
+<td><strong>S20</strong></td>
+<td>62</td>
+<td>3844</td>
+</tr>
+</tbody>
+</table>
+<p>Then, calculate the total for the scores and the squared scores, as well the scores' means. Assign variables names to each condition, such as \(X_1\) and \(X_2\):</p>
+<table>
+<thead>
+<tr>
+<th>Method A</th>
+<th></th>
+<th></th>
+<th>Method B</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Subject</strong></td>
+<td><strong>Score</strong> (\(X_1\))</td>
+<td><strong>Score²</strong> (\(X_1^2\))</td>
+<td><strong>Subject</strong></td>
+<td><strong>Score</strong> (\(X_2\))</td>
+<td><strong>Score²</strong> (\(X_2^2\))</td>
+</tr>
+<tr>
+<td><strong>S1</strong></td>
+<td>72</td>
+<td>5184</td>
+<td><strong>S11</strong></td>
+<td>65</td>
+<td>4225</td>
+</tr>
+<tr>
+<td><strong>S2</strong></td>
+<td>65</td>
+<td>4225</td>
+<td><strong>S12</strong></td>
+<td>56</td>
+<td>3136</td>
+</tr>
+<tr>
+<td><strong>S3</strong></td>
+<td>89</td>
+<td>7921</td>
+<td><strong>S13</strong></td>
+<td>67</td>
+<td>4489</td>
+</tr>
+<tr>
+<td><strong>S4</strong></td>
+<td>87</td>
+<td>7569</td>
+<td><strong>S14</strong></td>
+<td>45</td>
+<td>2025</td>
+</tr>
+<tr>
+<td><strong>S5</strong></td>
+<td>65</td>
+<td>4225</td>
+<td><strong>S15</strong></td>
+<td>47</td>
+<td>2209</td>
+</tr>
+<tr>
+<td><strong>S6</strong></td>
+<td>67</td>
+<td>4489</td>
+<td><strong>S16</strong></td>
+<td>68</td>
+<td>4624</td>
+</tr>
+<tr>
+<td><strong>S7</strong></td>
+<td>54</td>
+<td>2916</td>
+<td><strong>S17</strong></td>
+<td>72</td>
+<td>5184</td>
+</tr>
+<tr>
+<td><strong>S8</strong></td>
+<td>65</td>
+<td>4225</td>
+<td><strong>S18</strong></td>
+<td>58</td>
+<td>3364</td>
+</tr>
+<tr>
+<td><strong>S9</strong></td>
+<td>79</td>
+<td>6241</td>
+<td><strong>S19</strong></td>
+<td>81</td>
+<td>6561</td>
+</tr>
+<tr>
+<td><strong>S10</strong></td>
+<td>80</td>
+<td>6400</td>
+<td><strong>S20</strong></td>
+<td>62</td>
+<td>3844</td>
+</tr>
+<tr>
+<td><strong>TOTAL</strong></td>
+<td><strong>723</strong></td>
+<td><strong>53395</strong></td>
+<td></td>
+<td><strong>621</strong></td>
+<td><strong>39661</strong></td>
+</tr>
+<tr>
+<td><strong>MEAN</strong></td>
+<td><strong>72.3</strong></td>
+<td></td>
+<td></td>
+<td><strong>62.1</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The next step is to calculate the value \(t_{obs}\) with the following formula:</p>
+<p>\[t_{obs} = \frac{\overline{X_1} - \overline{X_2}}{\sqrt{\frac{\bigg[ \sum X_1^2 - \frac{(\sum X_1)^2}{n_1} \bigg] + \bigg[\sum X_2^2 - \frac{(\sum X_2)^2}{n_2} \bigg] }{(n_1 - 1) + (n_2 -1)} \cdot (\frac{1}{n_1} + \frac{1}{n_2})}}\]</p>
+<p>where:</p>
+<ul>
+<li>\(n_1\) and \(n_2\) are the number of subjects in each group (here \(n_1 = n_2 = 10\)),</li>
+<li>\(\overline{X_1}\) and \(\overline{X_2}\) are the mean for each group (here \(\overline{X_1} = 72.3, \overline{X_2} = 62.1\)),</li>
+<li>\(\sum X_1^2\) is the sum of squared scores for the group 1 (here \(\sum X_1^2 = 53395\)),</li>
+<li>\(\sum X_2^2\) is the sum of squared scores for the group 2 (here \(\sum X_2^2 = 39661\)),</li>
+<li>\((\sum X_1)^2\) is the squared total of scores for the group 1 (here \((\sum X_1^2) = 723^2 = 522729\)),</li>
+<li>\((\sum X_2)^2\) is the squared total of scores for the group 2 (here \((\sum X_2^2) = 621^2 = 385641\)).</li>
+</ul>
+<p>Therefore:</p>
+<p>\[t_{obs} = \frac{72.3 - 62.1}{\sqrt{\frac{\bigg[ 53395 - \frac{522729}{10} \bigg] + \bigg[39661 - \frac{385641}{10} \bigg] }{(10 - 1) + (10 -1)} \cdot (\frac{1}{10} + \frac{1}{10})}} = 2.056\]</p>
+<p>Finally, compute the degrees of freedom \(df = (n_1 - 1) + (n_2 - 1) = 18\).</p>
+<p>In the table <strong>H</strong>, search for \(df = 18\) with a level of significance of \(\alpha = 0.05\), that value is \(t_{crit} = 2.101\).</p>
+<p>Because \(t_{obs} &lt; t_{crit}\), we fail to reject the null hypothesis (it cannot be said that the method has an impact on performance).</p>
+<hr />
+<h3 id="t-test-within">T-Test (Within)</h3>
+<p><code>One IV, Two Levels, Within</code></p>
+<p>The appropriate height for a workstation is assessed by an experiment where the time taken to complete the task at two different workstation heights is measured 
+(in seconds) and compared.  The order of presentation of the two conditions is balanced to compensate for any practice effect that might be witnessed, and eight subjects are asked to complete the task at both of the workstation heights. The following results are obtained:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Subject</strong></th>
+<th><strong>High workstation</strong></th>
+<th><strong>Low workstation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S1</strong></td>
+<td>45</td>
+<td>32</td>
+</tr>
+<tr>
+<td><strong>S2</strong></td>
+<td>34</td>
+<td>37</td>
+</tr>
+<tr>
+<td><strong>S3</strong></td>
+<td>46</td>
+<td>43</td>
+</tr>
+<tr>
+<td><strong>S4</strong></td>
+<td>48</td>
+<td>48</td>
+</tr>
+<tr>
+<td><strong>S5</strong></td>
+<td>42</td>
+<td>38</td>
+</tr>
+<tr>
+<td><strong>S6</strong></td>
+<td>38</td>
+<td>31</td>
+</tr>
+<tr>
+<td><strong>S7</strong></td>
+<td>37</td>
+<td>33</td>
+</tr>
+<tr>
+<td><strong>S8</strong></td>
+<td>46</td>
+<td>43</td>
+</tr>
+</tbody>
+</table>
+<p>First, calculate the difference between each subject's scores as the variable \(d\):</p>
+<table>
+<thead>
+<tr>
+<th><strong>Subject</strong></th>
+<th><strong>High workstation</strong></th>
+<th><strong>Low workstation</strong></th>
+<th>\(d\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S1</strong></td>
+<td>45</td>
+<td>32</td>
+<td>13</td>
+</tr>
+<tr>
+<td><strong>S2</strong></td>
+<td>34</td>
+<td>37</td>
+<td>-3</td>
+</tr>
+<tr>
+<td><strong>S3</strong></td>
+<td>46</td>
+<td>43</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>S4</strong></td>
+<td>48</td>
+<td>48</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>S5</strong></td>
+<td>42</td>
+<td>38</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>S6</strong></td>
+<td>38</td>
+<td>31</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>S7</strong></td>
+<td>37</td>
+<td>33</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>S8</strong></td>
+<td>46</td>
+<td>43</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>Square these differences:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Subject</strong></th>
+<th><strong>High workstation</strong></th>
+<th><strong>Low workstation</strong></th>
+<th>\(d\)</th>
+<th>\(d^2\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S1</strong></td>
+<td>45</td>
+<td>32</td>
+<td>13</td>
+<td>169</td>
+</tr>
+<tr>
+<td><strong>S2</strong></td>
+<td>34</td>
+<td>37</td>
+<td>-3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><strong>S3</strong></td>
+<td>46</td>
+<td>43</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><strong>S4</strong></td>
+<td>48</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>S5</strong></td>
+<td>42</td>
+<td>38</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td><strong>S6</strong></td>
+<td>38</td>
+<td>31</td>
+<td>7</td>
+<td>49</td>
+</tr>
+<tr>
+<td><strong>S7</strong></td>
+<td>37</td>
+<td>33</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td><strong>S8</strong></td>
+<td>46</td>
+<td>43</td>
+<td>3</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+<p>Total the differences \(d\) and total the squared differences \(d^2\):</p>
+<table>
+<thead>
+<tr>
+<th><strong>Subject</strong></th>
+<th><strong>High workstation</strong></th>
+<th><strong>Low workstation</strong></th>
+<th>\(d\)</th>
+<th>\(d^2\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S1</strong></td>
+<td>45</td>
+<td>32</td>
+<td>13</td>
+<td>169</td>
+</tr>
+<tr>
+<td><strong>S2</strong></td>
+<td>34</td>
+<td>37</td>
+<td>-3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><strong>S3</strong></td>
+<td>46</td>
+<td>43</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><strong>S4</strong></td>
+<td>48</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>S5</strong></td>
+<td>42</td>
+<td>38</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td><strong>S6</strong></td>
+<td>38</td>
+<td>31</td>
+<td>7</td>
+<td>49</td>
+</tr>
+<tr>
+<td><strong>S7</strong></td>
+<td>37</td>
+<td>33</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td><strong>S8</strong></td>
+<td>46</td>
+<td>43</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><strong>TOTAL</strong></td>
+<td></td>
+<td></td>
+<td><strong>31</strong></td>
+<td><strong>277</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The next step is to calculate the value \(t_{obs}\) with the following formula:
+\[t_{obs} = \frac{\sum d}{\sqrt{\frac{N \cdot \sum d^2 - (\sum d)^2}{N - 1}}}\]</p>
+<p>where:</p>
+<ul>
+<li>\(N\) is the number of subjects (here \(N = 8\)),</li>
+<li>\(\sum d\) is the total of differences (here \(\sum d = 31\)),</li>
+<li>\(\sum d^2\) is the total of squared differences (here \(\sum d^2 = 277\)),</li>
+<li>\((\sum d)^2\) is the squared total of differences (here \((\sum d)^2 = 31^2 = 961\)).</li>
+</ul>
+<p>Therefore:
+\[t_{obs} = \frac{31}{\sqrt{\frac{8 \cdot 277 - 961}{8 - 1}}} = 2.315\]</p>
+<p>Finally, compute the degrees of freedom \(df = N - 1 = 7\).</p>
+<p>In the table <strong>H</strong>, search for \(df = 7\) with a level of significance of \(\alpha = 0.05\), that value is \(t_{crit} = 2.365\).</p>
+<p>Because \(t_{obs} &lt; t_{crit}\), we fail to reject the null hypothesis (it cannot be said that the workstation height has an impact on performance).</p>
                 
                   
                 
@@ -1732,7 +2385,7 @@ condition \(n_1 = n_2 = n_3 = 7\).</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../SHP-course/" title="Studying Human Performance - Methods" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../SHP-course/" title="SHP - Methods" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1741,19 +2394,19 @@ condition \(n_1 = n_2 = n_3 = 7\).</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Studying Human Performance - Methods
+                SHP - Methods
               </span>
             </div>
           </a>
         
         
-          <a href="../CEID-course/" title="Cognitive Ergonomics in Design" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../CEID-course/" title="CEID" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Cognitive Ergonomics in Design
+                CEID
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

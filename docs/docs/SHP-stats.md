@@ -558,3 +558,164 @@ To find \\(H_{crit}\\) the number of participants in each group determines the t
 Here \\(n_1 = n_2 = n_3 > 5\\), so the Chi-square table should be used. In the table **D**, search for \\(df = 2\\) and a significance level of \\(\alpha = 0.05\\), that value is \\(H_{crit} = 5.99\\).
 
 Because \\(H_{obs} > H_{crit}\\), we can reject the null hypothesis (keyboard force does affect comfort).
+
+--- 
+
+## Parametric tests
+
+### T-Test (Between)
+
+`One IV, Two Levels, Between`
+
+The efficiency of two different methods of assembling an electronic component was compared. Two groups of subjects are tested, one using Method A and one using Method B. The time taken for the assembly task to be completed is measured in seconds. The following results were obtained:
+
+| Method A | | Method B | | 
+| -- | -- | -- | -- | 
+| **Subject** | **Score** | **Subject** | **Score** 
+| **S1** | 72 | **S11** | 65 | 
+| **S2** | 65 | **S12** | 56 | 
+| **S3** | 89 | **S13** | 67 | 
+| **S4** | 87 | **S14** | 45 | 
+| **S5** | 65 | **S15** | 47 | 
+| **S6** | 67 | **S16** | 68  | 
+| **S7** | 54 | **S17** | 72 | 
+| **S8** | 65 | **S18** | 58 | 
+| **S9** | 79 | **S19** | 81 | 
+| **S10** | 80 | **S20** | 62 | 
+
+Start by calculating the squared scores for each score as follows:
+
+| Method A | | | Method B | |  |
+| -- | -- | -- | -- | -- | -- |
+| **Subject** | **Score** | **Score²** | **Subject** | **Score** | **Score²**
+| **S1** | 72 | 5184 | **S11** | 65 | 4225
+| **S2** | 65 | 4225 | **S12** | 56 | 3136
+| **S3** | 89 | 7921 | **S13** | 67 | 4489
+| **S4** | 87 | 7569 | **S14** | 45 | 2025
+| **S5** | 65 | 4225 | **S15** | 47 | 2209
+| **S6** | 67 | 4489 | **S16** | 68  | 4624
+| **S7** | 54 | 2916 | **S17** | 72 | 5184
+| **S8** | 65 | 4225 | **S18** | 58 | 3364
+| **S9** | 79 | 6241 | **S19** | 81 | 6561
+| **S10** | 80 | 6400 | **S20** | 62 | 3844
+
+Then, calculate the total for the scores and the squared scores, as well the scores' means. Assign variables names to each condition, such as \\(X_1\\) and \\(X_2\\):
+
+| Method A | | | Method B | |  |
+| -- | -- | -- | -- | -- | -- |
+| **Subject** | **Score** (\\(X_1\\)) | **Score²** (\\(X_1^2\\)) | **Subject** | **Score** (\\(X_2\\)) | **Score²** (\\(X_2^2\\))
+| **S1** | 72 | 5184 | **S11** | 65 | 4225
+| **S2** | 65 | 4225 | **S12** | 56 | 3136
+| **S3** | 89 | 7921 | **S13** | 67 | 4489
+| **S4** | 87 | 7569 | **S14** | 45 | 2025
+| **S5** | 65 | 4225 | **S15** | 47 | 2209
+| **S6** | 67 | 4489 | **S16** | 68  | 4624
+| **S7** | 54 | 2916 | **S17** | 72 | 5184
+| **S8** | 65 | 4225 | **S18** | 58 | 3364
+| **S9** | 79 | 6241 | **S19** | 81 | 6561
+| **S10** | 80 | 6400 | **S20** | 62 | 3844
+| **TOTAL** | **723** | **53395** | | **621** | **39661**
+| **MEAN** | **72.3** | | | **62.1** | 
+
+The next step is to calculate the value \\(t_{obs}\\) with the following formula:
+
+\\[t_{obs} = \frac{\overline{X_1} - \overline{X_2}}{\sqrt{\frac{\bigg[ \sum X_1^2 - \frac{(\sum X_1)^2}{n_1} \bigg] + \bigg[\sum X_2^2 - \frac{(\sum X_2)^2}{n_2} \bigg] }{(n_1 - 1) + (n_2 -1)} \cdot (\frac{1}{n_1} + \frac{1}{n_2})}}\\]
+
+where:
+
+- \\(n_1\\) and \\(n_2\\) are the number of subjects in each group (here \\(n_1 = n_2 = 10\\)),
+- \\(\overline{X_1}\\) and \\(\overline{X_2}\\) are the mean for each group (here \\(\overline{X_1} = 72.3, \overline{X_2} = 62.1\\)),
+- \\(\sum X_1^2\\) is the sum of squared scores for the group 1 (here \\(\sum X_1^2 = 53395\\)),
+- \\(\sum X_2^2\\) is the sum of squared scores for the group 2 (here \\(\sum X_2^2 = 39661\\)),
+- \\((\sum X_1)^2\\) is the squared total of scores for the group 1 (here \\((\sum X_1^2) = 723^2 = 522729\\)),
+- \\((\sum X_2)^2\\) is the squared total of scores for the group 2 (here \\((\sum X_2^2) = 621^2 = 385641\\)).
+
+Therefore:
+
+\\[t_{obs} = \frac{72.3 - 62.1}{\sqrt{\frac{\bigg[ 53395 - \frac{522729}{10} \bigg] + \bigg[39661 - \frac{385641}{10} \bigg] }{(10 - 1) + (10 -1)} \cdot (\frac{1}{10} + \frac{1}{10})}} = 2.056\\]
+
+Finally, compute the degrees of freedom \\(df = (n_1 - 1) + (n_2 - 1) = 18\\).
+
+In the table **H**, search for \\(df = 18\\) with a level of significance of \\(\alpha = 0.05\\), that value is \\(t_{crit} = 2.101\\).
+
+Because \\(t_{obs} < t_{crit}\\), we fail to reject the null hypothesis (it cannot be said that the method has an impact on performance).
+
+---
+
+### T-Test (Within)
+
+`One IV, Two Levels, Within`
+
+The appropriate height for a workstation is assessed by an experiment where the time taken to complete the task at two different workstation heights is measured 
+(in seconds) and compared.  The order of presentation of the two conditions is balanced to compensate for any practice effect that might be witnessed, and eight subjects are asked to complete the task at both of the workstation heights. The following results are obtained:
+
+| **Subject** | **High workstation** | **Low workstation** 
+| -- | -- | --
+| **S1** | 45 | 32
+| **S2** | 34 | 37
+| **S3** | 46 | 43
+| **S4** | 48 | 48
+| **S5** | 42 | 38
+| **S6** | 38 | 31
+| **S7** | 37 | 33
+| **S8** | 46 | 43
+
+First, calculate the difference between each subject's scores as the variable \\(d\\):
+
+| **Subject** | **High workstation** | **Low workstation** | \\(d\\)
+| -- | -- | -- | --
+| **S1** | 45 | 32 | 13
+| **S2** | 34 | 37 | -3
+| **S3** | 46 | 43 | 3
+| **S4** | 48 | 48 | 0 
+| **S5** | 42 | 38 | 4
+| **S6** | 38 | 31 | 7
+| **S7** | 37 | 33 | 4
+| **S8** | 46 | 43 | 3
+
+Square these differences:
+
+| **Subject** | **High workstation** | **Low workstation** | \\(d\\) | \\(d^2\\)
+| -- | -- | -- | -- | --
+| **S1** | 45 | 32 | 13 | 169
+| **S2** | 34 | 37 | -3 | 9
+| **S3** | 46 | 43 | 3 | 9
+| **S4** | 48 | 48 | 0  | 0
+| **S5** | 42 | 38 | 4 | 16
+| **S6** | 38 | 31 | 7 | 49
+| **S7** | 37 | 33 | 4 | 16
+| **S8** | 46 | 43 | 3 | 9
+
+Total the differences \\(d\\) and total the squared differences \\(d^2\\):
+
+| **Subject** | **High workstation** | **Low workstation** | \\(d\\) | \\(d^2\\)
+| -- | -- | -- | -- | --
+| **S1** | 45 | 32 | 13 | 169
+| **S2** | 34 | 37 | -3 | 9
+| **S3** | 46 | 43 | 3 | 9
+| **S4** | 48 | 48 | 0  | 0
+| **S5** | 42 | 38 | 4 | 16
+| **S6** | 38 | 31 | 7 | 49
+| **S7** | 37 | 33 | 4 | 16
+| **S8** | 46 | 43 | 3 | 9
+| **TOTAL** | | | **31** | **277**
+
+The next step is to calculate the value \\(t_{obs}\\) with the following formula:
+\\[t_{obs} = \frac{\sum d}{\sqrt{\frac{N \cdot \sum d^2 - (\sum d)^2}{N - 1}}}\\]
+
+where:
+
+- \\(N\\) is the number of subjects (here \\(N = 8\\)),
+- \\(\sum d\\) is the total of differences (here \\(\sum d = 31\\)),
+- \\(\sum d^2\\) is the total of squared differences (here \\(\sum d^2 = 277\\)),
+- \\((\sum d)^2\\) is the squared total of differences (here \\((\sum d)^2 = 31^2 = 961\\)).
+
+Therefore:
+\\[t_{obs} = \frac{31}{\sqrt{\frac{8 \cdot 277 - 961}{8 - 1}}} = 2.315\\]
+
+Finally, compute the degrees of freedom \\(df = N - 1 = 7\\).
+
+In the table **H**, search for \\(df = 7\\) with a level of significance of \\(\alpha = 0.05\\), that value is \\(t_{crit} = 2.365\\).
+
+Because \\(t_{obs} < t_{crit}\\), we fail to reject the null hypothesis (it cannot be said that the workstation height has an impact on performance).
+
