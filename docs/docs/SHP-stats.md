@@ -144,12 +144,12 @@ The action to reject the null hypothesis when it is actually true is called an *
 
 Of course, the opposite action of **failing to reject a null hypothesis** when it is **actually false** is another experimental error called **Type II error**, but is often seen as less serious than the Type I error. The chance to make a Type II error is represented by the probability called \\(\beta\\). The **statistical power** is the probability of correctly rejecting the null hypothesis, because it is **indeed false**.
 
-### Correlation ,regression
+### Correlation, regression
 
 Most tests aim to know if an independant variable has an impact on a dependant varible, but doesn't describe *how*. The study of **correlation** aims to 
 measure the association or the absence of relationship between two variables, without taking into account if they are independant or dependant. **Regression** analysis on the other predicts the value of a dependant variable based on the know value of an independant variable.
 
-Correlation is represented by a coefficient \\(r\\). This coefficient can vary from \\(-1\\) to \\(+1\\). A \\(-1\\) indicates a **perfect negative correlation**, while a \\(+1\\) indicates a **perfect positive correlation**. A correlation of \\(-0\\) means there is **no relationship** between the two variables. When there is a negative correlation between two variables, as the value of one variable increases, the value of the other variable decreases, and vise versa. In other words, for a negative correlation, the variables **work opposite each other**. When there is a positive correlation between two variables, as the value of one variable increases, the value of the other variable also increases, the variables **move together**.
+Correlation is represented by a coefficient \\(r\\). This coefficient can vary from \\(-1\\) to \\(+1\\). A \\(-1\\) indicates a **perfect negative correlation**, while a \\(+1\\) indicates a **perfect positive correlation**. A correlation of \\(0\\) means there is **no relationship** between the two variables. When there is a negative correlation between two variables, as the value of one variable increases, the value of the other variable decreases, and vise versa. In other words, for a negative correlation, the variables **work opposite each other**. When there is a positive correlation between two variables, as the value of one variable increases, the value of the other variable also increases, the variables **move together**.
 
 A rule of thumb to interpret \\(r\\) is:
 
@@ -599,6 +599,260 @@ Because \\(H_{obs} > H_{crit}\\), we can reject the null hypothesis (keyboard fo
 
 --- 
 
+### One-Way Chi Square
+
+`One IV, 2+ Levels`
+
+The Chi Square is the only test for **categorical data**. Usually measuring frequencies of events (how many subjects made an error, how many passed a test etc) in different conditions, this test aims to uncover if the condition had an impact on the frequencies, or if the null hypothesis is true, that is that each condition should be almost equally distributed.
+
+A test was performed to compare the efficiency of different methods of learning for retention of items after “Kim’s game”. The following figures show the  number of people who remembered more than 50% of items for each type of mnemonic:
+
+| Pictorial mnemonic | Word mnemonic | No mnemonic | Musical mnemonic |
+| -- | -- | -- | --
+39 | 42 | 26 | 3
+
+The null hypothesis predicts that the expected frequencies should be even, such as:
+
+| | Pictorial mnemonic | Word mnemonic | No mnemonic | Musical mnemonic |
+| -- | -- | -- | -- | --
+Observed | 39 | 42 | 26 | 3
+Expected | 27.5 | 27.5 | 27.5 | 27.5
+
+First calculate Chi Squared with the following formula:
+\\[\chi^2_{obs} = \sum \frac{(O - E)^2}{E}\\]
+
+with:
+
+- \\(O\\) are the **observed** values,
+- \\(E\\) are the **expected** values (\\(H_0\\)).
+
+Therefore:
+\\[\chi^2_{obs} = \bigg( \frac{(39 - 27.5)^2}{27.5} + \frac{(42 - 27.5)^2}{27.5} + \frac{(26 - 27.5)^2}{27.5} + \frac{(3 - 27.5)^2}{27.5} \bigg) = 34.37\\]
+
+Finally, calculate the degrees of freedom as \\(df = C - 1 = 4 - 1 = 3\\), where \\(C\\) is the number of different conditions (events, cells).
+
+In the table **D**, search for the \\(df = 3\\) with a significance level of \\(\alpha = 0.05\\), that value is \\(\chi^2_{crit} = 7.82\\).
+
+Because \\(\chi^2_{obs} > \chi^2_{crit}\\), we can reject the null hypothesis (the type of mnemonic has an impact on the numbers of items remembered).
+
+--- 
+
+### Two-Way Chi Square
+
+`Two IVs, Two+ Levels (symmetrical)`
+
+It is observed whether male and female drivers differ in their likelihood to stop at an amber light:
+
+| | Female | Male | **TOTAL**
+| -- | -- | -- | --
+| Stopped | 90 | 88 | **178**
+| Didn't stop | 56 | 89 | **145**
+| **TOTAL ** | **146** | **177** | **323**
+
+First start to calculate the expected frequencies for each cell with the following formula:
+\\[E = \frac{totalRow \cdot totalColumn}{grandTotal}\\]
+
+Therefore:
+
+| | Female | Male | **TOTAL**
+| -- | -- | -- | --
+| Stopped | \\(O = 90, E = \frac{146 \cdot 178}{323}\\) | \\(O = 88, E = \frac{177 \cdot 178}{323}\\) | **178**
+| Didn't stop | \\(O = 56, E = \frac{146 \cdot 145}{323}\\) | \\(O = 89, E = \frac{177 \cdot 145}{323}\\) | **145**
+| **TOTAL ** | **146** | **177** | **323**
+
+With the final values:
+
+| | Female | Male | **TOTAL**
+| -- | -- | -- | --
+| Stopped | \\(O = 90, E = 80.46\\) | \\(O = 88, E = 97.54\\) | **178**
+| Didn't stop | \\(O = 56, E = 65.54\\) | \\(O = 89, E = 79.46\\) | **145**
+| **TOTAL ** | **146** | **177** | **323**
+
+Next calculate Chi Squared with the following formula:
+\\[\chi^2_{obs} = \sum \frac{(O - E)^2}{E}\\]
+
+with:
+
+- \\(O\\) are the **observed** values,
+- \\(E\\) are the **expected** values (\\(H_0\\)).
+
+Therefore:
+\\[\chi^2_{obs} = \bigg( \frac{(90 - 80.46)^2}{80.46} + \frac{(88 - 97.54)^2}{97.54} + \frac{(56 - 65.54)^2}{65.54} + \frac{(89 - 79.46)^2}{79.46} \bigg) = 4.6\\]
+
+Finally, calculate the degrees of freedom as \\(df = (r - 1) \cdot (c - 1) = (2 - 1) \cdot (2 - 1) = 1\\), where \\(c\\) is the number of columns and \\(r\\) the number of rows.
+
+In the table **D**, search for the \\(df = 1\\) with a significance level of \\(\alpha = 0.05\\), that value is \\(\chi^2_{crit} = 3.84\\).
+
+Because \\(\chi^2_{obs} > \chi^2_{crit}\\), we can reject the null hypothesis (there is a difference between male and female when it comes to stopping at an amber light).
+
+--- 
+
+### Spearman
+
+This test is used to know if there is a correlation between two variables. If the null hypothesis is rejected, than a correlation is found (the strength of 
+that correlation is determined by the coefficient \\(r\\)).
+
+A survey is conducted to identify whether there is any relationship between job satisfaction and days absent. For \\(N = 12\\) participants, job satisfaction is measured using an 11 point ordinal scale, where a high rating indicates a high level of satisfaction. Number of days absent is monitored for 1 year.
+
+| Subject | Days absent | Job satisfaction
+| -- | -- | --
+| **S1** | 3 | 10
+| **S2** | 6 | 8
+| **S3** | 0 | 11
+| **S4** | 2 | 9
+| **S5** | 1 | 10
+| **S6** | 8 | 5
+| **S7** | 15 | 3
+| **S8** | 33 | 2
+| **S9** | 6 | 7
+| **S10** | 1 | 10
+| **S11** | 2 | 10
+| **S12** | 0 | 10
+
+First rank the scores by order of magnitude (take mean for similar differences) in \\([1, N]\\) as follows:
+
+**Days absent**
+
+<table>
+    <thead>
+        <th>Order</th>
+        <th style="text-align: center;">1</th>
+        <th style="text-align: center;">2</th>
+        <th style="text-align: center;">3</th>
+        <th style="text-align: center;">4</th>
+        <th style="text-align: center;">5</th>
+        <th style="text-align: center;">6</th>
+        <th style="text-align: center;">7</th>
+        <th style="text-align: center;">8</th>
+        <th style="text-align: center;">9</th>
+        <th style="text-align: center;">10</th>
+        <th style="text-align: center;">11</th>
+        <th style="text-align: center;">12</th>
+    </thead>
+    <tr>
+        <td>Score</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;">8</td>
+        <td style="text-align: center;">15</td>
+        <td style="text-align: center;">33</td>
+    </tr>
+    <tr>
+        <td>Rank</td>
+        <td style="text-align: center;" colspan="2">1.5</td>
+        <td style="text-align: center;" colspan="2">3.5</td>
+        <td style="text-align: center;" colspan="2">5.5</td>
+        <td style="text-align: center;">7</td>
+        <td style="text-align: center;" colspan="2">8.5</td>
+        <td style="text-align: center;">10</td>
+        <td style="text-align: center;">11</td>
+        <td style="text-align: center;">12</td>
+    </tr>
+</table>
+
+**Job satisfaction**
+
+
+<table>
+    <thead>
+        <th>Order</th>
+        <th style="text-align: center;">1</th>
+        <th style="text-align: center;">2</th>
+        <th style="text-align: center;">3</th>
+        <th style="text-align: center;">4</th>
+        <th style="text-align: center;">5</th>
+        <th style="text-align: center;">6</th>
+        <th style="text-align: center;">7</th>
+        <th style="text-align: center;">8</th>
+        <th style="text-align: center;">9</th>
+        <th style="text-align: center;">10</th>
+        <th style="text-align: center;">11</th>
+        <th style="text-align: center;">12</th>
+    </thead>
+    <tr>
+        <td>Score</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">5</td>
+        <td style="text-align: center;">7</td>
+        <td style="text-align: center;">8</td>
+        <td style="text-align: center;">9</td>
+        <td style="text-align: center;">10</td>
+        <td style="text-align: center;">10</td>
+        <td style="text-align: center;">10</td>
+        <td style="text-align: center;">10</td>
+        <td style="text-align: center;">10</td>
+        <td style="text-align: center;">11</td>
+    </tr>
+    <tr>
+        <td>Rank</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">4</td>
+        <td style="text-align: center;">5</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;" colspan="5">9</td>
+        <td style="text-align: center;">12</td>
+    </tr>
+</table>
+
+Fill these ranks in the previous table:
+
+| Subject | Days absent (\\(X\\)) | Job satisfaction (\\(Y\\)) | Rank \\(X\\) | Rank \\(Y\\)
+| -- | -- | -- | -- | --
+| **S1** | 3 | 10 | 7 | 9
+| **S2** | 6 | 8 | 8.5 | 5
+| **S3** | 0 | 11 | 1.5 | 12
+| **S4** | 2 | 9 | 5.5 | 6
+| **S5** | 1 | 10 | 3.5 | 9
+| **S6** | 8 | 5 | 10 | 3
+| **S7** | 15 | 3 | 11 | 2
+| **S8** | 33 | 2 | 12 | 1
+| **S9** | 6 | 7 | 8.5 | 4
+| **S10** | 1 | 10 | 3.5 | 9
+| **S11** | 2 | 10 | 5.5 | 9 
+| **S12** | 0 | 10 | 1.5 | 9
+
+Next, calculate the differences of the rank for each subject, as well as the square of that difference and the totals:
+
+| Subject | Days absent (\\(X\\)) | Job satisfaction (\\(Y\\)) | Rank \\(X\\) | Rank \\(Y\\) | \\(d\\) | \\(d^2\\)
+| -- | -- | -- | -- | -- | -- | --
+| **S1** | 3 | 10 | 7 | 9 | -2 | 4
+| **S2** | 6 | 8 | 8.5 | 5 | 3.5 | 12.25
+| **S3** | 0 | 11 | 1.5 | 12 | -10.5 | 110.25
+| **S4** | 2 | 9 | 5.5 | 6 | -0.5 | 0.25
+| **S5** | 1 | 10 | 3.5 | 9 | -5.5 | 30.25
+| **S6** | 8 | 5 | 10 | 3 | 7 | 49
+| **S7** | 15 | 3 | 11 | 2 | 9 | 81
+| **S8** | 33 | 2 | 12 | 1 | 11 | 121 
+| **S9** | 6 | 7 | 8.5 | 4 | 4.5 | 20.25
+| **S10** | 1 | 10 | 3.5 | 9 | -5.5 | 30.25 
+| **S11** | 2 | 10 | 5.5 | 9 | -3.5 | 12.25
+| **S12** | 0 | 10 | 1.5 | 9 | -7.5 | 56.25
+| **TOTAL** | | | | | | **527**
+
+Next calculate the coefficient \\(r_{obs}\\) with the following formula:
+\\[r_{obs} = 1 - \frac{6 \cdot \sum d^2}{N \cdot (N^2 - 1)}\\]
+
+Therefore:
+\\[r_{obs} = 1 - \frac{6 \cdot 527}{12 \cdot (12^2 - 1)} = -0.843\\]
+
+\\(r_{obs}\\) first shows a linear relationship close to -1, which means a strong negative correlation.
+
+Let's however find \\(r_{crit}\\) with a significance level of \\(\alpha = 0.05\\).
+
+In the table **J**, search for \\(N = 12\\) with a significance level of \\(\alpha = 0.05\\), that value is \\(r_{crit} = 0.591\\)
+
+Because \\(abs(r_{obs}) > r_{crit}\\), we can reject the null hypothesis (there is a negative correlation between the number of days absent and job satisfaction). Negative correlation indicates that the less absent employees are, the more satisfied they are. That doesn't mean however causality, we don't know if being absent causes employees to be more satisfied, just that they are correlated. A likely guess is that employees that love their jobs are less likely to want to miss it (maybe a reverse causation?). Further investigation is required.
+
 ## Parametric tests
 
 ### T-Test (Between)
@@ -937,3 +1191,64 @@ In the table(s) **I**, search for \\(v_1 = df_{bet} = 2\\) and \\(v_2 = df_{erro
 
 Because \\(F_{obs} > F_{crit}\\), we can reject the null hypothesis (the text size impacts the performance).
 
+--- 
+
+### Pearson
+
+This test is used to know if there is a correlation between two variables. If the null hypothesis is rejected, than a correlation is found (the strength of 
+that correlation is determined by the coefficient \\(r\\)).
+
+An ergonomist wishes to discover whether there is any association between the time twelve typists have spent working at a computer without a break and the number of typing errors made by them in a ten minute interval. The following results are obtained:
+
+| Subject | Time (\\(X\\)) | Errors (\\(Y\\))
+| -- | -- | --
+| **S1** | 45 | 10
+| **S2** | 61 | 14
+| **S3** | 52 | 13
+| **S4** | 73 | 16
+| **S5** | 46 | 9
+| **S6** | 32 | 6
+| **S7** | 21 | 4
+| **S8** | 19 | 3
+| **S9** | 70 | 18
+| **S10** | 86 | 21
+| **S11** | 53 | 15
+| **S12** | 18 | 5
+
+First start by computing \\(X^2\\), \\(Y^2\\) and \\(X \cdot Y\\) for each subject, as well as the totals:
+
+| Subject | Time (\\(X\\)) | Errors (\\(Y\\)) | \\(X^2\\) | \\(Y^2\\) | \\(X \cdot Y\\)
+| -- | -- | -- | -- | -- | --
+| **S1** | 45 | 10 | 2025 | 100 | 450
+| **S2** | 61 | 14 | 3721 | 196 | 854
+| **S3** | 52 | 13 | 2704 | 169 | 676
+| **S4** | 73 | 16 | 5329 | 256 | 1168
+| **S5** | 46 | 9 | 2116 | 81 | 414
+| **S6** | 32 | 6 | 1024 | 36 | 192
+| **S7** | 21 | 4 | 441 | 16 | 84
+| **S8** | 19 | 3 | 361 | 9 | 57
+| **S9** | 70 | 18 | 4900 | 324 | 1260
+| **S10** | 86 | 21 | 7396 | 441 | 1806
+| **S11** | 53 | 15 | 2809 | 225 | 795
+| **S12** | 18 | 5 | 324 | 25 | 90
+| **TOTAL** | **576** | **134** | **33150** | **1880** | **7846**
+
+Then calculate the coefficient \\(r_{obs}\\) with the following formula:
+\\[r_{obs} = \frac{N \cdot \sum X \cdot Y - (\sum X)\cdot (\sum Y)}{\sqrt{(N \cdot \sum X^2 - (\sum X)^2) \cdot (N \cdot \sum Y^2 - (\sum Y)^2)}}\\]
+
+with \\(N\\) the number of subjects, here \\(N = 12\\).
+
+Therefore:
+\\[r_{obs} = \frac{12 \cdot 7846 - 576 \cdot 134}{\sqrt{(12 \cdot 33150 - 576^2) \cdot (12 \cdot 1880 - 134^2)}} = 0.973\\]
+
+\\(r_{obs}\\) first shows a linear relationship close to 1, which in general means a strong correlation.
+
+Let's however find \\(r_{crit}\\) with a significance level of \\(\alpha = 0.05\\).
+
+Calculate the degrees of freedom as \\(df = N - 2  = 12 - 2 = 10\\).
+
+In the tale **K**, search for \\(df = 10\\) with a significance level of \\(\alpha = 0.05\\), that value is \\(r_{crit} = 0.5760\\).
+
+Because \\(r_{obs} > r_{crit}\\) we can reject the null hypothesis (the time spent without break and the number of errors are correlated).
+
+In addition, \\(r_{obs}^2 = 0.95\\) which means that 95% of the variance in the nuber of errors can be accounted for by the amount of time spent without a break.
