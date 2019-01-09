@@ -126,7 +126,7 @@ A study design can however further predictions by using **assumptions**.
 
 A **one-tailed** hypothesis predicts *how* and in *which direction* an independant variable impacts a dependant variable. For example, if an experimental hypothesis predicts that *music* (IV) impacts *performance* (DV), a one-tailed extension would add that *music* **improves** *performance*, or that *music* **impairs** *performance*. One-tailed tests must be justified: it is for example justified to predict that constant loud noise impairs performance.
 
-In addition, **contrasts** are other assumptions that can be integrated to a study design. Unlike one-tailed assumptions that predict in *which direction* an independant variable affects a dependant variable, contrasts compare the **levels** of an independant variable. For example, if an experimental hypothesis predicts that *music* (IV) impacts *performance* (DV), and that this independant variable has three levels (*classical*, *rock*, *rap*), contrasts could be that *classical* music affects *performance* differently than *rap music*.
+In addition, **contrasts** or **analytic comparisons** are other comparisons that can be integrated to a study design. Unlike one-tailed assumptions that predict in *which direction* an independant variable affects a dependant variable, contrasts compare the **levels** of an independant variable. For example, if an experimental hypothesis predicts that *music* (IV) impacts *performance* (DV), and that this independant variable has three levels (*classical*, *rock*, *rap*), contrasts could be that *classical* music affects *performance* differently than *rap music*.
 
 #### Data types and analysis
 
@@ -143,6 +143,44 @@ Statistical tests try to answer a question, based on the available data. When re
 The action to reject the null hypothesis when it is actually true is called an **incorrect conclusion** and more precisely a **Type I error**. It is an experimental error that analysts wants to **avoid** in priority, to not make any false claim. To that end, before conducting the test, a **significance threshold** called \\(\alpha\\) is set, that if exceeded, indicates a non-significant result. That threshold is usually \\(\alpha = 0.05\\), but particular contexts and fields of study often require a more strict value, such as \\(\alpha = 0.001\\).
 
 Of course, the opposite action of **failing to reject a null hypothesis** when it is **actually false** is another experimental error called **Type II error**, but is often seen as less serious than the Type I error. The chance to make a Type II error is represented by the probability called \\(\beta\\). The **statistical power** is the probability of correctly rejecting the null hypothesis, because it is **indeed false**.
+
+### Correlation ,regression
+
+Most tests aim to know if an independant variable has an impact on a dependant varible, but doesn't describe *how*. The study of **correlation** aims to 
+measure the association or the absence of relationship between two variables, without taking into account if they are independant or dependant. **Regression** analysis on the other predicts the value of a dependant variable based on the know value of an independant variable.
+
+Correlation is represented by a coefficient \\(r\\). This coefficient can vary from \\(-1\\) to \\(+1\\). A \\(-1\\) indicates a **perfect negative correlation**, while a \\(+1\\) indicates a **perfect positive correlation**. A correlation of \\(-0\\) means there is **no relationship** between the two variables. When there is a negative correlation between two variables, as the value of one variable increases, the value of the other variable decreases, and vise versa. In other words, for a negative correlation, the variables **work opposite each other**. When there is a positive correlation between two variables, as the value of one variable increases, the value of the other variable also increases, the variables **move together**.
+
+A rule of thumb to interpret \\(r\\) is:
+
+- \\(+-1\\): perfect relationship,
+- \\(+-0.7\\): strong relationship,
+- \\(+-0.5\\): moderate relationship,
+- \\(+-0.3\\): weak relation ship,
+- \\(0\\): no relationship.
+
+While \\(r\\) represents the strength of the linear relationship between two variables, \\(r^2\\) is generally better to report correlation in ergonomics. Known as the **coefficient of determination**, \\(r^2\\) represents the proportion of variance of one variable that is predicted from another variable (e.g. 80% of variation in Y can be explained by its relationship with X, while 20% remain unexplained).
+
+The coefficient \\(r\\) can be calculated with:
+
+- **Spearman test** (non-parametric),
+- **Pearson test** (parametric).
+
+### Causality
+
+It is very important to understand that **correlation does not imply causation**. When two variables are found to be correlated, it is tempting to assume that this shows that one variable causes the other. It is however not the case, and this assumption is considered a **questionable cause logical fallacy**.
+
+For any two correlated varaibles \\(A\\) and \\(B\\), the different possible relationships include:
+
+- \\(A\\) causes \\(B\\) (direct causation),
+- \\(B\\) causes \\(A\\) (reverse causation),
+- \\(A\\) and \\(B\\) are consequences of a common cause, but do not cause each other,
+- \\(A\\) and \\(B\\) both cause \\(\\C), which is explicitely of implicitely conditioned on,
+- \\(A\\) causes \\(B\\) and \\(B\\) causes \\(A\\) (bidirectional or cyclic causation),
+- \\(A\\) causes \\(C\\) which causes \\(B\\) (indirect causation),
+- There is no connection between \\(A\\) and \\(B\\), the correlation is a coincidence.
+
+Thus there can be **no conclusion** made regarding the existence of a cause-and-effect relationship only from the fact that A and B are correlated. Determining whether there is an actual cause-and-effect relationship requires **further investigation**, even when the relationship between A and B is statistically significant, a large effect size is observed, or a large part of the variance is explained. 
 
 ---
 
@@ -718,4 +756,184 @@ Finally, compute the degrees of freedom \\(df = N - 1 = 7\\).
 In the table **H**, search for \\(df = 7\\) with a level of significance of \\(\alpha = 0.05\\), that value is \\(t_{crit} = 2.365\\).
 
 Because \\(t_{obs} < t_{crit}\\), we fail to reject the null hypothesis (it cannot be said that the workstation height has an impact on performance).
+
+--- 
+
+### One-Way ANOVA (Between)
+
+`One IV, Three+ Levels, Between`
+
+An experiment is performed to see if there is a difference between the ability to perform tasks depending on the amount of grip provided by the glove worn. The 
+following results are obtained:
+
+| High grip | | Medium grip | | Low grip | |
+| -- | -- | -- | -- | -- | -- | 
+| **Subject** | **Score** | **Subject** | **Score** | **Subject** | **Score** 
+| **S1** | 16 | **S6** | 2 | **S11** | 4
+| **S2** | 18 | **S7** | 10 | **S12** | 6
+| **S3** | 10 | **S8** | 9 | **S13** | 8
+| **S4** | 12 | **S9** | 13 | **S14** | 10
+| **S5** | 19 | **S10** | 11 | **S15** | 2
+
+First, square each score and calculate the totals:
+
+| High grip | | | Medium grip | | | Low grip | | |
+| -- | -- | -- | -- | -- | -- | -- | -- | --  
+| **Subject** | **Score** \\(X_1\\) | \\(X_1^2\\) | **Subject** | **Score** \\(X_2\\) | \\(X_2^2\\) | **Subject** | **Score** \\(X_3\\) | \\(X_3^2\\) |
+| **S1** | 16 | 256 | **S6** | 2 | 4 | **S11** | 4 | 16
+| **S2** | 18 | 324 | **S7** | 10 | 100 | **S12** | 6 | 36
+| **S3** | 10 | 100 | **S8** | 9 | 81 | **S13** | 8 | 64
+| **S4** | 12 | 144 | **S9** | 13 | 169 | **S14** | 10 | 100
+| **S5** | 19 | 361 | **S10** | 11 | 121 | **S15** | 2 | 4
+| **TOTAL** | **75** | **1185** | | **45** | **475** | | **30** | **220**
+
+We note the following values:
+
+- \\(\sum T_c^2\\) is the sum of squared totals for each condition, here:
+\\[\sum T_c^2 = (\sum X_1)^2 + (\sum X_2)^2 + (\sum X_3)^2 = 75^2 + 45^2 + 30^2 = 8550\\]
+- \\(\sum X^2\\) is the sum of all squared scores, here:
+\\[\sum X^2 = \sum X_1^2 + \sum X_2^2 + \sum X_3^2 = 1185 + 475 + 220 = 1880\\]
+- \\((\sum X)^2\\) is the grand total squared, here:
+\\[(\sum X)^2 = (\sum X_1 + \sum X_2 + \sum X_3)^2 = (75 + 45 + 30)^2 = 22500\\]
+- \\(N\\) is the total number of scores (subjects), here \\(N = 15\\),
+- \\(n\\) is the number of subjects in each condition, here \\(n = 5\\),
+- \\(C\\) is the number of conditions (levels), here \\(C = 3\\).
+
+From this table, the **ANOVA Table** must be computed, with the following values:
+
+> \\(SS_{bet} = \frac{\sum T_c^2}{n} - \frac{(\sum X)^2}{N}\\)
+>
+> \\(SS_{tot} = \sum X^2 - \frac{(\sum X)^2}{N}\\)
+>
+> \\(SS_{error} = SS_{tot} - SS_{bet}\\)
+> 
+> \\(df_{bet} = C - 1\\)
+>
+> \\(df_{tot} = N - 1\\)
+> 
+> \\(df_{error} = df_{tot} - df_{bet}\\)
+
+Replacing with the values gives:
+
+\\[SS_{bet} = \frac{8550}{5} - \frac{22500}{15} = 210\\]
+\\[SS_{tot} = 1880 - \frac{22500}{15} = 380\\]
+\\[SS_{error}  = 380 - 210 = 170\\]
+\\[df_{bet} = 3 - 1 = 2\\]
+\\[df_{tot} = 15 - 1 = 14\\]
+\\[df_{error} = 14 - 2 = 12\\]
+
+Next, replace the values in the following table:
+
+| Source of Variance | \\(SS\\) | \\(df\\) | \\(MS\\) | F ratio
+| -- | -- | -- | -- | --
+| Variable A | \\(SS_{bet}\\) | \\(df_{bet}\\) | \\(SS_{bet} / df_{bet}\\) | \\(MS_{bet} / MS_{error}\\)
+| Error | \\(SS_{error}\\) | \\(df_{error}\\) | \\(SS_{error} / df_{error}\\) | --
+| TOTAL | \\(SS_{tot}\\) | \\(df_{tot}\\) | -- | --
+
+Which gives us:
+
+| Source of Variance | \\(SS\\) | \\(df\\) | \\(MS\\) | F ratio
+| -- | -- | -- | -- | --
+| Variable A | 210 | 2 | 105 | **7.41**
+| Error | 170 | 12 | 14.17 | --
+| TOTAL | 380 | 14 | -- | --
+
+We note the value \\(F_{obs} = 7.41\\).
+
+In the table(s) **I**, search for \\(v_1 = df_{bet} = 2\\) and \\(v_2 = df_{error} = 12\\), with a significance level of \\(\alpha = 0.05\\), that value is \\(F_{crit} = 3.89\\).
+
+Because \\(F_{obs} > F_{crit}\\), we can reject the null hypothesis (the amount of grip impacts the performance).
+
+---
+
+### One-Way ANOVA (Within)
+
+`One IV, Three+ Levels, Within`
+
+An experiment is performed to see if there is a difference between the number of correct responses (deciding whether each stimulus is a word or a non-word) for different sizes of text. The following results are obtained:
+
+| Subject | Small | Medium | Large
+| -- | -- | -- | --
+| **S1** | 6 | 8 | 9 
+| **S2** | 7 | 12 | 13 
+| **S3** | 9 | 11 | 12 
+| **S4** | 6 | 15 | 16
+
+First square every score and compute the totals:
+
+|  | Small | | Medium | | Large | | \\(\sum T_s\\)
+| -- | -- | -- | -- | -- | -- | -- | --
+| **Subject** | **Score** \\(X_1\\) | \\(X_1^2\\) | **Score** \\(X_2\\) | \\(X_2^2\\) | **Score** \\(X_1\\) | \\(X_3^2\\)
+| **S1** | 6 | 36 | 8 | 64 | 9 | 81 | 23
+| **S2** | 7 | 49 | 12 | 144 | 13 | 169 | 32
+| **S3** | 9 | 81 | 11 | 121 | 12 | 144 | 32
+| **S4** | 6 | 36 | 15 | 225 | 16 | 256 | 37
+| **TOTAL** | **28** | **202** | **46** | **554** | **50** | **650** | **124**
+
+We note the following values:
+
+- \\(\sum T_c^2\\) is the sum of squared totals for each condition, here:
+\\[\sum T_c^2\\ = (\sum X_1)^2 + (\sum X_2)^2 + (\sum X_3)^2 = 28^2 + 46^2 + 50^2 = 5400\\]
+- \\(\sum T_s^2\\) is the sum of squared totals for each subject, here:
+\\[\sum T_s^2\\ = (\sum T_{s1})^2 + (\sum T_{s2})^2 + (\sum T_{s3})^2 + (\sum T_{s4})^2 = 23^2 + 32^2 + 32^2 + 37^2 = 3946\\]
+- \\(\sum X^2\\) is the sum of all squared scores, here:
+\\[\sum X^2 = \sum X_1^2 + \sum X_2^2 + \sum X_3^2 = 202 + 554 + 650 = 1406\\]
+- \\((\sum X)^2\\) is the grand total squared, here:
+\\[(\sum X)^2 = (\sum X_1 + \sum X_2 + \sum X_3)^2 = (28 + 46 + 50)^2 = 15376\\]
+- \\(N\\) is the total number of scores (subjects), here \\(N = 12\\),
+- \\(n\\) is the number of subjects in each condition, here \\(n = 4\\),
+- \\(C\\) is the number of conditions (levels), here \\(C = 3\\).
+
+
+From this table, the **ANOVA Table** must be computed, with the following values:
+
+> \\(SS_{bet} = \frac{\sum T_c^2}{n} - \frac{(\sum X)^2}{N}\\)
+>
+> \\(SS_{subj} = \frac{\sum T_s^2}{c} - \frac{(\sum X)^2}{N}\\)
+>
+> \\(SS_{tot} = \sum X^2 - \frac{(\sum X)^2}{N}\\)>
+>
+> \\(SS_{error} = SS_{tot} - SS_{bet} - SS_{subj}\\)
+> 
+> \\(df_{bet} = C - 1\\)
+>
+> \\(df_{subj} = n - 1\\)
+>
+> \\(df_{tot} = N - 1\\)
+> 
+> \\(df_{error} = df_{tot} - df_{bet} - df_{subj}\\)
+
+Replacing with the values gives:
+
+\\[SS_{bet} = \frac{5400}{4} - \frac{15376}{12} = 68.67\\]
+\\[SS_{subj} = \frac{3946}{3} - \frac{15376}{12} = 34\\]
+\\[SS_{tot} = 1406 - \frac{15376}{12} = 124.67\\]
+\\[SS_{error}  = 124.67 - 68.67 - 34 = 22\\]
+\\[df_{bet} = 3 - 1 = 2\\]
+\\[df_{subj} = 4 - 1 = 3\\]
+\\[df_{tot} = 12 - 1 = 11\\]
+\\[df_{error} = 11 - 3 - 2 = 6\\]
+
+
+| Source of Variance | \\(SS\\) | \\(df\\) | \\(MS\\) | F ratio
+| -- | -- | -- | -- | --
+| Variable A | \\(SS_{bet}\\) | \\(df_{bet}\\) | \\(SS_{bet} / df_{bet}\\) | \\(MS_{bet} / MS_{error}\\)
+| Subjects | \\(SS_{subj}\\) | \\(df_{subj}\\) | \\(SS_{subj} / df_{subj}\\) | \\(MS_{subj} / MS_{error}\\)
+| Error | \\(SS_{error}\\) | \\(df_{error}\\) | \\(SS_{error} / df_{error}\\) | --
+| TOTAL | \\(SS_{tot}\\) | \\(df_{tot}\\) | -- | --
+
+Which gives us:
+
+| Source of Variance | \\(SS\\) | \\(df\\) | \\(MS\\) | F ratio
+| -- | -- | -- | -- | --
+| Variable A | 68.7 | 2 | 34.34 | **9.38**
+| Subjects | 34 | 3 | 11.33 | **3.10**
+| Error | 22 | 6 | 3.66 | --
+| TOTAL | 124.67 | 11 | -- | --
+
+We note the value \\(F_{obs} = 9.38\\).
+
+In the table(s) **I**, search for \\(v_1 = df_{bet} = 2\\) and \\(v_2 = df_{error} = 6\\), with a significance level of \\(\alpha = 0.05\\), that value is \\(F_{crit} = 5.14\\).
+
+Because \\(F_{obs} > F_{crit}\\), we can reject the null hypothesis (the text size impacts the performance).
 
