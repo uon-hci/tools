@@ -119,14 +119,18 @@ There are two ways to allocate and distribute the participants across the IVs:
 - **Within**: every participant completes every experimental condition,
 - **Between**: different participants are allocated to each experimental condition.
 
-#### Assumptions
+#### Assumptions and planned comparissons
 
-The experimental hypothesis predicts a dependant relationship between variables, or in other words, independant variables impacting dependant variables. 
-A study design can however further predictions by using **assumptions**.
+The experimental hypothesis predicts a dependant relationship between variables, or in other words, independant variables impacting dependant variables. When a significant interaction is found, it is called a **main effect**. A study design can however further predictions by using **assumptions, planned comparisons and post hocs**.
 
 A **one-tailed** hypothesis predicts *how* and in *which direction* an independant variable impacts a dependant variable. For example, if an experimental hypothesis predicts that *music* (IV) impacts *performance* (DV), a one-tailed extension would add that *music* **improves** *performance*, or that *music* **impairs** *performance*. One-tailed tests must be justified: it is for example justified to predict that constant loud noise impairs performance.
 
-In addition, **contrasts** or **analytic comparisons** are other comparisons that can be integrated to a study design. Unlike one-tailed assumptions that predict in *which direction* an independant variable affects a dependant variable, contrasts compare the **levels** of an independant variable. For example, if an experimental hypothesis predicts that *music* (IV) impacts *performance* (DV), and that this independant variable has three levels (*classical*, *rock*, *rap*), contrasts could be that *classical* music affects *performance* differently than *rap music*.
+In addition, **planned comparisons** and **post hoc** are other comparisons that can be integrated to a study design. Unlike one-tailed assumptions that predict in *which direction* an independant variable affects a dependant variable, these computations compare the **levels** of an independant variable. For example, if an experimental hypothesis predicts that *music* (IV) impacts *performance* (DV), and that this independant variable has three levels (*classical*, *rock*, *rap*), contrasts could be that *classical* music affects *performance* differently than *rap music*. These potential interactions are called **simple effects**.
+
+These comparisons can be done in two ways: 
+
+- **Contrasts**: they are planned comparisons, with hypotheses in mind, a guess in which direction the comparisons will result. They are specifically planned **before the tests**,
+- **Post hoc**: if no specific prediction is made, these comparisons are made **after** the test, comparing everything to possibly detect significant differences.
 
 #### Data types and analysis
 

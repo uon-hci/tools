@@ -12,6 +12,43 @@ Descriptive statistics are used to **describe and summarise datasets**, and SPSS
 
 --- 
 
+## Assumptions tests
+
+### Levene
+
+**Levene**'s test is an inferential statistic used to assess the equality of variances. It tests the null hypothesis that the population variances are equal (called homogeneity of variance or homoscedasticity). If the resulting p-value of Levene's test is less than some significance level (typically 0.05), the obtained differences in sample variances are unlikely to have occurred based on random sampling from a population with equal variances. Thus, the null hypothesis of equal variances is rejected and it is concluded that there is a difference between the variances in the population.
+
+### Mauchly
+
+**Mauchly's sphericity** is an important assumption of a repeated-measures ANOVA. It refers to the condition where the variances of the differences between all possible pairs of within-subject conditions are equal. If sphericity is violated, then the variance calculations may be distorted, which would result in an F-ratio that would be inflated. Sphericity can be evaluated when there are three or more levels of a repeated measure factor and, with each additional repeated measures factor, the risk for violating sphericity increases. To know if the sphericity is violated, the significance level is noted: **if \\(p < 0.05\\) the assumption of sphericity is reject**.
+
+![Descriptive](img/SPSS16.png)
+
+
+If the sphericity is violated, there are two main corrections to use to interpret the results:
+
+- **Greenhouse-Geisser**,
+- **Huynh-Feldt**.
+
+A general rule of thumb presents the choices as follows:
+![Descriptive](img/SPSS15.png)
+
+### Normality
+
+An assessment of the normality of data is a prerequisite for many statistical tests because normal data is an underlying assumption in parametric testing. There are two main methods of assessing normality: graphically and numerically.
+
+Numerically, the tests **Kolmogorov-Smirnov** and **Shapiro-Wilk** are used:
+
+![Descriptive](img/SPSS17.png)
+
+Use **Shapiro-Wilk** for small samples (< 50) and **Kolmogorov-Smirnov** otherwise.
+
+To interpret both tests, read the value of the significance value, **if p < 0.05, the data significantly deviates from a normal distribution**.
+
+
+
+---
+
 ## Tests
 
 ### Wilcoxon
@@ -24,9 +61,9 @@ Then the next table shows that SPSS calculated what is called \\(W\\) when doing
 
 ![Descriptive](img/SPSS3.png)
 
-In this case, because the significance level is inferior to 0.05, the null hypothesis can be rejected.
+In this case, because the significance level is superior to 0.05, we fail to reject the null hypothesis.
 
-> **REPORTING**: First conclude on the research question based on the significance level. Then present the results as such: **z = -2.87, N =14, p < 0.01**, and finally use descriptive statistics to support the result: the median.
+> **REPORTING**: First conclude on the research question based on the significance level. Then present the results as such: **z = -1.807, p = 0.071**, and finally use descriptive statistics to support the result: the median.
 
 --- 
 
@@ -101,8 +138,17 @@ Thenext table **independant sample test** provides the actual results of the T-t
 
 ![Descriptive](img/SPSS12.png)
 
-**Levene**'s test is an inferential statistic used to assess the equality of variances. It tests the null hypothesis that the population variances are equal (called homogeneity of variance or homoscedasticity). If the resulting p-value of Levene's test is less than some significance level (typically 0.05), the obtained differences in sample variances are unlikely to have occurred based on random sampling from a population with equal variances. Thus, the null hypothesis of equal variances is rejected and it is concluded that there is a difference between the variances in the population. With a p-value of 0.579 here, the samples have homogeneity of variance.
+With a p-value of 0.579 for the Levene's test, the samples have homogeneity of variance.
 
 Regarding the T-test, the significance level of 0.020 indicates that the null hypothesis can be rejected.
 
 > **REPORTING**: First conclude on the research question based on the significance level,then present the results in this format: t(df) = t_value, p = p-value, such as **t(38) = 2.428, p < 0.020** in this case. Use the descriptive statistics to support the results.
+
+---
+
+### One-Way ANOVA (Within)
+
+First, the test outputs a table of descriptive statistics that gives valuable information:
+
+![Descriptive](img/SPSS13.png)
+
