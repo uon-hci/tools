@@ -362,6 +362,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#statistical-power" title="Statistical power" class="md-nav__link">
+    Statistical power
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#correlation-regression" title="Correlation, regression" class="md-nav__link">
     Correlation, regression
   </a>
@@ -689,6 +696,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#statistical-power" title="Statistical power" class="md-nav__link">
+    Statistical power
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#correlation-regression" title="Correlation, regression" class="md-nav__link">
     Correlation, regression
   </a>
@@ -937,6 +951,15 @@ Conventionally, there are two types of hypothesis:</p>
 <p>Statistical tests try to answer a question, based on the available data. When rejecting a null hypothesis (observing that there is indeed a relation between variables), there is a probability that this rejection is due to <strong>chance</strong>, that the random variables happen to <strong>misrepresent the reality</strong>. This probability, called <strong>p-value</strong>, represents the chance to reject a null hypothesis when it is <strong>actually true</strong>. Subsequently, the lower the p-value, the more meaningful the result because it is less likely to be caused by <strong>noise</strong>. </p>
 <p>The action to reject the null hypothesis when it is actually true is called an <strong>incorrect conclusion</strong> and more precisely a <strong>Type I error</strong>. It is an experimental error that analysts wants to <strong>avoid</strong> in priority, to not make any false claim. To that end, before conducting the test, a <strong>significance threshold</strong> called \(\alpha\) is set, that if exceeded, indicates a non-significant result. That threshold is usually \(\alpha = 0.05\), but particular contexts and fields of study often require a more strict value, such as \(\alpha = 0.001\).</p>
 <p>Of course, the opposite action of <strong>failing to reject a null hypothesis</strong> when it is <strong>actually false</strong> is another experimental error called <strong>Type II error</strong>, but is often seen as less serious than the Type I error. The chance to make a Type II error is represented by the probability called \(\beta\). The <strong>statistical power</strong> is the probability of correctly rejecting the null hypothesis, because it is <strong>indeed false</strong>.</p>
+<h3 id="statistical-power">Statistical power</h3>
+<p><strong>Statistical power</strong> is the probability of <strong>correctly</strong> rejecting a <strong>false</strong> null hypothesis. Statistical power is inversely related to \(\beta\) or the probability of making a <strong>Type II error</strong>. In short, \(power = 1 - β.\). In simpler words, statistical power is the likelihood that a study will detect an effect when there is an effect there to be detected. If statistical power is high, the probability of making a Type II error, or concluding there is no effect when, in fact, there is one, goes down. As a rule of thumb, ideal statistical power is assumed.</p>
+<p>Statistical power power nearly always depends on the following three factors:</p>
+<ul>
+<li>the <strong>statistical significance criterion</strong> used in the test: usually named \(\alpha\) and set at 0.05, this criterion represent the likelihood to reject a null hypothesis when it is actually true,</li>
+<li>the <strong>magnitude</strong> of the effect: the effect size, is a quantitative measure of the magnitude of a phenomenon. Examples of effect sizes are the correlation between two variables, the regression coefficient in a regression, the mean difference, etc. In simple words, while the significance provides the knowledge of the presence of a phenomenon, the effect size describes how much is that phenomenon occuring,</li>
+<li>the <strong>sample size</strong>: it determines the amount of sampling error inherent in a test result. The statistical power is therefore often used to determine the idel sample size (larger effect and sample sizes improve power).</li>
+</ul>
+<p>In addition, the type of test can play a part in the power, as parametric tests are generally more powerful than non-parametrics ones.</p>
 <h3 id="correlation-regression">Correlation, regression</h3>
 <p>Most tests aim to know if an independant variable has an impact on a dependant varible, but doesn't describe <em>how</em>. The study of <strong>correlation</strong> aims to 
 measure the association or the absence of relationship between two variables, without taking into account if they are independant or dependant. <strong>Regression</strong> analysis on the other predicts the value of a dependant variable based on the know value of an independant variable.</p>
@@ -955,6 +978,7 @@ measure the association or the absence of relationship between two variables, wi
 <li><strong>Spearman test</strong> (non-parametric),</li>
 <li><strong>Pearson test</strong> (parametric).</li>
 </ul>
+<p>In <strong>simple linear regression</strong>, we predict scores of one variable from the scores of a second variable. The variable we are predicting is called the <strong>criterion variable</strong> and is referred to as \(Y\). The variable we are basing our predictions on is called the <strong>predictor variable</strong> and is referred to as \(X\). When there is only one predictor variable, the prediction method is called <strong>simple regression</strong>. In simple linear regression, the predictions of Y when plotted as a function of X form a straight line. Linear regression consists of finding the <strong>best-fitting straight line</strong> through the points, called a regression line. </p>
 <h3 id="causality">Causality</h3>
 <p>It is very important to understand that <strong>correlation does not imply causation</strong>. When two variables are found to be correlated, it is tempting to assume that this shows that one variable causes the other. It is however not the case, and this assumption is considered a <strong>questionable cause logical fallacy</strong>.</p>
 <p>For any two correlated varaibles \(A\) and \(B\), the different possible relationships include:</p>

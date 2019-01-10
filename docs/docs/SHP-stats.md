@@ -148,6 +148,18 @@ The action to reject the null hypothesis when it is actually true is called an *
 
 Of course, the opposite action of **failing to reject a null hypothesis** when it is **actually false** is another experimental error called **Type II error**, but is often seen as less serious than the Type I error. The chance to make a Type II error is represented by the probability called \\(\beta\\). The **statistical power** is the probability of correctly rejecting the null hypothesis, because it is **indeed false**.
 
+### Statistical power
+
+**Statistical power** is the probability of **correctly** rejecting a **false** null hypothesis. Statistical power is inversely related to \\(\beta\\) or the probability of making a **Type II error**. In short, \\(power = 1 - β.\\). In simpler words, statistical power is the likelihood that a study will detect an effect when there is an effect there to be detected. If statistical power is high, the probability of making a Type II error, or concluding there is no effect when, in fact, there is one, goes down. As a rule of thumb, ideal statistical power is assumed.
+
+Statistical power power nearly always depends on the following three factors:
+
+- the **statistical significance criterion** used in the test: usually named \\(\alpha\\) and set at 0.05, this criterion represent the likelihood to reject a null hypothesis when it is actually true,
+- the **magnitude** of the effect: the effect size, is a quantitative measure of the magnitude of a phenomenon. Examples of effect sizes are the correlation between two variables, the regression coefficient in a regression, the mean difference, etc. In simple words, while the significance provides the knowledge of the presence of a phenomenon, the effect size describes how much is that phenomenon occuring,
+- the **sample size**: it determines the amount of sampling error inherent in a test result. The statistical power is therefore often used to determine the idel sample size (larger effect and sample sizes improve power).
+
+In addition, the type of test can play a part in the power, as parametric tests are generally more powerful than non-parametrics ones.
+
 ### Correlation, regression
 
 Most tests aim to know if an independant variable has an impact on a dependant varible, but doesn't describe *how*. The study of **correlation** aims to 
@@ -169,6 +181,8 @@ The coefficient \\(r\\) can be calculated with:
 
 - **Spearman test** (non-parametric),
 - **Pearson test** (parametric).
+
+In **simple linear regression**, we predict scores of one variable from the scores of a second variable. The variable we are predicting is called the **criterion variable** and is referred to as \\(Y\\). The variable we are basing our predictions on is called the **predictor variable** and is referred to as \\(X\\). When there is only one predictor variable, the prediction method is called **simple regression**. In simple linear regression, the predictions of Y when plotted as a function of X form a straight line. Linear regression consists of finding the **best-fitting straight line** through the points, called a regression line. 
 
 ### Causality
 
