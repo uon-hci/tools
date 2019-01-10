@@ -334,8 +334,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#one-way-anova-within" title="One-Way ANOVA (Within)" class="md-nav__link">
-    One-Way ANOVA (Within)
+  <a href="#one-way-anova-between" title="One-Way ANOVA (Between)" class="md-nav__link">
+    One-Way ANOVA (Between)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-way-anova-within-repeated-measures" title="One-Way ANOVA (Within, Repeated Measures)" class="md-nav__link">
+    One-Way ANOVA (Within, Repeated Measures)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-way-anova-betweenwithin" title="Two-Way ANOVA (Between/Within)" class="md-nav__link">
+    Two-Way ANOVA (Between/Within)
   </a>
   
 </li>
@@ -492,8 +506,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#one-way-anova-within" title="One-Way ANOVA (Within)" class="md-nav__link">
-    One-Way ANOVA (Within)
+  <a href="#one-way-anova-between" title="One-Way ANOVA (Between)" class="md-nav__link">
+    One-Way ANOVA (Between)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-way-anova-within-repeated-measures" title="One-Way ANOVA (Within, Repeated Measures)" class="md-nav__link">
+    One-Way ANOVA (Within, Repeated Measures)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-way-anova-betweenwithin" title="Two-Way ANOVA (Between/Within)" class="md-nav__link">
+    Two-Way ANOVA (Between/Within)
   </a>
   
 </li>
@@ -608,9 +636,34 @@ shows if there are differences between groups, that can afterwards be validated 
 <p><strong>REPORTING</strong>: First conclude on the research question based on the significance level,then present the results in this format: t(df) = t_value, p = p-value, such as <strong>t(38) = 2.428, p &lt; 0.020</strong> in this case. Use the descriptive statistics to support the results.</p>
 </blockquote>
 <hr />
-<h3 id="one-way-anova-within">One-Way ANOVA (Within)</h3>
+<h3 id="one-way-anova-between">One-Way ANOVA (Between)</h3>
 <p>First, the test outputs a table of descriptive statistics that gives valuable information:</p>
 <p><img alt="Descriptive" src="../img/SPSS13.png" /></p>
+<p>Then, the ANOVA table is presented:</p>
+<p><img alt="Descriptive" src="../img/SPSS18.png" /></p>
+<p>This table shows the <strong>main effect</strong>, that there is a significant difference between the group means. Here with p = 0.021 (&lt; 0.05), that is validated and therefore there is a difference in the means. While this is important, the <strong>simple effects</strong> tells us more about which of the specific groups differ (done either with planned contrats or post hocs). The multiple comparisons shows this:</p>
+<p><img alt="Descriptive" src="../img/SPSS19.png" /></p>
+<p>This table show the significances values between each group and here we can see that Beginner differs from Intermediate and Advanced (p = 0.46 and p = 0.34), while Indermediate and Advanced present no significant difference (p = 0.989).</p>
+<blockquote>
+<p><strong>REPORTING</strong>: First conclude on the research question based on the significance level and the F-ratio as follows: F(df_between, df_within) = F_value, p = p_value, such as <strong>F(2, 27) = 4.467, p = 0.021</strong>. Present the results found with constrasts/post hocs using the p-values and use the mean to support it.</p>
+</blockquote>
+<hr />
+<h3 id="one-way-anova-within-repeated-measures">One-Way ANOVA (Within, Repeated Measures)</h3>
+<p>The first table output is the <strong>within-subjects factors</strong> which confirms the study design of our analysis, these are the experimental conditions:</p>
+<p><img alt="Descriptive" src="../img/SPSS20.png" /></p>
+<p>Then, just like for the Between ANOVA, a table of descriptive statistics is shown:</p>
+<p><img alt="Descriptive" src="../img/SPSS21.png" /></p>
+<p>The next stable is the actual results of the test:</p>
+<p><img alt="Descriptive" src="../img/SPSS22.png" /></p>
+<p>It is important (using mauchly's test) to know which result source to read from. Here, because the assumption of sphericity is violated, the Greenhouse-Geisser correction is used. With a significance level of 0.000-, the null hypothesis can be rejected. While this is important, the <strong>simple effects</strong> tells us more about which of the specific level differ (done either with planned contrats or post hocs). The pairwise comparisons shows this: </p>
+<p><img alt="Descriptive" src="../img/SPSS23.png" /></p>
+<p>Again, the significance values shows where differences are present between the conditions.</p>
+<blockquote>
+<p><strong>REPORTING</strong>: First conclude on the research question based on the significance level and the F-ratio as follows: F(df_between, df_within) = F_value, p = p_value, such as <strong>F(2, 27) = 4.467, p = 0.021</strong>. Present the results found with constrasts/post hocs using the p-values and use the mean to support it.</p>
+</blockquote>
+<hr />
+<h3 id="two-way-anova-betweenwithin">Two-Way ANOVA (Between/Within)</h3>
+<p>These tests are similar and the process is similar, only with more IVs, hence more combinations and more possible comparisons.</p>
                 
                   
                 

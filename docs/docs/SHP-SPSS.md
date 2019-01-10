@@ -146,9 +146,50 @@ Regarding the T-test, the significance level of 0.020 indicates that the null hy
 
 ---
 
-### One-Way ANOVA (Within)
+### One-Way ANOVA (Between)
 
 First, the test outputs a table of descriptive statistics that gives valuable information:
 
 ![Descriptive](img/SPSS13.png)
 
+Then, the ANOVA table is presented:
+
+![Descriptive](img/SPSS18.png)
+
+This table shows the **main effect**, that there is a significant difference between the group means. Here with p = 0.021 (< 0.05), that is validated and therefore there is a difference in the means. While this is important, the **simple effects** tells us more about which of the specific groups differ (done either with planned contrats or post hocs). The multiple comparisons shows this:
+
+![Descriptive](img/SPSS19.png)
+
+This table show the significances values between each group and here we can see that Beginner differs from Intermediate and Advanced (p = 0.46 and p = 0.34), while Indermediate and Advanced present no significant difference (p = 0.989).
+
+> **REPORTING**: First conclude on the research question based on the significance level and the F-ratio as follows: F(df_between, df_within) = F_value, p = p_value, such as **F(2, 27) = 4.467, p = 0.021**. Present the results found with constrasts/post hocs using the p-values and use the mean to support it.
+
+---
+
+### One-Way ANOVA (Within, Repeated Measures)
+
+The first table output is the **within-subjects factors** which confirms the study design of our analysis, these are the experimental conditions:
+
+![Descriptive](img/SPSS20.png)
+
+Then, just like for the Between ANOVA, a table of descriptive statistics is shown:
+
+![Descriptive](img/SPSS21.png)
+
+The next stable is the actual results of the test:
+
+![Descriptive](img/SPSS22.png)
+
+It is important (using mauchly's test) to know which result source to read from. Here, because the assumption of sphericity is violated, the Greenhouse-Geisser correction is used. With a significance level of 0.000-, the null hypothesis can be rejected. While this is important, the **simple effects** tells us more about which of the specific level differ (done either with planned contrats or post hocs). The pairwise comparisons shows this: 
+
+![Descriptive](img/SPSS23.png)
+
+Again, the significance values shows where differences are present between the conditions.
+
+> **REPORTING**: First conclude on the research question based on the significance level and the F-ratio as follows: F(df_between, df_within) = F_value, p = p_value, such as **F(2, 27) = 4.467, p = 0.021**. Present the results found with constrasts/post hocs using the p-values and use the mean to support it.
+
+--- 
+
+### Two-Way ANOVA (Between/Within)
+
+These tests are similar and the process is similar, only with more IVs, hence more combinations and more possible comparisons.
