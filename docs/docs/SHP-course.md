@@ -96,7 +96,7 @@ Conventionally, there are two types of hypothesis:
 The said variables are split in three categories:
 
 - **Independant variables** (*IV*): variables manipulated by the experimented, related to the individual, task, system or environment,
-- **Dependant varaibles** (*DV*): varaibles being measured in the experiment, not under the control of the experimenter, possibly affected by the IVs,
+- **Dependant variables** (*DV*): variables being measured in the experiment, not under the control of the experimenter, possibly affected by the IVs,
 - **Controlled variables**: variables that need to be kept constant during the experiment.
 
 ### Choose the research setting
@@ -267,7 +267,7 @@ The preference matrix represents every pair and how many participants prefered o
 #### Computing the probability matrix
 
 To obtain results and identify the most (or least) preferred object, the probability matrix must be computed.
-From the preference matrix, every item must be divided by the total number of objects \\(n\\), and empty items (same objects) replaced by \\(0.50\\).
+From the preference matrix, every item must be divided by the total number of participants \\(n\\), and empty items (same objects) replaced by \\(0.50\\).
 
 |  | **A** | **B** | **C** | **D**
 | :- | - | - | - | -
