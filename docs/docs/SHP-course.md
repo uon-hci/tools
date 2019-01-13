@@ -124,11 +124,11 @@ The research setting (previously mentioned as *study type*), needs to be conside
 
 ### Select the participants sample
 
-It is important to properly select the **sample**, the sall group that is representative of the **population**. This sample must be the most representative of the population possible, in order to make more general statements about the results.
+It is important to properly select the **sample**, the small group that is representative of the **population**. This sample must be the most representative of the population possible, in order to make more general statements about the results.
 
 There are multiple types of sampling, depending on if the notion of probability accuracy is desired. The three major ones are:
 
-- **Random**: selecting random participants, with each particiant having an equal chance of being selected,
+- **Random**: selecting random participants, with each participant having an equal chance of being selected,
 - **Systematic**: selecting every *nth* participant,
 - **Stratified random**: first diving the population into meaningful groups, then selecting randomly.
 
@@ -198,7 +198,7 @@ the following aspects to consider:
 - **Demographic details**: defining what personal information is really needed,
 - **Piloting**: trials to identify ambiguities, issues and errors,
 - **Administration**: process to get access to the desired sample (distribution),
-- **Data collection**:  process to collect the completed questionnaires (postage, internet),$
+- **Data collection**:  process to collect the completed questionnaires (postage, internet),
 - **Data entry and screening**: conversion from questionnaire to usable data.
 
 There are also many factors to take into consideration to make sure people fill the questionnaire appropriately to obtain good data. Generally, people might not be aware of specific aspects of a task (they don't realize everything they do, and how) or not recall certain information about a task (frequency, exposure). The time since exposure may also affect what can be observed as memory could be altered. Finally, observers and participants can have differences in their understanding and perception of certain aspects.
@@ -229,7 +229,7 @@ Semi-structured interviews address general themes and core questions, but allow 
 
 #### Group
 
-Group interviews gather multiple participants, and sometimes multiple interviewers. The first benefit in doing such an interview is the obvious saving of time by combining participants. Of course a potential issue with this is the lack of depth, and the difficulty to maintain a structured interview. It is hence very important to limit the group interview to a maximum amount of participants and interviewers. The practical aspects must also be considered: group disposition, turn taking and general order.
+Group interviews gather multiple participants, and sometimes multiple interviewers. The first benefit in doing such an interview is the obvious gain of time by combining participants. Of course a potential issue with this is the lack of depth, and the difficulty to maintain a structured interview. It is hence very important to limit the group interview to a maximum amount of participants and interviewers. The practical aspects must also be considered: group disposition, turn taking and general order.
 
 #### Other interview techniques
 
@@ -245,9 +245,14 @@ Group interviews gather multiple participants, and sometimes multiple interviewe
 
 ### Paired comparisons
 
+`Henry Scheffé`
+
 When comparing multiple systems, the *paired comparisons* method can be used to *rank and identify general user preferences*. 
 This method consists in presenting all possible pairs of the system (product) to every participant, in a random sequence. Each time, the participant
 must indicate which system was preferred between the two.
+
+**SOURCE**: used to compare car seat comfort, through a subjective scale (-3 to +3). Significant results were found regarding the stiffness and foam hardness.
+(Kazushige Ebe & Micheal J. Griffi (2001)).
 
 #### Identifying the pairs
 
@@ -267,7 +272,7 @@ The preference matrix represents every pair and how many participants prefered o
 #### Computing the probability matrix
 
 To obtain results and identify the most (or least) preferred object, the probability matrix must be computed.
-From the preference matrix, every item must be divided by the total number of participants \\(n\\), and empty items (same objects) replaced by \\(0.50\\).
+From the preference matrix, every item must be divided by the total number of participants \\(N\\), and empty items (same objects) replaced by \\(0.50\\).
 
 |  | **A** | **B** | **C** | **D**
 | :- | - | - | - | -
@@ -277,7 +282,7 @@ From the preference matrix, every item must be divided by the total number of pa
 | **D** | 0.14 | 0.00 | 0.07 | 0.50
 | \\(\sum\\) | 1.64 | 1.22 | 1.85 | 3.29
 
-Using the last row, the sum of probabilities, the most preferred chaid is \\(D\\), and the least preferred one is \\(B\\).
+Using the last row, the sum of probabilities, the most preferred chair is \\(D\\), and the least preferred one is \\(B\\).
 
 #### Relative ranking
 
@@ -297,13 +302,17 @@ The last row, the mean of the *z-scores*, represents a relative ranking:
 
 ### Repertory grid
 
+`George Kelly, 1955`
+
 The repertory grid is a tool to identify what **constructs are important** to a person in a system, product, job or establishement. It helps to understand 
 and indivual's **interpretation** of his or her environment. Using a method of *triads*, this method compares elements of a topic (better, worse, extremes). These elements are put in a table that represents a person's perception of a certain topic. The data used to rate and rank the elements can be qualitative and quantitative. In practice, the repertory grid is a **structured and thorough method**, and can be applied to many contexts. Ideally used early in the design process, it might required more time to train the participaints and make sure the results are valid and reliable.
 
 ### Card sorting
 
 The technique of card sorting, also called *concept sorting*, aims to understand how an individual sees the **relationships between a set of concepts**.
-By sorting cards (items, elements) into piles, the participant explores the different ways in which concept are similar or different, using diverse system of sorting (categories, ordered hierarchy). Repeated many times, it can demonstrate many views of how **knowledge is organised**. The results can then be examined and analyzed to reveal relationships between concepts.
+By sorting cards (items, elements) into piles, the participant explores the different ways in which concepts are similar or different, using diverse system of sorting (categories, ordered hierarchy). Repeated many times, it can demonstrate many views of how **knowledge is organised**. The results can then be examined and analyzed to reveal relationships between concepts.
+
+**SOURCE**: card-sorting task with experienced and less experienced air traffic controllers, in order to examine whether the range of anticipation dpends onn the level of experience. A set of 30 realistic and comparable traffic sutations was presented, and the controllers' task was to sort the situations according to similarity. Results: experienced and less experienced controllers showed no relevant differences in classifying the situations. (C. Niessen, K. Eyferth & T. Bierwagen (1999)).
 
 ---
 
@@ -313,7 +322,7 @@ By sorting cards (items, elements) into piles, the participant explores the diff
 
 ### What?
 
-Observation is first useful to become familiar with a task, get experience of work in a natural situation, a real setting. It is about observing the actions, postures, bahaviours, techniques, reactions and many more aspects of an activity. More than just observing the participants, it also essential to note the task sequences, timings, equipments and diverse resources, and the interactions between people.
+Observation is first useful to become familiar with a task, get experience of work in a natural situation, a real setting. It is about observing the actions, postures, bahaviours, techniques, reactions and many more aspects of an activity. More than just observing the participants, it is also essential to note the task sequences, timings, equipments and diverse resources, and the interactions between people.
 
 ### How?
 
@@ -369,7 +378,7 @@ The fundamental components of task analysis are:
 There are multiple forms of task analysis:
 
 - **Data collection methods**: observation, critical incident, etc,
-- **Task description**: representing data in specific formats (chart, hiearichical task analysis (HTA): decomposig a task into goals, sub-goals, operations an plans),
+- **Task description**: representing data in specific formats (chart, hiearichical task analysis (HTA): decomposing a task into goals, sub-goals, operations and plans),
 - **Task simulation**: computer modelling, computations, walk-throughs,
 - **Task behaviour assessment**: eventualities, failures, effects,
 - **Task requirements evaluation**: environment, checklists, surveys.

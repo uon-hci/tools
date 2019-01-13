@@ -1184,10 +1184,10 @@ Conventionally, there are two types of hypothesis:</p>
 </tbody>
 </table>
 <h3 id="select-the-participants-sample">Select the participants sample</h3>
-<p>It is important to properly select the <strong>sample</strong>, the sall group that is representative of the <strong>population</strong>. This sample must be the most representative of the population possible, in order to make more general statements about the results.</p>
+<p>It is important to properly select the <strong>sample</strong>, the small group that is representative of the <strong>population</strong>. This sample must be the most representative of the population possible, in order to make more general statements about the results.</p>
 <p>There are multiple types of sampling, depending on if the notion of probability accuracy is desired. The three major ones are:</p>
 <ul>
-<li><strong>Random</strong>: selecting random participants, with each particiant having an equal chance of being selected,</li>
+<li><strong>Random</strong>: selecting random participants, with each participant having an equal chance of being selected,</li>
 <li><strong>Systematic</strong>: selecting every <em>nth</em> participant,</li>
 <li><strong>Stratified random</strong>: first diving the population into meaningful groups, then selecting randomly.</li>
 </ul>
@@ -1241,7 +1241,7 @@ the following aspects to consider:</p>
 <li><strong>Demographic details</strong>: defining what personal information is really needed,</li>
 <li><strong>Piloting</strong>: trials to identify ambiguities, issues and errors,</li>
 <li><strong>Administration</strong>: process to get access to the desired sample (distribution),</li>
-<li><strong>Data collection</strong>:  process to collect the completed questionnaires (postage, internet),$</li>
+<li><strong>Data collection</strong>:  process to collect the completed questionnaires (postage, internet),</li>
 <li><strong>Data entry and screening</strong>: conversion from questionnaire to usable data.</li>
 </ul>
 <p>There are also many factors to take into consideration to make sure people fill the questionnaire appropriately to obtain good data. Generally, people might not be aware of specific aspects of a task (they don't realize everything they do, and how) or not recall certain information about a task (frequency, exposure). The time since exposure may also affect what can be observed as memory could be altered. Finally, observers and participants can have differences in their understanding and perception of certain aspects.</p>
@@ -1262,7 +1262,7 @@ These interviews are "<em>free-style</em>" and spontaneous, with minimal interve
 <h4 id="semi-structured">Semi-structured</h4>
 <p>Semi-structured interviews address general themes and core questions, but allow for the interview to divert to broader and external contexts. Generally these interviews still require a set of questions regarding certain topics to always ensure a beneficial method. Being less "<em>accurate</em>", these interviews are widely used in qualitative research.</p>
 <h4 id="group">Group</h4>
-<p>Group interviews gather multiple participants, and sometimes multiple interviewers. The first benefit in doing such an interview is the obvious saving of time by combining participants. Of course a potential issue with this is the lack of depth, and the difficulty to maintain a structured interview. It is hence very important to limit the group interview to a maximum amount of participants and interviewers. The practical aspects must also be considered: group disposition, turn taking and general order.</p>
+<p>Group interviews gather multiple participants, and sometimes multiple interviewers. The first benefit in doing such an interview is the obvious gain of time by combining participants. Of course a potential issue with this is the lack of depth, and the difficulty to maintain a structured interview. It is hence very important to limit the group interview to a maximum amount of participants and interviewers. The practical aspects must also be considered: group disposition, turn taking and general order.</p>
 <h4 id="other-interview-techniques">Other interview techniques</h4>
 <ul>
 <li><strong>Critical incident technique</strong>: set of procedures used for collecting direct observations of human behavior that have critical significance and meet methodically defined criteria. These observations are used to solve practical problems and develop broad psychological principles. A critical incident can be described as one that makes a contribution, either positively or negatively, to an activity.</li>
@@ -1275,9 +1275,12 @@ These interviews are "<em>free-style</em>" and spontaneous, with minimal interve
 <p>Understanding the way people perceive, compare and prefer systems and products is an essential part of a design process. There are tools and methods used to identify these aspects in diverse contexts.</p>
 </blockquote>
 <h3 id="paired-comparisons">Paired comparisons</h3>
+<p><code>Henry Scheffé</code></p>
 <p>When comparing multiple systems, the <em>paired comparisons</em> method can be used to <em>rank and identify general user preferences</em>. 
 This method consists in presenting all possible pairs of the system (product) to every participant, in a random sequence. Each time, the participant
 must indicate which system was preferred between the two.</p>
+<p><strong>SOURCE</strong>: used to compare car seat comfort, through a subjective scale (-3 to +3). Significant results were found regarding the stiffness and foam hardness.
+(Kazushige Ebe &amp; Micheal J. Griffi (2001)).</p>
 <h4 id="identifying-the-pairs">Identifying the pairs</h4>
 <p>For \(n\) objects, there are \( \frac{1}{2} \cdot n \cdot (n - 1)\) possible pairs. In the example of 4 chairs, there a \(1/2 * 4 * 3 = 6\) possible pairs, that can be \({AB, AC, BD, CB, CD, DA}.\)</p>
 <h4 id="filling-the-preference-matrix">Filling the preference matrix</h4>
@@ -1325,7 +1328,7 @@ must indicate which system was preferred between the two.</p>
 </table>
 <h4 id="computing-the-probability-matrix">Computing the probability matrix</h4>
 <p>To obtain results and identify the most (or least) preferred object, the probability matrix must be computed.
-From the preference matrix, every item must be divided by the total number of participants \(n\), and empty items (same objects) replaced by \(0.50\).</p>
+From the preference matrix, every item must be divided by the total number of participants \(N\), and empty items (same objects) replaced by \(0.50\).</p>
 <table>
 <thead>
 <tr>
@@ -1374,7 +1377,7 @@ From the preference matrix, every item must be divided by the total number of pa
 </tr>
 </tbody>
 </table>
-<p>Using the last row, the sum of probabilities, the most preferred chaid is \(D\), and the least preferred one is \(B\).</p>
+<p>Using the last row, the sum of probabilities, the most preferred chair is \(D\), and the least preferred one is \(B\).</p>
 <h4 id="relative-ranking">Relative ranking</h4>
 <p>To rank the objects in relative levels, the use of standard scores, or <em>z-scores</em>, is required. To do so, the distance from the mean, here \(0.50\) must be extracted and used in the <em>normal distribution</em> table to get the <em>z-score</em>. If an item is above the mean, the <em>z-score</em> is positive, if it is under the mean the <em>z-score</em> is negative, and null otherwise.</p>
 <table>
@@ -1428,18 +1431,20 @@ From the preference matrix, every item must be divided by the total number of pa
 <p>The last row, the mean of the <em>z-scores</em>, represents a relative ranking:</p>
 <p>\[ B(-1.18) &lt; A(-0.27) &lt; C(-0.19) &lt; D(1.64) \]</p>
 <h3 id="repertory-grid">Repertory grid</h3>
+<p><code>George Kelly, 1955</code></p>
 <p>The repertory grid is a tool to identify what <strong>constructs are important</strong> to a person in a system, product, job or establishement. It helps to understand 
 and indivual's <strong>interpretation</strong> of his or her environment. Using a method of <em>triads</em>, this method compares elements of a topic (better, worse, extremes). These elements are put in a table that represents a person's perception of a certain topic. The data used to rate and rank the elements can be qualitative and quantitative. In practice, the repertory grid is a <strong>structured and thorough method</strong>, and can be applied to many contexts. Ideally used early in the design process, it might required more time to train the participaints and make sure the results are valid and reliable.</p>
 <h3 id="card-sorting">Card sorting</h3>
 <p>The technique of card sorting, also called <em>concept sorting</em>, aims to understand how an individual sees the <strong>relationships between a set of concepts</strong>.
-By sorting cards (items, elements) into piles, the participant explores the different ways in which concept are similar or different, using diverse system of sorting (categories, ordered hierarchy). Repeated many times, it can demonstrate many views of how <strong>knowledge is organised</strong>. The results can then be examined and analyzed to reveal relationships between concepts.</p>
+By sorting cards (items, elements) into piles, the participant explores the different ways in which concepts are similar or different, using diverse system of sorting (categories, ordered hierarchy). Repeated many times, it can demonstrate many views of how <strong>knowledge is organised</strong>. The results can then be examined and analyzed to reveal relationships between concepts.</p>
+<p><strong>SOURCE</strong>: card-sorting task with experienced and less experienced air traffic controllers, in order to examine whether the range of anticipation dpends onn the level of experience. A set of 30 realistic and comparable traffic sutations was presented, and the controllers' task was to sort the situations according to similarity. Results: experienced and less experienced controllers showed no relevant differences in classifying the situations. (C. Niessen, K. Eyferth &amp; T. Bierwagen (1999)).</p>
 <hr />
 <h2 id="observartional-methods">Observartional methods</h2>
 <blockquote>
 <p>Observing is an important skill when doing ergonomics work. It is important to understant <em>what</em> should be observed, and <em>how</em>?</p>
 </blockquote>
 <h3 id="what">What?</h3>
-<p>Observation is first useful to become familiar with a task, get experience of work in a natural situation, a real setting. It is about observing the actions, postures, bahaviours, techniques, reactions and many more aspects of an activity. More than just observing the participants, it also essential to note the task sequences, timings, equipments and diverse resources, and the interactions between people.</p>
+<p>Observation is first useful to become familiar with a task, get experience of work in a natural situation, a real setting. It is about observing the actions, postures, bahaviours, techniques, reactions and many more aspects of an activity. More than just observing the participants, it is also essential to note the task sequences, timings, equipments and diverse resources, and the interactions between people.</p>
 <h3 id="how">How?</h3>
 <p>Observing of an activity and collecting data can be done in many ways. An observation session can either be <em>formal</em> or <em>informal</em>, where a formal approach imposes a large amount of <strong>structure</strong> and direction on what is to be observed, whereas an informal session is less structured and allows the observer considerable <strong>freedom</strong> in what information is gathered ad how it is recorded. The observation can also be either <em>direct</em> or <em>indirect</em>. A direct observation is when the observer is present during the experiment, in real time. Indirect observation happens by accessing previous recording.</p>
 <p>The role of the observer is a complex notion that can vary from <strong>simple observer to complete participant</strong>. While sometimes frowned upon from a scientifical point of view, the observer can decide to become a participant in the experiment. <em>Participant observation</em> presents advantages such as real experience for the observer (subjective experience), but also presents issues such as the analysis, that should already take place while collecting data. Participant observers can either hide the fact that they are carrying out a research (<em>the complete participant</em>), or make it clear from the start what is being observed (<em>the participant as observer</em>). Other possible roles are <em>the marginal participant</em>, when the observer plays the role of a passive participant in the "background", or <em>the observer-as-participant</em>, where the observer does not take part in the activity, but whose status as researcher is known to the participants.</p>
@@ -1486,7 +1491,7 @@ to look out for the following details:<ul>
 <p>There are multiple forms of task analysis:</p>
 <ul>
 <li><strong>Data collection methods</strong>: observation, critical incident, etc,</li>
-<li><strong>Task description</strong>: representing data in specific formats (chart, hiearichical task analysis (HTA): decomposig a task into goals, sub-goals, operations an plans),</li>
+<li><strong>Task description</strong>: representing data in specific formats (chart, hiearichical task analysis (HTA): decomposing a task into goals, sub-goals, operations and plans),</li>
 <li><strong>Task simulation</strong>: computer modelling, computations, walk-throughs,</li>
 <li><strong>Task behaviour assessment</strong>: eventualities, failures, effects,</li>
 <li><strong>Task requirements evaluation</strong>: environment, checklists, surveys.</li>

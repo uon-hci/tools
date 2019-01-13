@@ -870,7 +870,7 @@ Finding the median in a sample only requires the sample to be ranked (sorted, or
 <h2 id="normal-distribution">Normal distribution</h2>
 <h3 id="definition">Definition</h3>
 <p>The <strong>normal distribution</strong> (also called <em>Gaussian</em> or the <em>bell curve</em>), is a very common continuous probability distribution. Normal distributions
-are very important in statistics and are often used to represent real-valued random varaibles whose distributions are not known.
+are very important in statistics and are often used to represent real-valued random variables whose distributions are not known.
 The normal distribution is useful because of the <strong>central limit theorem</strong> stating that averages of samples converge in distribution to the normal, that is,
 they become normally distributed when the number of observations is sufficiently large.</p>
 <p>In simpler words, when observing data from large samples, in many cases, the data tends to be around a central value with no bias left or right. This 
@@ -897,7 +897,7 @@ distribution is found in many naturally occurring phenomena such as <em>heights 
 <p>Doing that operation is called <strong>standardizing</strong>, or converting a <em>normal distribution</em> into a <em>standard normal distribution</em>. Usually, the entire sample
 is standardized at once to simplify the calculations by simply looking up standardized pre-computed tables. The table <strong>D. Normal distribution table</strong> allows
 to convert from standard scores to percents, and vice versa.</p>
-<p>-- </p>
+<hr />
 <h2 id="statistical-tests">Statistical tests</h2>
 <p>When doing an experiment, choosing the correct statistical test is very important to obtain significant results. The first step
 in doing so is to understand every factor affecting the choice, and how to implement <strong>study design</strong>.</p>
@@ -906,8 +906,8 @@ in doing so is to understand every factor affecting the choice, and how to imple
 <ol>
 <li><strong>Research question</strong>: objective, aim, question asked,</li>
 <li><strong>Study design</strong>: describing the experiment through hypothesis, variables, data types and participants,</li>
-<li><strong>Test selection</strong>: choosing the correct test(s) based on the study design,</li>
 <li><strong>Conducting the experiment</strong>: doing the described experiment and collecting data,</li>
+<li><strong>Test selection</strong>: choosing the correct test(s) based on the study design,</li>
 <li><strong>Doing the test</strong>: using the data to obtain results through the selected test(s),</li>
 <li><strong>Interpretation and conclusion</strong>: making sense of the result and concluding on the research question.</li>
 </ol>
@@ -925,7 +925,7 @@ Conventionally, there are two types of hypothesis:</p>
 <p>The said variables are split in three categories:</p>
 <ul>
 <li><strong>Independant variables</strong> (<em>IV</em>): variables manipulated by the experimented, related to the individual, task, system or environment,</li>
-<li><strong>Dependant varaibles</strong> (<em>DV</em>): varaibles being measured in the experiment, not under the control of the experimenter, possibly affected by the IVs,</li>
+<li><strong>Dependant variables</strong> (<em>DV</em>): variables being measured in the experiment, not under the control of the experimenter, possibly affected by the IVs,</li>
 <li><strong>Controlled variables</strong>: variables that need to be kept constant during the experiment.</li>
 </ul>
 <h4 id="allocate-participants-to-the-experimental-conditions">Allocate participants to the experimental conditions</h4>
@@ -945,24 +945,25 @@ Conventionally, there are two types of hypothesis:</p>
 </ul>
 <h4 id="data-types-and-analysis">Data types and analysis</h4>
 <p>Based on the data types and the variables, a test can either be <strong>parametric</strong> or <strong>non-parametric</strong>.</p>
-<p>A <strong>parametric test</strong> is a test that is carried out with the assumption that the data collected follows a well-known distribution (usually the normal distribution), which can be boiled down to the knowledge of just a couple of <strong>parameters</strong>. A parametric test provides generalisations for making statements about the mean of the parent population. Because parametric test are based on a distribution, the measurement of varaibles on <strong>interval</strong> or <strong>ratio</strong> level, with the mean used as the measure of central tendency.</p>
-<p>On the other hand, a <strong>non-parametric test</strong> has no know information about the population and is not based on any known distribution. Because non-parametric tests don't require assumptions about the nature of their distributions, they are also called <strong>distribution-free</strong>. These tests hence assume that the variables are measured on a <strong>nominal</strong> (categorical) or <strong>ordinal</strong> level, with the median as the measure of central tendency.</p>
+<p>A <strong>parametric test</strong> is a test that is carried out with the assumption that the data collected follows a well-known distribution (usually the normal distribution), which can be boiled down to the knowledge of just a couple of <strong>parameters</strong>. A parametric test provides generalisations for making statements about the mean of the parent population. Because parametric test are based on a distribution, the measurement of variables on <strong>interval</strong> or <strong>ratio</strong> level, with the mean used as the measure of central tendency.</p>
+<p>On the other hand, a <strong>non-parametric test</strong> has no known information about the population and is not based on any known distribution. Because non-parametric tests don't require assumptions about the nature of their distributions, they are also called <strong>distribution-free</strong>. These tests hence assume that the variables are measured on a <strong>nominal</strong> (categorical) or <strong>ordinal</strong> level, with the median as the measure of central tendency.</p>
 <h3 id="significance">Significance</h3>
 <p>Statistical tests try to answer a question, based on the available data. When rejecting a null hypothesis (observing that there is indeed a relation between variables), there is a probability that this rejection is due to <strong>chance</strong>, that the random variables happen to <strong>misrepresent the reality</strong>. This probability, called <strong>p-value</strong>, represents the chance to reject a null hypothesis when it is <strong>actually true</strong>. Subsequently, the lower the p-value, the more meaningful the result because it is less likely to be caused by <strong>noise</strong>. A statistically significant result is one in which we believe the result was as a result of the experimental manipulation rather than chance alone.</p>
 <p>The action to reject the null hypothesis when it is actually true is called an <strong>incorrect conclusion</strong> and more precisely a <strong>Type I error</strong>. It is an experimental error that analysts wants to <strong>avoid</strong> in priority, to not make any false claim. To that end, before conducting the test, a <strong>significance threshold</strong> called \(\alpha\) is set, that if exceeded, indicates a non-significant result. That threshold is usually \(\alpha = 0.05\), but particular contexts and fields of study often require a more strict value, such as \(\alpha = 0.001\).</p>
-<p>Of course, the opposite action of <strong>failing to reject a null hypothesis</strong> when it is <strong>actually false</strong> is another experimental error called <strong>Type II error</strong>, but is often seen as less serious than the Type I error. The chance to make a Type II error is represented by the probability called \(\beta\). The <strong>statistical power</strong> is the probability of correctly rejecting the null hypothesis, because it is <strong>indeed false</strong>.</p>
+<p>Of course, the opposite action of <strong>failing to reject a null hypothesis</strong> when it is <strong>actually false</strong> is another experimental error called <strong>Type II error</strong>, but is often seen as less serious than the Type I error. The chance to make a Type II error is represented by the probability called \(\beta\). The <strong>statistical power</strong> is the probability of correctly rejecting the null hypothesis, when it is <strong>indeed false</strong>.
+\(geq 0.8\).</p>
 <h3 id="statistical-power">Statistical power</h3>
-<p><strong>Statistical power</strong> is the probability of <strong>correctly</strong> rejecting a <strong>false</strong> null hypothesis. Statistical power is inversely related to \(\beta\) or the probability of making a <strong>Type II error</strong>. In short, \(power = 1 - β.\). In simpler words, statistical power is the likelihood that a study will detect an effect when there is an effect there to be detected. If statistical power is high, the probability of making a Type II error, or concluding there is no effect when, in fact, there is one, goes down. As a rule of thumb, ideal statistical power is assumed.</p>
+<p><strong>Statistical power</strong> is the probability of <strong>correctly</strong> rejecting a <strong>false</strong> null hypothesis. Statistical power is inversely related to \(\beta\) or the probability of making a <strong>Type II error</strong>. In short, \(power = 1 - β\). In simpler words, statistical power is the likelihood that a study will detect an effect when there is an effect there to be detected. If statistical power is high, the probability of making a Type II error, or concluding there is no effect when, in fact, there is one, goes down. As a rule of thumb, ideal statistical power is assumed when .</p>
 <p>Statistical power power nearly always depends on the following three factors:</p>
 <ul>
 <li>the <strong>statistical significance criterion</strong> used in the test: usually named \(\alpha\) and set at 0.05, this criterion represent the likelihood to reject a null hypothesis when it is actually true,</li>
 <li>the <strong>magnitude</strong> of the effect: the effect size, is a quantitative measure of the magnitude of a phenomenon. Examples of effect sizes are the correlation between two variables, the regression coefficient in a regression, the mean difference, etc. In simple words, while the significance provides the knowledge of the presence of a phenomenon, the effect size describes how much is that phenomenon occuring,</li>
-<li>the <strong>sample size</strong>: it determines the amount of sampling error inherent in a test result. The statistical power is therefore often used to determine the idel sample size (larger effect and sample sizes improve power).</li>
+<li>the <strong>sample size</strong>: it determines the amount of sampling error inherent in a test result. The statistical power is therefore often used to determine the ideal sample size (larger effect and sample sizes improve power).</li>
 </ul>
 <p>In addition, the type of test can play a part in the power, as parametric tests are generally more powerful than non-parametrics ones.</p>
 <h3 id="correlation-regression">Correlation, regression</h3>
-<p>Most tests aim to know if an independant variable has an impact on a dependant varible, but doesn't describe <em>how</em>. The study of <strong>correlation</strong> aims to 
-measure the association or the absence of relationship between two variables, without taking into account if they are independant or dependant. <strong>Regression</strong> analysis on the other predicts the value of a dependant variable based on the know value of an independant variable.</p>
+<p>Most tests aim to know if an independant variable has an impact on a dependant variable, but doesn't describe <em>how</em>. The study of <strong>correlation</strong> aims to 
+measure the association or the absence of relationship between two variables, without taking into account if they are independant or dependant. <strong>Regression</strong> analysis on the other hand predicts the value of a dependant variable based on the known value of an independant variable.</p>
 <p>Correlation is represented by a coefficient \(r\). This coefficient can vary from \(-1\) to \(+1\). A \(-1\) indicates a <strong>perfect negative correlation</strong>, while a \(+1\) indicates a <strong>perfect positive correlation</strong>. A correlation of \(0\) means there is <strong>no relationship</strong> between the two variables. When there is a negative correlation between two variables, as the value of one variable increases, the value of the other variable decreases, and vise versa. In other words, for a negative correlation, the variables <strong>work opposite each other</strong>. When there is a positive correlation between two variables, as the value of one variable increases, the value of the other variable also increases, the variables <strong>move together</strong>.</p>
 <p>A rule of thumb to interpret \(r\) is:</p>
 <ul>
@@ -981,12 +982,12 @@ measure the association or the absence of relationship between two variables, wi
 <p>In <strong>simple linear regression</strong>, we predict scores of one variable from the scores of a second variable. The variable we are predicting is called the <strong>criterion variable</strong> and is referred to as \(Y\). The variable we are basing our predictions on is called the <strong>predictor variable</strong> and is referred to as \(X\). When there is only one predictor variable, the prediction method is called <strong>simple regression</strong>. In simple linear regression, the predictions of Y when plotted as a function of X form a straight line. Linear regression consists of finding the <strong>best-fitting straight line</strong> through the points, called a regression line. </p>
 <h3 id="causality">Causality</h3>
 <p>It is very important to understand that <strong>correlation does not imply causation</strong>. When two variables are found to be correlated, it is tempting to assume that this shows that one variable causes the other. It is however not the case, and this assumption is considered a <strong>questionable cause logical fallacy</strong>.</p>
-<p>For any two correlated varaibles \(A\) and \(B\), the different possible relationships include:</p>
+<p>For any two correlated variables \(A\) and \(B\), the different possible relationships include:</p>
 <ul>
 <li>\(A\) causes \(B\) (direct causation),</li>
 <li>\(B\) causes \(A\) (reverse causation),</li>
 <li>\(A\) and \(B\) are consequences of a common cause, but do not cause each other,</li>
-<li>\(A\) and \(B\) both cause \(\C), which is explicitely of implicitely conditioned on,</li>
+<li>\(A\) and \(B\) both cause \(C\), which is explicitely of implicitely conditioned on,</li>
 <li>\(A\) causes \(B\) and \(B\) causes \(A\) (bidirectional or cyclic causation),</li>
 <li>\(A\) causes \(C\) which causes \(B\) (indirect causation),</li>
 <li>There is no connection between \(A\) and \(B\), the correlation is a coincidence.</li>
@@ -1951,7 +1952,7 @@ condition \(n_1 = n_2 = n_3 = 7\).</p>
 <p>Because \(H_{obs} &gt; H_{crit}\), we can reject the null hypothesis (keyboard force does affect comfort).</p>
 <hr />
 <h3 id="one-way-chi-square">One-Way Chi Square</h3>
-<p><code>One IV, 2+ Levels</code></p>
+<p><code>One IV, Two+ Levels</code></p>
 <p>The Chi Square is the only test for <strong>categorical data</strong>. Usually measuring frequencies of events (how many subjects made an error, how many passed a test etc) in different conditions, this test aims to uncover if the condition had an impact on the frequencies, or if the null hypothesis is true, that is that each condition should be almost equally distributed.</p>
 <p>A test was performed to compare the efficiency of different methods of learning for retention of items after “Kim’s game”. The following figures show the  number of people who remembered more than 50% of items for each type of mnemonic:</p>
 <table>

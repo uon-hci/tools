@@ -33,7 +33,7 @@ The **mode** of a set of values is the value that appears most often, the most c
 ### Definition
 
 The **normal distribution** (also called *Gaussian* or the *bell curve*), is a very common continuous probability distribution. Normal distributions
-are very important in statistics and are often used to represent real-valued random varaibles whose distributions are not known.
+are very important in statistics and are often used to represent real-valued random variables whose distributions are not known.
 The normal distribution is useful because of the **central limit theorem** stating that averages of samples converge in distribution to the normal, that is,
 they become normally distributed when the number of observations is sufficiently large.
 
@@ -74,7 +74,7 @@ Doing that operation is called **standardizing**, or converting a *normal distri
 is standardized at once to simplify the calculations by simply looking up standardized pre-computed tables. The table **D. Normal distribution table** allows
 to convert from standard scores to percents, and vice versa.
 
--- 
+---
 
 ## Statistical tests
 
@@ -87,8 +87,8 @@ An experiment, (or study or research), can be outlined by the following steps:
 
 1. **Research question**: objective, aim, question asked,
 2. **Study design**: describing the experiment through hypothesis, variables, data types and participants,
-3. **Test selection**: choosing the correct test(s) based on the study design,
-4. **Conducting the experiment**: doing the described experiment and collecting data,
+3. **Conducting the experiment**: doing the described experiment and collecting data,
+4. **Test selection**: choosing the correct test(s) based on the study design,
 5. **Doing the test**: using the data to obtain results through the selected test(s),
 6. **Interpretation and conclusion**: making sense of the result and concluding on the research question.
 
@@ -109,7 +109,7 @@ Conventionally, there are two types of hypothesis:
 The said variables are split in three categories:
 
 - **Independant variables** (*IV*): variables manipulated by the experimented, related to the individual, task, system or environment,
-- **Dependant varaibles** (*DV*): varaibles being measured in the experiment, not under the control of the experimenter, possibly affected by the IVs,
+- **Dependant variables** (*DV*): variables being measured in the experiment, not under the control of the experimenter, possibly affected by the IVs,
 - **Controlled variables**: variables that need to be kept constant during the experiment.
 
 #### Allocate participants to the experimental conditions
@@ -136,9 +136,9 @@ These comparisons can be done in two ways:
 
 Based on the data types and the variables, a test can either be **parametric** or **non-parametric**.
 
-A **parametric test** is a test that is carried out with the assumption that the data collected follows a well-known distribution (usually the normal distribution), which can be boiled down to the knowledge of just a couple of **parameters**. A parametric test provides generalisations for making statements about the mean of the parent population. Because parametric test are based on a distribution, the measurement of varaibles on **interval** or **ratio** level, with the mean used as the measure of central tendency.
+A **parametric test** is a test that is carried out with the assumption that the data collected follows a well-known distribution (usually the normal distribution), which can be boiled down to the knowledge of just a couple of **parameters**. A parametric test provides generalisations for making statements about the mean of the parent population. Because parametric test are based on a distribution, the measurement of variables on **interval** or **ratio** level, with the mean used as the measure of central tendency.
 
-On the other hand, a **non-parametric test** has no know information about the population and is not based on any known distribution. Because non-parametric tests don't require assumptions about the nature of their distributions, they are also called **distribution-free**. These tests hence assume that the variables are measured on a **nominal** (categorical) or **ordinal** level, with the median as the measure of central tendency.
+On the other hand, a **non-parametric test** has no known information about the population and is not based on any known distribution. Because non-parametric tests don't require assumptions about the nature of their distributions, they are also called **distribution-free**. These tests hence assume that the variables are measured on a **nominal** (categorical) or **ordinal** level, with the median as the measure of central tendency.
 
 ### Significance
 
@@ -146,24 +146,25 @@ Statistical tests try to answer a question, based on the available data. When re
 
 The action to reject the null hypothesis when it is actually true is called an **incorrect conclusion** and more precisely a **Type I error**. It is an experimental error that analysts wants to **avoid** in priority, to not make any false claim. To that end, before conducting the test, a **significance threshold** called \\(\alpha\\) is set, that if exceeded, indicates a non-significant result. That threshold is usually \\(\alpha = 0.05\\), but particular contexts and fields of study often require a more strict value, such as \\(\alpha = 0.001\\).
 
-Of course, the opposite action of **failing to reject a null hypothesis** when it is **actually false** is another experimental error called **Type II error**, but is often seen as less serious than the Type I error. The chance to make a Type II error is represented by the probability called \\(\beta\\). The **statistical power** is the probability of correctly rejecting the null hypothesis, because it is **indeed false**.
+Of course, the opposite action of **failing to reject a null hypothesis** when it is **actually false** is another experimental error called **Type II error**, but is often seen as less serious than the Type I error. The chance to make a Type II error is represented by the probability called \\(\beta\\). The **statistical power** is the probability of correctly rejecting the null hypothesis, when it is **indeed false**.
+\\(geq 0.8\\).
 
 ### Statistical power
 
-**Statistical power** is the probability of **correctly** rejecting a **false** null hypothesis. Statistical power is inversely related to \\(\beta\\) or the probability of making a **Type II error**. In short, \\(power = 1 - β.\\). In simpler words, statistical power is the likelihood that a study will detect an effect when there is an effect there to be detected. If statistical power is high, the probability of making a Type II error, or concluding there is no effect when, in fact, there is one, goes down. As a rule of thumb, ideal statistical power is assumed.
+**Statistical power** is the probability of **correctly** rejecting a **false** null hypothesis. Statistical power is inversely related to \\(\beta\\) or the probability of making a **Type II error**. In short, \\(power = 1 - β\\). In simpler words, statistical power is the likelihood that a study will detect an effect when there is an effect there to be detected. If statistical power is high, the probability of making a Type II error, or concluding there is no effect when, in fact, there is one, goes down. As a rule of thumb, ideal statistical power is assumed when .
 
 Statistical power power nearly always depends on the following three factors:
 
 - the **statistical significance criterion** used in the test: usually named \\(\alpha\\) and set at 0.05, this criterion represent the likelihood to reject a null hypothesis when it is actually true,
 - the **magnitude** of the effect: the effect size, is a quantitative measure of the magnitude of a phenomenon. Examples of effect sizes are the correlation between two variables, the regression coefficient in a regression, the mean difference, etc. In simple words, while the significance provides the knowledge of the presence of a phenomenon, the effect size describes how much is that phenomenon occuring,
-- the **sample size**: it determines the amount of sampling error inherent in a test result. The statistical power is therefore often used to determine the idel sample size (larger effect and sample sizes improve power).
+- the **sample size**: it determines the amount of sampling error inherent in a test result. The statistical power is therefore often used to determine the ideal sample size (larger effect and sample sizes improve power).
 
 In addition, the type of test can play a part in the power, as parametric tests are generally more powerful than non-parametrics ones.
 
 ### Correlation, regression
 
-Most tests aim to know if an independant variable has an impact on a dependant varible, but doesn't describe *how*. The study of **correlation** aims to 
-measure the association or the absence of relationship between two variables, without taking into account if they are independant or dependant. **Regression** analysis on the other predicts the value of a dependant variable based on the know value of an independant variable.
+Most tests aim to know if an independant variable has an impact on a dependant variable, but doesn't describe *how*. The study of **correlation** aims to 
+measure the association or the absence of relationship between two variables, without taking into account if they are independant or dependant. **Regression** analysis on the other hand predicts the value of a dependant variable based on the known value of an independant variable.
 
 Correlation is represented by a coefficient \\(r\\). This coefficient can vary from \\(-1\\) to \\(+1\\). A \\(-1\\) indicates a **perfect negative correlation**, while a \\(+1\\) indicates a **perfect positive correlation**. A correlation of \\(0\\) means there is **no relationship** between the two variables. When there is a negative correlation between two variables, as the value of one variable increases, the value of the other variable decreases, and vise versa. In other words, for a negative correlation, the variables **work opposite each other**. When there is a positive correlation between two variables, as the value of one variable increases, the value of the other variable also increases, the variables **move together**.
 
@@ -188,12 +189,12 @@ In **simple linear regression**, we predict scores of one variable from the scor
 
 It is very important to understand that **correlation does not imply causation**. When two variables are found to be correlated, it is tempting to assume that this shows that one variable causes the other. It is however not the case, and this assumption is considered a **questionable cause logical fallacy**.
 
-For any two correlated varaibles \\(A\\) and \\(B\\), the different possible relationships include:
+For any two correlated variables \\(A\\) and \\(B\\), the different possible relationships include:
 
 - \\(A\\) causes \\(B\\) (direct causation),
 - \\(B\\) causes \\(A\\) (reverse causation),
 - \\(A\\) and \\(B\\) are consequences of a common cause, but do not cause each other,
-- \\(A\\) and \\(B\\) both cause \\(\\C), which is explicitely of implicitely conditioned on,
+- \\(A\\) and \\(B\\) both cause \\(C\\), which is explicitely of implicitely conditioned on,
 - \\(A\\) causes \\(B\\) and \\(B\\) causes \\(A\\) (bidirectional or cyclic causation),
 - \\(A\\) causes \\(C\\) which causes \\(B\\) (indirect causation),
 - There is no connection between \\(A\\) and \\(B\\), the correlation is a coincidence.
@@ -619,7 +620,7 @@ Because \\(H_{obs} > H_{crit}\\), we can reject the null hypothesis (keyboard fo
 
 ### One-Way Chi Square
 
-`One IV, 2+ Levels`
+`One IV, Two+ Levels`
 
 The Chi Square is the only test for **categorical data**. Usually measuring frequencies of events (how many subjects made an error, how many passed a test etc) in different conditions, this test aims to uncover if the condition had an impact on the frequencies, or if the null hypothesis is true, that is that each condition should be almost equally distributed.
 
