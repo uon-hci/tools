@@ -49,6 +49,14 @@ The choice of a method significantly depends on the context of the study. Howeve
 - **Usability**: is the method easy to learn and implement?
 - **Resources**: how expensive and demanding (cost, expertise) is the method? 
 
+**SOURCES**:
+
+- "The notion of reliability thus includes both the characteristics of the instrument and the conditions under which it is administered — both must be  consistent." (Oppenheim),
+- "If the reliability of a scale or other measure drops below .80 this means that repeated administrations will cover less than 64 per cent of the same ground, and that the error component is more than one-third; such a measure will come in for serious criticism and might well have to be discarded or rebuilt." (Oppenheim, where 0.8 is a correlation coefficient)
+- Reliability may be measuredin several different ways: *test-retest*, *internal consistency*, *split-half* or *parallel-form* ; each method sing correlation coefficients.
+- There a different types of validity: *content validity* (the content is well-balanced in the domain to be measured), **concurrent validity** (the method correlates with other well-walidated measures of the same topic, administered at about the same time); *construct validity* (base a method on the fulfilment of well established predictions and theoretica assumptions), *predictive validity* (forecast some future criterion related to similar concepts).
+
+
 ### Types of measure
 
 When doing a study, the type of measures defines the methods used and the data collected. In most ergonomics works, the following measure types are assessed:
@@ -126,16 +134,23 @@ The research setting (previously mentioned as *study type*), needs to be conside
 
 It is important to properly select the **sample**, the small group that is representative of the **population**. This sample must be the most representative of the population possible, in order to make more general statements about the results.
 
-There are multiple types of sampling, depending on if the notion of probability accuracy is desired. The three major ones are:
+There are multiple types of sampling, depending on if the notion of probability accuracy is desired. The major *representative sampling* techniques are:
 
-- **Random**: selecting random participants, with each participant having an equal chance of being selected,
+- **Random** (*sampling frame*): selecting random participants, with each participant having an equal chance of being selected,
 - **Systematic**: selecting every *nth* participant,
-- **Stratified random**: first diving the population into meaningful groups, then selecting randomly.
+- **Stratified random**: first diving the population into meaningful groups, then selecting randomly,
+- **Cluster**: dividing the population into a number of units, or clusters, each of which contains individuals having a range of characteristics (can be extended to a *multi-stage* sampling).
 
 In other situtions, the participants are selected in a more *favored* way, when the basic selection techniques seen previously are not precise enough and the sample needs to be very specific. The **non-probability** sample techniques are:
 
+- **Quota**: obtaining representatives of the various elements of a population, usually in the relative proportions in which they occur in the population (can be extended to a *dimensional* sampling),
 - **Purposive**: satisfying the specific needs of a project,
-- **Conveniance sampling**: nearest, easiest, cheapest, most convenient.
+- **Conveniance sampling**: nearest, easiest, cheapest, most convenient,
+- **Snowball**: identifying one or more individuals from the population of interest, and then use them as informants to identify other members of the population, and so on.
+
+"*Convenience sampling is sometimes used as a cheap and dirty way of doing a sample survey. You do not know whether or not findings are representative*" (Robson).
+
+There are additional special sampling methods: **Time samples**, **Homogeneous samples**, **Heterogeneous samples**, **Extreme case samples** and **Rare element samples**.
 
 Finally, the resources and costs required to mobilize a sample need to be balanced with the potential results, and the confidence that
 the results will be significant.
@@ -202,6 +217,14 @@ the following aspects to consider:
 - **Data entry and screening**: conversion from questionnaire to usable data.
 
 There are also many factors to take into consideration to make sure people fill the questionnaire appropriately to obtain good data. Generally, people might not be aware of specific aspects of a task (they don't realize everything they do, and how) or not recall certain information about a task (frequency, exposure). The time since exposure may also affect what can be observed as memory could be altered. Finally, observers and participants can have differences in their understanding and perception of certain aspects.
+
+**SOURCE**:
+
+- "Most practitioners and researchers describe questionnaires as tools to gather information that is not readily accessible by examining an individual’s performance or behavior" (Moroney and Cameron, 2016),
+- Example of question wording: impact of the verb (context of a car accident: smashed/collided/bumped/hit/contacted, each lead to different interpretation of the speed of the cars when the accident occured, impact on the mental model), (Loftus and Palmer, 1974),
+- *Perceived affordances* and *cultural conventions* associated with Web site use,
+- Kilograms/Pounds confusion in top 10 patient safety concern by the ECRI Institute (2015)
+- "*If a questionnaire is to be a conversation, the designer and the respondent need to establish a relationship*" (Moroney and Cameron, 2016)
 
 ### Interview
 
@@ -307,12 +330,14 @@ The last row, the mean of the *z-scores*, represents a relative ranking:
 The repertory grid is a tool to identify what **constructs are important** to a person in a system, product, job or establishement. It helps to understand 
 and indivual's **interpretation** of his or her environment. Using a method of *triads*, this method compares elements of a topic (better, worse, extremes). These elements are put in a table that represents a person's perception of a certain topic. The data used to rate and rank the elements can be qualitative and quantitative. In practice, the repertory grid is a **structured and thorough method**, and can be applied to many contexts. Ideally used early in the design process, it might required more time to train the participaints and make sure the results are valid and reliable.
 
+**SOURCE**: In order to elicit and explore the knowledge held by rail signalling experts about the most relevant elements of the signallingsy stem and how each element could be considered as influencing signaller workload the Repertory Grid Technique was used (L. Pickup, J. Wilson, E. Lowe (2009))
+
 ### Card sorting
 
 The technique of card sorting, also called *concept sorting*, aims to understand how an individual sees the **relationships between a set of concepts**.
 By sorting cards (items, elements) into piles, the participant explores the different ways in which concepts are similar or different, using diverse system of sorting (categories, ordered hierarchy). Repeated many times, it can demonstrate many views of how **knowledge is organised**. The results can then be examined and analyzed to reveal relationships between concepts.
 
-**SOURCE**: card-sorting task with experienced and less experienced air traffic controllers, in order to examine whether the range of anticipation dpends onn the level of experience. A set of 30 realistic and comparable traffic sutations was presented, and the controllers' task was to sort the situations according to similarity. Results: experienced and less experienced controllers showed no relevant differences in classifying the situations. (C. Niessen, K. Eyferth & T. Bierwagen (1999)).
+**SOURCE**: card-sorting task with experienced and less experienced air traffic controllers, in order to examine whether the range of anticipation depends on the level of experience. A set of 30 realistic and comparable traffic sutations was presented, and the controllers' task was to sort the situations according to similarity. Results: experienced and less experienced controllers showed no relevant differences in classifying the situations. (C. Niessen, K. Eyferth & T. Bierwagen (1999)).
 
 ---
 
@@ -382,3 +407,8 @@ There are multiple forms of task analysis:
 - **Task simulation**: computer modelling, computations, walk-throughs,
 - **Task behaviour assessment**: eventualities, failures, effects,
 - **Task requirements evaluation**: environment, checklists, surveys.
+
+**SOURCE**:
+
+- "*Carrying out some form of human error analysis enables us to gain an understanding of how human interaction with drug administration tasks might lead to incidents*", in the context of the study of drug dosage errors, R. Lane et al. (2006)
+- SHERPA (systematic human error reduction and prediction approach, Embery 1986): analyses tasks and identifies potential solutions to errors in a structured manner.
