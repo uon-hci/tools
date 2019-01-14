@@ -14,6 +14,9 @@ There are three types of data to consider when doing statistics:
 - **Ordinal**: data that can only be classed by order,
 - **Ratio/Interval**: data that can be put on a scale where the relationship between each point is known.
 
+![Data types](img/dt.png)
+
+
 ### Measures of central tendency
 
 There are three measures of central tendency to take into account: *mean*, *median* and *mode*.
