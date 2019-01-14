@@ -150,11 +150,10 @@ Statistical tests try to answer a question, based on the available data. When re
 The action to reject the null hypothesis when it is actually true is called an **incorrect conclusion** and more precisely a **Type I error**. It is an experimental error that analysts wants to **avoid** in priority, to not make any false claim. To that end, before conducting the test, a **significance threshold** called \\(\alpha\\) is set, that if exceeded, indicates a non-significant result. That threshold is usually \\(\alpha = 0.05\\), but particular contexts and fields of study often require a more strict value, such as \\(\alpha = 0.001\\).
 
 Of course, the opposite action of **failing to reject a null hypothesis** when it is **actually false** is another experimental error called **Type II error**, but is often seen as less serious than the Type I error. The chance to make a Type II error is represented by the probability called \\(\beta\\). The **statistical power** is the probability of correctly rejecting the null hypothesis, when it is **indeed false**.
-\\(geq 0.8\\).
 
 ### Statistical power
 
-**Statistical power** is the probability of **correctly** rejecting a **false** null hypothesis. Statistical power is inversely related to \\(\beta\\) or the probability of making a **Type II error**. In short, \\(power = 1 - β\\). In simpler words, statistical power is the likelihood that a study will detect an effect when there is an effect there to be detected. If statistical power is high, the probability of making a Type II error, or concluding there is no effect when, in fact, there is one, goes down. As a rule of thumb, ideal statistical power is assumed when .
+**Statistical power** is the probability of **correctly** rejecting a **false** null hypothesis. Statistical power is inversely related to \\(\beta\\) or the probability of making a **Type II error**. In short, \\(power = 1 - β\\). In simpler words, statistical power is the likelihood that a study will detect an effect when there is an effect there to be detected. If statistical power is high, the probability of making a Type II error, or concluding there is no effect when, in fact, there is one, goes down. As a rule of thumb, ideal statistical power is assumed when \\(\geq 0.8\\).
 
 Statistical power power nearly always depends on the following three factors:
 

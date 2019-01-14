@@ -53,8 +53,8 @@ The choice of a method significantly depends on the context of the study. Howeve
 
 - "The notion of reliability thus includes both the characteristics of the instrument and the conditions under which it is administered — both must be  consistent." (Oppenheim),
 - "If the reliability of a scale or other measure drops below .80 this means that repeated administrations will cover less than 64 per cent of the same ground, and that the error component is more than one-third; such a measure will come in for serious criticism and might well have to be discarded or rebuilt." (Oppenheim, where 0.8 is a correlation coefficient)
-- Reliability may be measuredin several different ways: *test-retest*, *internal consistency*, *split-half* or *parallel-form* ; each method sing correlation coefficients.
-- There a different types of validity: *content validity* (the content is well-balanced in the domain to be measured), **concurrent validity** (the method correlates with other well-walidated measures of the same topic, administered at about the same time); *construct validity* (base a method on the fulfilment of well established predictions and theoretica assumptions), *predictive validity* (forecast some future criterion related to similar concepts).
+- Reliability may be measured in several different ways: *test-retest*, *internal consistency*, *split-half* or *parallel-form* ; each method using correlation coefficients. (Oppenheims)
+- There are different types of validity: *content validity* (the content is well-balanced in the domain to be measured), *concurrent validity* (the method correlates with other well-validated measures of the same topic, administered at about the same time); *construct validity* (base a method on the fulfilment of well established predictions and theoretical assumptions), *predictive validity* (forecast some future criterion related to similar concepts).
 
 
 ### Types of measure
@@ -275,7 +275,7 @@ This method consists in presenting all possible pairs of the system (product) to
 must indicate which system was preferred between the two.
 
 **SOURCE**: used to compare car seat comfort, through a subjective scale (-3 to +3). Significant results were found regarding the stiffness and foam hardness.
-(Kazushige Ebe & Micheal J. Griffi (2001)).
+(Kazushige Ebe & Micheal J. Griffin (2001)).
 
 #### Identifying the pairs
 
@@ -330,7 +330,7 @@ The last row, the mean of the *z-scores*, represents a relative ranking:
 The repertory grid is a tool to identify what **constructs are important** to a person in a system, product, job or establishement. It helps to understand 
 and indivual's **interpretation** of his or her environment. Using a method of *triads*, this method compares elements of a topic (better, worse, extremes). These elements are put in a table that represents a person's perception of a certain topic. The data used to rate and rank the elements can be qualitative and quantitative. In practice, the repertory grid is a **structured and thorough method**, and can be applied to many contexts. Ideally used early in the design process, it might required more time to train the participaints and make sure the results are valid and reliable.
 
-**SOURCE**: In order to elicit and explore the knowledge held by rail signalling experts about the most relevant elements of the signallingsy stem and how each element could be considered as influencing signaller workload the Repertory Grid Technique was used (L. Pickup, J. Wilson, E. Lowe (2009))
+**SOURCE**: In order to elicit and explore the knowledge held by rail signalling experts about the most relevant elements of the signalling system and how each element could be considered as influencing signaller workload, the Repertory Grid Technique was used (L. Pickup, J. Wilson, E. Lowe (2009))
 
 ### Card sorting
 
