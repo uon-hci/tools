@@ -28,7 +28,7 @@ The course is outlined with the following chapters:
 
 --- 
 
-## Memory and attention
+## Memory
 
 ### Memory structures
 
@@ -115,3 +115,66 @@ A common example to explain false memories is the case of the car crash and the 
 A flashbulb memory is highly detailed, exceptionnally vivid "*snapshot*" of the moment and circumstances in which a piece of surprising and consequential news was heard. This type of memory include six main characteristic features: *place*, *ongoing activity*, *informant*, *own effect*, *other effect* and *aftermath*. Generally, the determinants of a flashbulb memory are a high level of surprise, a high level of consequentiality, and perhaps emotional arousal. An example of such a memory is the generally very detailed memories of the events of 9/11, and how many people remember exactly what they were doing the moment they learned about these events. 
 
 Flashbulb memories however remain a controversial idea among psychologists, with some believing that these memories are not different from any other autobiographical memory because they rely on elements of personal importance, consequentiality, emotion and surprise. Other researchers believe it is an entirely distinct type of memory that forms differently and perhaps in different parts of the brain.
+
+### Misplacing objects
+
+Misplacing objects is something that happens very often to most individuals (Sarah Brill if you read this, big up to your Burgerking experience). Four main cognitive errors leading to misplaced objects are:
+
+- **Absent-mindness**: mental condition in which a person experiences low levels of attention and frequent distraction (object put in unusual places),
+- **Updating errors**: when a person cannot remember which of several usual places an object is in,
+- **Detection failures**: when a person has an object in front of them but can't *detect* it,
+- **Context effects**: distortions from other elements within the environment.
+
+Common techniques to locate missing objects are: 
+
+- **Action replay**: reconstruct sequence of actions,
+- **Mental walk**: visualise possible object locations,
+- **Reality monitoring**: generate images of placing the object in various locations and decide whether these correspond to reality,
+- **Physical search**.
+
+---
+
+## Attention
+
+Attention is the behavioral and cognitive process of selectively concentrating on a discrete aspect of information, whether deemed subjective or objective, while ignoring other perceivable information. Also described as the allocation of limited cognitive processing resources, attention remains a major area of investigation to determine the source of the sensor cues and signals that generate attention and the relationship between ofhter concepts like working memory and psychological vigilance.
+
+### Types of attention
+
+Attention is commonly split into four different types:
+
+- **Selective**: ability to direct attention on several sources of information to determine whether a particular event has occured (*a doctor reading a hospital screen*),
+- **Focused**: ability to direct attention on a single source of information without interruption or interference from either external or internal factors or stimuli (*a tennis court supervisor*),
+- **Divided**: ability to direct attention to two or more separated tasks performed simultaneously (*cooking a meal*),
+- **Sustained**: ability to continuously maintain focus on a task or event over a long period of time (*monitoring camera screen for security measures*).
+
+### Attention models
+
+#### Broadbent's filter model
+
+In 1958, Broadbent proposed an attention model that postulates that physicial characteristics of messages are used to select one message for further processing and that all others are lost. This models proposes that information from all the stimuli at any given time enters an unilimited capacity sensory buffer, and is then filtered based on physical characteristics (*pitch*, *color*, *loudness*, *direction*). Because the human brain has a limited capacity to process information, this filter is designed to prevent the information-processing system from becoming overloaded. According to Broadbent the meaning of any of the messages is not taken into account at all by the filter.  All semantic processing is carried out after the filter has selected the message to pay attention to. So every message that is not attended would not be understood.
+
+> **Criticism**: In addition to several criticism regarding the experiments that lead to the Broadbent's model (possible other explanations than the filter theory), a major issue with this model is that it does not account for the *Cocktail Party Effect*, because unattended messages are filtered out before the meaning can be processed (hearing someone call your name when not focused on it should then be impossible).
+
+#### Treisman's attenuation model
+
+In 1964, Treisman completes Broadbent's theory by specifying that the filter attenuates rather than eliminates the unattended material. This attenuation is like turning down the volume, so that if you have 4 sources of sound in one room, you can turn down or attenuate 3 in order to attend the fourth. This means that people can still process the meaning of unattended messages.
+
+> **Criticism**: This model overcomes some of the Broadbent's model (the Cocktail Party Effect), but has been criticized regarding the lack of precision on the nature of the attenuation process and Treisman does not explain how exactly semantic analysis work.
+
+#### Late selection model
+
+In 1963, Deutsch & Deutsch proposed a model where all stimuli get processed in full, with the most important or relevant stimulus determining the response. In other words, they suggested that the selection does not occus on the basis of an early-selection filter, but after stimuli have already been identified. This theory hence locates the attentional filter later in the processing, after which all material processed upto this point ad judged to be most important is elaborated more fully.
+
+> **Criticism**: The main criticism received for this theory is how wasteful it appears, with its thorough processing of all information before selection of admittance into working memory.
+
+#### Capacity model
+
+In 1973, Kahneman proposed a theory which is based around the idea of mental efforts. It proposes that some activities are more demanding and therefore require more mental effort than others. Kahneman thus believes in the existence of a Central Processor which operates a Central Allocation Policy, constantly evaluating the demands made by each task and adjusting attention accordingly. In addition, the total available processing capacities could be increased or decreased by  factors such as arousal
+
+> **Criticism**: The main criticism for this theory ist that by developing skills, it would become impossible to accurately evaluate the demands required for each task and hence adjust attention accordingly.
+
+#### Perceptual load model
+
+In 1995, Lavie presented the perceptual load theory as a potential resolution to the early/late selection debate. Lavie attempts to resolve this debate by stating that both early and late selection occur varying on the stimulus presented. This variation in stimilus is explained as a notion of high or low perceptual load. This perceptual load refers to the complexity of the physical stimuli (particularly the distractor stimuli). Because Lavie gives the assumption that all of the attentional resources naturally have to be used up, a low load task would process more of the distractors to exhaust mental resources, and therefore the distractors would cause a greatee inference. On the other hand, in high load situations, as all the attentional resources are used up, distractors would cause less inference, if not at all. In other words, if the task-relevant stimulus uses all of the attentional resources, then none of the task-irrelevant stimuli (distractors) will be processed.
+
+> **Criticism**: This theory has criticized regarding several points, notably how the notion of perceptual load is in fact dilution, and that this theory is not a solution t the early/late debate. A main critique is also how a visual cue can eliminate the inference effect supposedly created by perceptual load.
