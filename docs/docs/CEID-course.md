@@ -39,7 +39,7 @@ When trying to describe how the memory works, two types of structures can be not
 
 ### Memory models
 
-More precisely, the memory presents many states, components and other elemets that makes it more complex. Psychologist have been
+More precisely, the memory presents many states, components and other elements that makes it more complex. Psychologist have been
 trying to explain it through diverse models for many years. However critized, these models have influenced memory research.
 
 #### Multi-store model
@@ -73,7 +73,7 @@ Proposed in 1974 by **Alan Baddely** and **Graham Hitch** proposed the working m
 accurate model than the modal model by introducing a three part **working memory** replacing the short-term store. In 2000, they 
 added a fourth component in the model. These components are:
 
-- **Central executive**: acts as a supervisory system controlling to flow of information from and to its slave systems: the phonological loop and 
+- **Central executive**: acts as a supervisory system controlling the flow of information from and to its slave systems: the phonological loop and 
 the visuo-spatial sketchpad,
 - **Phonological loop**: stores information in a phonological form (speech-based, verbal content),
 - **Visuo-visual sketch**: stores the spatial and/or visual data,
@@ -88,3 +88,30 @@ the visuo-spatial sketchpad,
 > **Disadvantage**: Difficulty to measure the capacity of the central executive.
 
 ### Long-term memory
+
+The long-term memory does not store memories in one unified structure, as might be seen in a computer's hard disk drive. Instead, the long-term memory is typically divided into two major components: **explicit** memory and **implicit** memory.
+
+#### Explicit memory
+
+Also called the *declarative memory*, the explicit memory refers to all memories that are consciously available. It is the conscious, intentional recollection of factual information, previous experiences and concepts. People use explicit memory throughout the day, such as remembering the time of an appointment or recollecting an event from years ago. The explicit memory is divided in four major memory types:
+
+- **Episodic**: storage and recollection of observational information attached to specific life-events (*someone's name*, *the memory of watching a movie*, *the memory of meeting someone*),
+- **Semantic**: general world knowledge (facts, ideas, meaning and concepts) that can be articulated and is independant of personal experience (*languages*, *structures*, *classifications*, *objects*),
+- **Autobiographical**: combination of episodic and semantic memory to contain the information on what the self is, what the self was, and what the self can be,
+- **Spatial**: memory responsible for the recording of information about the environment and spatial orientation (*navigation*, *recognition of familiar places*, *map reading*).
+
+#### Implicit memory
+
+Also called the *procedural memory*, the implicity memory refers to the use of objects, or the movements of the body, generally to skills. It is acquired and used unconsciously, and can affect thoughts and behaviours. People use implicit memory every day such as tying their shoes or riding a bicycle, without consciously thinking about these activities.
+
+### False memories
+
+Evidence and studies have shown that although people are highly confident in their memories, the details of the memories can be forgotten and altered. A false memory is a phenomenon where a person recalls something that did not happen or differently from the way it happened. This phenomenon was initially investigated by the psychological pioneers **Pierre Janet** and **Sigmund Freud**. **Elizabeth Loftus** has since been a lead researcher in memory recovery and false memories. False memories can be created by suggestibility, activation of associated information, the incorporation of misinformation or source misattribution.
+
+A common example to explain false memories is the case of the car crash and the distorted perceptions of it. In 1974, Loftus and Palmer conducted an experiment where they showed participants the video of a car crash. Later, they were asked questions about that same accident. The questions were asked differently to each participants, where for example a word in the question would change: "*About how fast were the cars going when they smashed/collided/bumped/hit/contacted each other?*". The results showed that the estimated speed was affected by the verb used. In addition, a week later, a question about the presence of broken glass on the accident was asked, and revealed that more participants that were asked the first question with the verb "*smashed*" remembered broken glass, although there was none.
+
+### Flashbulb memory
+
+A flashbulb memory is highly detailed, exceptionnally vivid "*snapshot*" of the moment and circumstances in which a piece of surprising and consequential news was heard. This type of memory include six main characteristic features: *place*, *ongoing activity*, *informant*, *own effect*, *other effect* and *aftermath*. Generally, the determinants of a flashbulb memory are a high level of surprise, a high level of consequentiality, and perhaps emotional arousal. An example of such a memory is the generally very detailed memories of the events of 9/11, and how many people remember exactly what they were doing the moment they learned about these events. 
+
+Flashbulb memories however remain a controversial idea among psychologists, with some believing that these memories are not different from any other autobiographical memory because they rely on elements of personal importance, consequentiality, emotion and surprise. Other researchers believe it is an entirely distinct type of memory that forms differently and perhaps in different parts of the brain.
