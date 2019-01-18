@@ -274,3 +274,41 @@ In 1984, Wickens proposes a theory where the human operator does not have one si
 - Tasks can be performed concurrently,
 - Tasks will interefere with each other,
 - Increases in the difficulty of onne task will result in a loss of performance of another task.
+
+---
+
+## Situation awareness
+
+Situation awareness (SA) is the perception of environmental elements and events with respect to time or space, the comprehension of their meaning, and the projection of their future status. Situation awareness has become a foundation for succesul decision-making across a broad range of situations, including aviation, air traffic control, ship navigation, health care, emergency response, military command and control operations, and offshore oil and nuclear power plan management. Lacking or inadequate situation awareness has been identified as one of the primary factors in accidents attributed to human error.
+
+Based on **Endlsey**'s model from 1995, situation awareness consists of three hierachical cognitive levels:
+
+1. **Perception of the elements in the environment**: processes of monitoring, cue detection and simple recognition, awareness of multiple situational elements (objects, events, people, systems) and their current states (locations, conditions, modes, actions),
+2. **Comprehension of the current situation**: processes of pattern recognition, interpretation and evaluation, understanding how perceived information will impact the goals and objectives (a comprehensive picture of the world),
+3. **Projection of future status**: ability to project the future actions of the elements in the environment, determine how interpreted information will affect future states of the operational environment.
+
+Situation awareness involved both an important temporal component, as it is a dynamic construct, changing at a tempo dictated by the actions of individuals, task characteristics, and the surrounding environment. As new inputs enter the system, the individual incorporates them into his mental representation, making changes as necessary in plans and actions in order to achieve the desired goals. In addition, situation awareness also involves spatial knowledge about the activities and events occuring in a specific ocation of interest to the individual. Thus, the concept of situation awareness includes perception, comprehension, and project of situational information, as well as temporal and spatial components.
+
+### Factors
+
+Endsley's model also illustrates several variables that can influence the development and maintenance of situation awareness. These factors can be divided into two categories:
+
+- **Individual factors**: experience, training, abilities, knowledge, preconceptions, goals,
+- **Task and environmental factors**: workload, stressors, system design, complexity.
+
+These important factors demonstrates how simply providing the same system and training will not ensure situation awareness across different individuals. While this model provides the primary basis for decision making and performance in the operation of complex and dynamic systems, it cannot guarantee successful decision making. It is possible to have good situation awareness but make incorrect and poor performance, as it is possible to make good decisions leading to good performance with poor situation awareness.
+
+In addition, other correlated cognitive concepts are factors to situation awareness:
+
+- **Attention**: how an individual directs attention when acquiring and processing information has a fundamental impact, that can be affected by the individual's experience ad understanding of the system, as well as the physical characteristics of the environment,
+- **Memory**: the working memory and its limits can constrain situation awareness, but the memory load can be reduced using meaningful chunks, information prioritisation or gistification of information. The long-term memory can also play an important part, in experts that develop internal models of the systems,
+- **Workload**: situation awareness and workload are inter-related, independant constructs. The ultimate goal in system design is a high situation awareness combined with low workload.
+
+### Measuring situation awareness
+
+The multivariate nature of situation awareness poses a considerable challenge to its quantification and measurement. In general, techniques vary in terms of direct measurement (considered "*product-oriented*") or methods that infer ("*proccess-oriented*") situation awareness based on the operator behavior or performance. The main measures for situation awareness are:
+
+- **Objective**: collecting data from the individual on his or her perceptions of the situation and compare them to what is actually happening. This type of assessment provides a direct measure of situation awareness, and can be gathered during the task (real-time), during a task interruption or after the completion of the task,
+- **Subjective**: asking individuals to rate their own situation awareness through questionnaires or interviews. This technique is straightfoward and easy to implement, but limitations regarding the subjective assessments might not exploit the multivariate nature of situation awareness to provide a detailed diagnostic,
+- **Performance and behavioral**: infering situation awareness from the end result (task performance, productivity, accuracy, number of errors), based on the assumption that better performance indicates better situation awareness. These measures can be collected objectively and intrusiveness, but evidence suggests that the connection between situation awareness and performance is not always direct and unequivocal, therefore not always reliable. Similarly, behavior meaures infer situation awareness from the actions that individuals choose to take, based on the assumption that good actions will follow from good situation awareness,
+- **Process indices**: examining how individuals process information in their environement, such as by analyzing communication patterns between team members or using eye tracking devices. Verbal communication supports the knowledge bulding and informaton processing that leads to situations awareness construction. Physio-physiological measures can also be used to assess the relationship between human performance and changes in the operator's physiology (eyeblinks cardiac activity).
