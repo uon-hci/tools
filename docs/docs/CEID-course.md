@@ -151,30 +151,126 @@ Attention is commonly split into four different types:
 
 #### Broadbent's filter model
 
-In 1958, Broadbent proposed an attention model that postulates that physicial characteristics of messages are used to select one message for further processing and that all others are lost. This models proposes that information from all the stimuli at any given time enters an unilimited capacity sensory buffer, and is then filtered based on physical characteristics (*pitch*, *color*, *loudness*, *direction*). Because the human brain has a limited capacity to process information, this filter is designed to prevent the information-processing system from becoming overloaded. According to Broadbent the meaning of any of the messages is not taken into account at all by the filter.  All semantic processing is carried out after the filter has selected the message to pay attention to. So every message that is not attended would not be understood.
+In 1958, **Broadbent** proposed an attention model that postulates that physicial characteristics of messages are used to select one message for further processing and that all others are lost. This models proposes that information from all the stimuli at any given time enters an unilimited capacity sensory buffer, and is then filtered based on physical characteristics (*pitch*, *color*, *loudness*, *direction*). Because the human brain has a limited capacity to process information, this filter is designed to prevent the information-processing system from becoming overloaded. According to Broadbent the meaning of any of the messages is not taken into account at all by the filter.  All semantic processing is carried out after the filter has selected the message to pay attention to. So every message that is not attended would not be understood.
 
 > **Criticism**: In addition to several criticism regarding the experiments that lead to the Broadbent's model (possible other explanations than the filter theory), a major issue with this model is that it does not account for the *Cocktail Party Effect*, because unattended messages are filtered out before the meaning can be processed (hearing someone call your name when not focused on it should then be impossible).
 
 #### Treisman's attenuation model
 
-In 1964, Treisman completes Broadbent's theory by specifying that the filter attenuates rather than eliminates the unattended material. This attenuation is like turning down the volume, so that if you have 4 sources of sound in one room, you can turn down or attenuate 3 in order to attend the fourth. This means that people can still process the meaning of unattended messages.
+In 1964, **Treisman** completes Broadbent's theory by specifying that the filter attenuates rather than eliminates the unattended material. This attenuation is like turning down the volume, so that if you have 4 sources of sound in one room, you can turn down or attenuate 3 in order to attend the fourth. This means that people can still process the meaning of unattended messages.
 
 > **Criticism**: This model overcomes some of the Broadbent's model (the Cocktail Party Effect), but has been criticized regarding the lack of precision on the nature of the attenuation process and Treisman does not explain how exactly semantic analysis work.
 
 #### Late selection model
 
-In 1963, Deutsch & Deutsch proposed a model where all stimuli get processed in full, with the most important or relevant stimulus determining the response. In other words, they suggested that the selection does not occus on the basis of an early-selection filter, but after stimuli have already been identified. This theory hence locates the attentional filter later in the processing, after which all material processed upto this point ad judged to be most important is elaborated more fully.
+In 1963, **Deutsch & Deutsch** proposed a model where all stimuli get processed in full, with the most important or relevant stimulus determining the response. In other words, they suggested that the selection does not occus on the basis of an early-selection filter, but after stimuli have already been identified. This theory hence locates the attentional filter later in the processing, after which all material processed upto this point ad judged to be most important is elaborated more fully.
 
 > **Criticism**: The main criticism received for this theory is how wasteful it appears, with its thorough processing of all information before selection of admittance into working memory.
 
 #### Capacity model
 
-In 1973, Kahneman proposed a theory which is based around the idea of mental efforts. It proposes that some activities are more demanding and therefore require more mental effort than others. Kahneman thus believes in the existence of a Central Processor which operates a Central Allocation Policy, constantly evaluating the demands made by each task and adjusting attention accordingly. In addition, the total available processing capacities could be increased or decreased by  factors such as arousal
+In 1973, **Kahneman** proposed a theory which is based around the idea of mental efforts. It proposes that some activities are more demanding and therefore require more mental effort than others. Kahneman thus believes in the existence of a Central Processor which operates a Central Allocation Policy, constantly evaluating the demands made by each task and adjusting attention accordingly. In addition, the total available processing capacities could be increased or decreased by  factors such as arousal
 
 > **Criticism**: The main criticism for this theory ist that by developing skills, it would become impossible to accurately evaluate the demands required for each task and hence adjust attention accordingly.
 
 #### Perceptual load model
 
-In 1995, Lavie presented the perceptual load theory as a potential resolution to the early/late selection debate. Lavie attempts to resolve this debate by stating that both early and late selection occur varying on the stimulus presented. This variation in stimilus is explained as a notion of high or low perceptual load. This perceptual load refers to the complexity of the physical stimuli (particularly the distractor stimuli). Because Lavie gives the assumption that all of the attentional resources naturally have to be used up, a low load task would process more of the distractors to exhaust mental resources, and therefore the distractors would cause a greatee inference. On the other hand, in high load situations, as all the attentional resources are used up, distractors would cause less inference, if not at all. In other words, if the task-relevant stimulus uses all of the attentional resources, then none of the task-irrelevant stimuli (distractors) will be processed.
+In 1995, **Lavie** presented the perceptual load theory as a potential resolution to the early/late selection debate. Lavie attempts to resolve this debate by stating that both early and late selection occur varying on the stimulus presented. This variation in stimilus is explained as a notion of high or low perceptual load. This perceptual load refers to the complexity of the physical stimuli (particularly the distractor stimuli). Because Lavie gives the assumption that all of the attentional resources naturally have to be used up, a low load task would process more of the distractors to exhaust mental resources, and therefore the distractors would cause a greatee inference. On the other hand, in high load situations, as all the attentional resources are used up, distractors would cause less inference, if not at all. In other words, if the task-relevant stimulus uses all of the attentional resources, then none of the task-irrelevant stimuli (distractors) will be processed.
 
 > **Criticism**: This theory has criticized regarding several points, notably how the notion of perceptual load is in fact dilution, and that this theory is not a solution t the early/late debate. A main critique is also how a visual cue can eliminate the inference effect supposedly created by perceptual load.
+
+### Detection theory
+
+In many taks that require thorough attention, the concept of signal detection plays an important part. Detection theory (1954) measures the ability to differentiate between information-bearing patterns (the signals) and random patterns that distract from the information (the noise). The theory states that characteristics such as experience, expectations, physiological state and other factors can affect the ability to detect relevant information. There are four possible outcomes when detecting:
+
+| | Signal present | Signal absent
+| -- | -- | --
+| Signal detected | **Hit** | False alarm
+| Signal not detected | Miss | **Correct rejection**
+
+<!-- --- 
+
+## Fitt's List
+
+The Fitt's List, also known as HABA-MABA (*Humans Are Better At*-*Machines Are Better At*), is a list of statements regarding the abilities of humans and machines, which is used to determine the allocation of task assignment. In others words, it used to determine if a person or a machine could better a function required by a task or a system, with the ultimate goal to increase efficiency, safety, quality and profit-margins.
+
+The first version of that list, from 1951, is the following table:
+
+| HABA | MABA
+| -- | --
+| Detect a small amout of visual or acoustic energy | Quicly respond to control signals and apply great force smoothly and precisely
+| Perceive patterns of light or sound | Perform repetitive tasks
+| Improvise and use flexible procedures | Store information briefly and then erase it completely
+| Store very large amounts of information for long periods and recall facts at the appropriate time | Reason deductively, including computational ability
+| Reason inductively | Handle high complex operations at once
+| Exercise judgement | 
+
+Of course, multiple elements of that list are outdated, and hence a more recent one is presented (2017): 
+
+| HABA | MABA
+| -- | --
+| Common sense | Natural language
+| Dilemmas | Pattern identification
+| Morals | Locating knowledge 
+| Compassion | Machine learning
+| Imagination | Eliminate bias 
+| Dreaming | Endless capacity
+| Abstraction | 
+| Generalisation |  -->
+
+--- 
+
+## Human Workload
+
+The workload is the notion of amount of labor, efforts, attention, focus and resources a human can manage while conducting a task. This concept is important because humans have limited capability for processing information, holding items in memory, making decisions and performing tasks. Excess workload can result in human performance issues such as slower task completion and errors such as slips, lapses or mistakes. Underload can also lead to issues such as boredom, loss of situation awareness and reduced alertness. These issues may be more relevant in critical times suchs as incidents.
+
+### Measuring workload
+
+It is hence important to be able to measure and assess mental workload in tasks to improve performance and reduce issues. There are four considerations to take into account to measure mental workload:
+
+- **Sensitivity**: ability to detect changes in the workload experience by an operator,
+- **Diagnosticity**: ability to understand the nature of changes in the workload,
+- **Validity**: ensure that the measured changes in workload are not from external interferences,
+- **Reliability**: stability and consistency of the measures,
+- **Intrusiveness**: interference of the measure on the task performance leading to contaminated workload measures,
+- **Usability**: ease of use (both for participat and experimenter),
+- **Operator acceptance**: ensure that no change in performance is due to the operator awareness.
+
+There are four aspects to measure to represent mental workload:
+
+- **Primary task**: measuring how the nature of the main task and different demands impact performance,
+- **Secondary task**: measuring how adding a secondary task (varying in difficulty) impact performance for both tasks,
+- **Subjective**: self-report methods to measure workload from the operator's opinion,
+- **Physiological/Psycho-physiological**: measuring changes in physiological parameters indicating changes in workload.
+
+#### Primary task measures
+
+When measuring the primary task, the main goal is to detect and understand changes in performance as demands are modified. The number of errors made, speed of performance or reaction time are frequently used as primary-task performance measures. There are several thorough methods to achieve this (*Analytic approach (Welford, 1978)* or *Synthetic method (Chiles & Allusi, 1979)*), but a combination of many is possible to obtain measurements of the workload.
+It is important to note that primary measures can be unreliable, and that the workload can increase while performance remains unchanged. In addition, the specific individuals and taks involved in the measurement might also alter the results.
+
+#### Secondary task measures
+
+Adding a secondary task to the operator's primary task aims to discover the balance and allocation of workload, based on the fact that humans have a limited capacity to gather and process information. By looking at the performance of each task, the researcher can assess the operator's workload capacity. There are two way to do this: 
+
+- **Loading**: the operator is instructed to avoid making errors on the secondary task. If the limit capacity is reached, then the primary task performance is degraded,
+- **Non-loading**: the operator is instructed to avoid making errors on the primary task. The operator then tends to attend to the secondary task only when time is available.
+
+It is important to take into consideration the intrusiveness of this measurement, as the secondary task will impact the general performance. In addition, primary and secondary tasks must use the same type of resources.
+
+#### Subjective measures
+
+Subjective measures refers to collecting information on the workload by asking the operators to rate the level of mental workload they felt to accomplish a task. This is done through self-reports methods such as interviews and questionnaires. These measures can be unidimensional (general index of the workload) or multidimensional (more in-depth measures assessing the nature of the workload). A multidimensional approach assumes that the workload is a complex phenomenon derived from multiple factors, and that the variations in the dimensions can be defined and evaluated more precisely. These measures will differ from individuals to others, as the emphasis on dimensions are different for each. 
+
+An example of a multidimensional rating is the NASA-TLX scale, evaluating the mental demand, physical demand, temporal demand, effort, performance and frustration level of an indidividual. Another technique is the SWAT (*Subjective Workload Assessment Technique*) that splits the scale in dimensions of time load, mental effort load and psychological stress load.
+
+#### Physiological measures
+
+The physiological measures consist in using physical indicators to detect workload. For example, an elevated heart rate might indicate an intense activity, as could other indicators such as pupil diameter. A very thorough method is to examine brain waves, but is a very expensive and complex measurement. Other metrics such as body chemicals or auditory canal temperature can also be used.
+
+### Wicken's multiple resources theory
+
+In 1984, Wickens proposes a theory where the human operator does not have one single information processing that can be tapped, but several different pools of resources that can be tapped simultaneously. Depending on the nature of the task, these resources may have to process information sequentially if the different tasks require the same pool of resources, or can be processed in parallel if the task requires different resources. This theory allows system desigers to predict when:
+
+- Tasks can be performed concurrently,
+- Tasks will interefere with each other,
+- Increases in the difficulty of onne task will result in a loss of performance of another task.
