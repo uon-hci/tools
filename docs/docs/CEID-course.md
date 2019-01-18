@@ -312,3 +312,70 @@ The multivariate nature of situation awareness poses a considerable challenge to
 - **Subjective**: asking individuals to rate their own situation awareness through questionnaires or interviews. This technique is straightfoward and easy to implement, but limitations regarding the subjective assessments might not exploit the multivariate nature of situation awareness to provide a detailed diagnostic,
 - **Performance and behavioral**: infering situation awareness from the end result (task performance, productivity, accuracy, number of errors), based on the assumption that better performance indicates better situation awareness. These measures can be collected objectively and intrusiveness, but evidence suggests that the connection between situation awareness and performance is not always direct and unequivocal, therefore not always reliable. Similarly, behavior meaures infer situation awareness from the actions that individuals choose to take, based on the assumption that good actions will follow from good situation awareness,
 - **Process indices**: examining how individuals process information in their environement, such as by analyzing communication patterns between team members or using eye tracking devices. Verbal communication supports the knowledge bulding and informaton processing that leads to situations awareness construction. Physio-physiological measures can also be used to assess the relationship between human performance and changes in the operator's physiology (eyeblinks cardiac activity).
+
+--- 
+
+## Mental models
+
+A mental model is an explanation of someone's though process about how something works in the real world. It is a representation of the surrounding world, the relationships betwen its various parts and a person's intuitive perception about his or her own acts and their consequences. Mental models can help shape behaviour and set an approach to solving problems and doing tasks. A mental model is a kind of internal symbol or representation of external reality, that plays a major role in cognition, reasoning and decision-making.
+
+"*The image of the world around us, which we carry in our head, is just a model. Nobody in his head imagines all the world, government or country. He has only selected concepts, and relationships between them, and uses those to represent the real system.*" (Forrester, 1971).
+
+### SKR framework
+
+In 1983, Rasmussen proposed a framework that defines three types of behaviour of psychological processes present in operator information processing. This framework was developed to help designers combine information requirements for a system and aspects of human cognition. The three categories are:
+
+- **Skill-based level**: also known as *sensorimotor behaviour*, a skill-based behaviour represents a type of behaviour that requires very little or no conscious control to perform or execute an action once an intention is formed (*riding a bike*),
+- **Rule-based level**: characterised by the use of rules and procedures to select a course of action in a familiar situation (*following emergency instructions during a fire incident*),
+- **Knowledge-based level**: a more advanced level of reasoning, employed when the sitation is novel and unexpected. A plan is developed using knowledge, reasoning and experience to predict the outcome of actions (*navigating in an unfamiliar environment*).
+
+###  The knowledge in the head and world
+
+In 1988, **Norman** presented the notion that not all knowledge required for precise behaviour has to be in the head. Instead, that knowledge is distributed, partly in the head, partly in the world, and partly in the constraints of the world. The way the knowledge and its properties are distributed between the head and the world is presented in the following table:
+
+| Property | Knowledge in the world | Knowledge in the head 
+| -- | -- | --
+| Retrievability | Retrievable whenever visible or audible | Not readily retrievable, requires memory search or reminding
+| Learning | Learning not required, substitued by interpertration | Requires learning, which is easier if there is meaning or structure to the material
+| Efficiency of use | Tends to be slowed up by the need to find and interpret the external information | Can be very efficient
+| Ease of use at first encounter | High | Low
+| Aesthetics | Can be unaesthetic and inelegant, can lead to clutter
+
+In addition, Norman presents the seven stages of action with knowledge:
+
+1. Perceiving the state of the world
+2. Interpreting the perception
+3. Evaluation of interpretations
+4. Goals
+5. Intention to act
+6. Sequence of actions
+7. Execution of the action sequence
+
+### Characteristics
+
+Designers are interested in measures of learnability and ease of use. In this respect the notion of mental models has applicability and explanatory power. Mental models are what people really have in their heads and what guides their use of things. In other words, the designer designs a conceptual model into the system in order for it to appear graspable and coherent to the user. A mental model should integrate the following characteristics:
+
+- **Feedback**: elements that clearly indicates changes in the state of a system. Feedback communicates the results of any interaction, making it both visible and understandable. It gives the user a signal that they have succeeded or failed at performing a task,
+- **Consistency**: use of elements, rules and concepts that are consistent with already established designs to facilitate the use of the system. It is also about limiting the number of ways actions and operations are represented, ensuring that users do not have learn new representations for each task,
+- **Visibility**: clear visual cues, easily readable and simplified,
+- **Accessibility**: disposition of the different elements in an accessible configuration for all users,
+- **Affordances**: properties that show the possible actions users can do, suggesting how they may interact with the system.
+
+### Constraints
+
+A user's understanding of how an object works is also based on the following constraints:
+
+- **Natural, physical constraints**: the way in which an object can be moved, how it fits to other objects (*a kitchen closet door*),
+- **Semantic constraints**: cues based on knowledge of the meaning of a situation (*a pen lid has to go where the ink can dry*),
+- **Cultural constraints**: cues based on social conventions (*order of lights on a traffic light*),
+- **Logical constraints**: cues based on a logical relationship between the spatial or function layout of components (*if there are only two buttons on a fan and one is used to turn it on, the other one is probably to turn it off*).
+
+### Gestalt Laws
+
+Gestalt laws of grouping, or the *principles of grouping* are a set of principles to account for the observation that humans naturally pereive objects as organized patterns an objects. Gestalt psychologists argued that these principles exist because the mind has an innate disposition to perceive patterns in the stimulus based on certain rules. These principles are organized into five categories:
+
+- **Similarity**: suggests that similar objects tend to appear grouped together,
+- **Pragnanz**: suggests that objects are seen in a way to makes them appear as simple as possible,
+- **Proximity**: suggests that objects that are near each other seem to be grouped together,
+- **Continuity**: suggests tat points that are connected by straight or curving lines are seen in a way that follows the smoothest path,
+- **Closure**: suggests that objects are grouped together if they seem to complete some entity.
