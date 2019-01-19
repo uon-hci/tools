@@ -567,6 +567,53 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#human-error" title="Human error" class="md-nav__link">
+    Human error
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classification" title="Classification" class="md-nav__link">
+    Classification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gems" title="GEMS" class="md-nav__link">
+    GEMS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation" title="Automation" class="md-nav__link">
+    Automation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ironies-of-automation" title="Ironies of automation" class="md-nav__link">
+    Ironies of automation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -914,6 +961,53 @@
           <li class="md-nav__item">
   <a href="#gestalt-laws" title="Gestalt Laws" class="md-nav__link">
     Gestalt Laws
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#human-error" title="Human error" class="md-nav__link">
+    Human error
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classification" title="Classification" class="md-nav__link">
+    Classification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gems" title="GEMS" class="md-nav__link">
+    GEMS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation" title="Automation" class="md-nav__link">
+    Automation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ironies-of-automation" title="Ironies of automation" class="md-nav__link">
+    Ironies of automation
   </a>
   
 </li>
@@ -1297,6 +1391,57 @@ It is important to note that primary measures can be unreliable, and that the wo
 <li><strong>Proximity</strong>: suggests that objects that are near each other seem to be grouped together,</li>
 <li><strong>Continuity</strong>: suggests tat points that are connected by straight or curving lines are seen in a way that follows the smoothest path,</li>
 <li><strong>Closure</strong>: suggests that objects are grouped together if they seem to complete some entity.</li>
+</ul>
+<hr />
+<h2 id="human-error">Human error</h2>
+<p>Human error is an inappropriate or undesirable human decision or behaviour that reduces, or has the potential for reducing, effectiveness, safety or system performance. An error does not have to result in degraded system perofrmance or an undesirable effect on people to be considered an error. Human error theory aims to understand the nature and classification of these errors, and suggests considering the entire system and not only focus only the operator when errors occur.</p>
+<h3 id="classification">Classification</h3>
+<p>The first aspect to classify error is the difference between <em>active</em> and <em>latent</em> failures:</p>
+<ul>
+<li><strong>Active</strong>: when the effects and consequences of the error are felt almost immediatly,</li>
+<li><strong>Latent</strong>: when the error and its consequences may lie dormant for a long time.</li>
+</ul>
+<p>Regarding the cognitive nature of the error, three main categories are considered:</p>
+<ul>
+<li><strong>Slips/Lapses</strong>: when the correct way of performing an action is known, but often due to a lapse of attention, it is performed wrongly,</li>
+<li><strong>Mistakes</strong>: use of an inappropriate action for the situation,</li>
+<li><strong>Violations</strong>: deliberate decision to perform what is known to be an inappropriate or unsafe act.</li>
+</ul>
+<p>The following diagram presents the classification of unsafe acts:</p>
+<p><img alt="Unsafe_Acts" src="../img/unsafe-lg.gif" /></p>
+<h3 id="gems">GEMS</h3>
+<p>The Generic Error-Modelling System (GEMS) integrates, within the same framework, the different error mechanisms (slips, lapses, mistakes) and the three levels of performance (skill, rule, knowledge):</p>
+<ul>
+<li><strong>Skill-based</strong>: <em>Slips</em> and <em>lapses</em>. These can be double-capture slips, omissions associated with interruptions, reduced intentionality, perceptual confusions, interference erros or overattention (omission, repetition, reversal),</li>
+<li><strong>Rule-based</strong>: <em>Mistakes</em>. These can be misapplication of good rules or application of bad rules,</li>
+<li><strong>Knowledge-based</strong>: <em>Mistakes</em>. These can be due to selectivity, workspace limitations, out of sight out of mind knowledge, confirmation bias, overconfidence, biased reviewing, illusory correlation, halo effects, causality issues, complexity issues, delayed feedback, insufficient consideration of processes in time.</li>
+</ul>
+<hr />
+<h2 id="automation">Automation</h2>
+<p>Automation refers to when a machine (usually a computer) assumes a task that is otherwise usually performed by a human operator. Automation is used in situations when the tasks are dangerous, impossible, challenging and when using a machine supports human performance and saves cost. There are three classes of automation: <em>Perception</em>, <em>Cognition</em> and <em>Control</em>.</p>
+<p>There are 5 levels of decisions and action selection that a machine can assume in automation:</p>
+<ol>
+<li><strong>None</strong>: the human make all the decisions, without any support,</li>
+<li><strong>Low</strong>: the computer provides decisions support to the human to help ensure the decision is not unsafe,</li>
+<li><strong>Medium</strong>: the computer performs basic analysis and leaves perturbed modes to the human,</li>
+<li><strong>High</strong>: the computer performs mid-level analysis and has basic plans for implementation during perturbed operations,</li>
+<li><strong>Full</strong>: the computer makes all the decisions under all circumstances using complex algorithms to determine the optimal decisions and provides flexible plans for perturbed operations.</li>
+</ol>
+<p>The general principles for a good automation are visibility, observability, understandability, directability, accountability, robustness, skill degradation, error resistant, error tolerant, reliability.</p>
+<h3 id="ironies-of-automation">Ironies of automation</h3>
+<p>In 1983, <strong>Bainbridge</strong> presented a paper discussing how automation might expand problems instead of eliminating them. Some of these ironies of automation are:</p>
+<ul>
+<li>Automation is never entirely autonomous and always requires an operator to do the remaining not-automated tasks,</li>
+<li>Skills, experience, expertise and long-term memory degradation,</li>
+<li>An operator is still required to monitor that the machine is effective.</li>
+</ul>
+<p>There are more general issues with automation, such as:</p>
+<ul>
+<li>Reliability issues,</li>
+<li>Mistrust in system,</li>
+<li>Overtrust and complacency,</li>
+<li>Impact on operator workload,</li>
+<li>Job satisfaction.</li>
 </ul>
                 
                   

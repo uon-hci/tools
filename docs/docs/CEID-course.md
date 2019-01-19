@@ -379,3 +379,66 @@ Gestalt laws of grouping, or the *principles of grouping* are a set of principle
 - **Proximity**: suggests that objects that are near each other seem to be grouped together,
 - **Continuity**: suggests tat points that are connected by straight or curving lines are seen in a way that follows the smoothest path,
 - **Closure**: suggests that objects are grouped together if they seem to complete some entity.
+
+---
+
+## Human error
+
+Human error is an inappropriate or undesirable human decision or behaviour that reduces, or has the potential for reducing, effectiveness, safety or system performance. An error does not have to result in degraded system perofrmance or an undesirable effect on people to be considered an error. Human error theory aims to understand the nature and classification of these errors, and suggests considering the entire system and not only focus only the operator when errors occur.
+
+### Classification
+
+The first aspect to classify error is the difference between *active* and *latent* failures:
+
+- **Active**: when the effects and consequences of the error are felt almost immediatly,
+- **Latent**: when the error and its consequences may lie dormant for a long time.
+
+Regarding the cognitive nature of the error, three main categories are considered:
+
+- **Slips/Lapses**: when the correct way of performing an action is known, but often due to a lapse of attention, it is performed wrongly,
+- **Mistakes**: use of an inappropriate action for the situation,
+- **Violations**: deliberate decision to perform what is known to be an inappropriate or unsafe act.
+
+The following diagram presents the classification of unsafe acts:
+
+![Unsafe_Acts](img/unsafe-lg.gif)
+
+### GEMS
+
+The Generic Error-Modelling System (GEMS) integrates, within the same framework, the different error mechanisms (slips, lapses, mistakes) and the three levels of performance (skill, rule, knowledge):
+
+- **Skill-based**: *Slips* and *lapses*. These can be double-capture slips, omissions associated with interruptions, reduced intentionality, perceptual confusions, interference erros or overattention (omission, repetition, reversal),
+- **Rule-based**: *Mistakes*. These can be misapplication of good rules or application of bad rules,
+- **Knowledge-based**: *Mistakes*. These can be due to selectivity, workspace limitations, out of sight out of mind knowledge, confirmation bias, overconfidence, biased reviewing, illusory correlation, halo effects, causality issues, complexity issues, delayed feedback, insufficient consideration of processes in time.
+
+---
+
+## Automation
+
+Automation refers to when a machine (usually a computer) assumes a task that is otherwise usually performed by a human operator. Automation is used in situations when the tasks are dangerous, impossible, challenging and when using a machine supports human performance and saves cost. There are three classes of automation: *Perception*, *Cognition* and *Control*.
+
+There are 5 levels of decisions and action selection that a machine can assume in automation:
+
+1. **None**: the human make all the decisions, without any support,
+2. **Low**: the computer provides decisions support to the human to help ensure the decision is not unsafe,
+3. **Medium**: the computer performs basic analysis and leaves perturbed modes to the human,
+4. **High**: the computer performs mid-level analysis and has basic plans for implementation during perturbed operations,
+5. **Full**: the computer makes all the decisions under all circumstances using complex algorithms to determine the optimal decisions and provides flexible plans for perturbed operations.
+
+The general principles for a good automation are visibility, observability, understandability, directability, accountability, robustness, skill degradation, error resistant, error tolerant, reliability.
+
+### Ironies of automation
+
+In 1983, **Bainbridge** presented a paper discussing how automation might expand problems instead of eliminating them. Some of these ironies of automation are:
+
+- Automation is never entirely autonomous and always requires an operator to do the remaining not-automated tasks,
+- Skills, experience, expertise and long-term memory degradation,
+- An operator is still required to monitor that the machine is effective.
+
+There are more general issues with automation, such as:
+
+- Reliability issues,
+- Mistrust in system,
+- Overtrust and complacency,
+- Impact on operator workload,
+- Job satisfaction.
