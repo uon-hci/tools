@@ -442,3 +442,79 @@ There are more general issues with automation, such as:
 - Overtrust and complacency,
 - Impact on operator workload,
 - Job satisfaction.
+
+---
+
+## Decision making
+
+Decision making is the cognitive process resulting in the selection of a choice among several alternative possibilities. Every decision-making process produces a final choice, which may or may not prompt action. The process of identifying and choosing alternatives is based on the values, preferences and beliefs of the decision-maker. Decision making is linked to several other cognitive factors such as *perception*, *working memory*, *attention*, *situation awareness* and *mental workload*. The flow of the decision making is usually cues leading to hypotheses generation and selection, to an action selection.
+
+### Decision biases
+
+Biases usually affect decision-making processes. They appear more when the decision task has time pressure, is done under high stress and/or when the task is highly complex. The heuristics and biases can be:
+
+1. **Obtaining and using cues**: 
+    - Attention to a limited number of cues,
+    - Cue primacy,
+    - Inattention to later cues,
+    - Cue salience and prominence
+    - Overweighting of unreliable cues,
+2. **Hypothesis generation**
+    - Limited number of hypotheses generated,
+    - Availability heuristic (recency and frequency),
+    - Representativeness heuristic (symptoms),
+    - Overconfidence
+3. **Hypothesis evaluation and selection**
+    - Cognitive fixation
+    - Confirmation bias
+4. **Action selection**
+    - Retrieve a small number of actions (working memory limited),
+    - Availability heuristic for actions (recency, frequency, strength),
+    - Availability of possible outcomes.
+
+### Theories
+
+#### Rational decision making
+
+Rational decision making uses objective data, logic, and analysis instead of subjectivity and intuition to help solve a problem or achieve a goal. It's a normative step-by-step model that helps identifying a problem, picking a solution and finding an answer. The general steps are:
+
+1. Define the problem,
+2. Identify the decision criteria,
+3. Allocate weights to the criteria,
+4. Develop the alternatives,
+5. Evaluate the alternatives,
+6. Select the best alternative.
+
+#### Prospect theory
+
+Created in 1992 by Kahneman and Tversky, prospect theory describes the way people choose between probalistic alternatives that involve risk, where the probabilities of outcomes are uncertain. The theory states that people make decisions based on the potential value of losses and gains rather than the final outcome, and that people evaluate these losses and gains using heuristics. The model is descriptive: it tries to model real-life choices, rather than optimal decisions, as normative models do.
+
+### Group decision making
+
+Group decision making is a situation faced when individuals collectively make a choice from the alternatives before them. The decision is then no longer attributable to any single individual who is a memberof the group. This is because all the individuals ans social group processes such as social influence contribute to the outcome. The decisions made by groups are often different from those moade by individuals. While according to the idea of synergy, decisions made collectively tend to be more effective, there are many possible flaws and errors in group decision making:
+
+- **Groupthink**: phenomenon that occurs within a group of people in which the desire for harmony or conformity in the group results in an irrational or dysfunctional decision-making outcome (trying to avoid conflict),
+- Time, peer and leader pressure,
+- Isolated decision-making,
+- Inappropriate risk perception,
+- Lack of deference to expertise.
+
+--- 
+
+## Expertise
+
+An expert is someone who has a prolonged or intense experience through practice and education in a particular field. Informally, an expert i someones widely recognized as a reliable source of technique or skill whose faculty for judging or deciding rightly, justly, or wisely is accorded authority and status by peers or the public in a specific well-distinguished domain. The characteristics of an expert are vast sources of knowledge, organisational skills, and prolonged analysis competence.
+
+### Expertise theory
+
+Expertise theory specifies how talent develops across specified fields or domains, focusing on cognitive task analysis, instruction and practice, and clearly specified learning outcomes against which one can objectively measure the development of expertise. **Ericsson** established that expertise (and talent generally) appears to conform to orderly laws rather like those of classical learning theory. The amount of practice, coupled with quality curriculum and expert coaching, appears to predict the rate and ultimately limits of the development of expertise within a given domain. Ericsson suggest that the type of practice required to develop expertise is not simply doing work. It is a cognitively effortful activity in which on is thinking about what one is doing. It involves a reflective component, plus the opportunity to obtain feedback on the quality of the performance. Finally, in order to document the development of expertise, one must have clearly specified the learning outcomes agains which one can objectively measure its development.
+
+Theories about expertise still present any issues, notably the fact that there seems to be a role for general intelligence, and that individual differences have a significant impact.
+
+### Naturalistic decision making
+
+In 1997, the naturalist decision-making (NDM) was originated as a means of studying how people use their experience to make decisions in real-world situations. This theory is specifically used in situatons marked by limited time, uncertainty, high stakes, team and organizational constraints, unstable conditions, and varying amounts of experience.
+
+The recognition-primed decision (RPD) model is the main protocol derived from naturalistic decision making. This model describes how people use their experience in the form of patterns, that hihglight the relevant cues, provide expected outcomes, identify plausible goals and suggest typical types of reactions in that type of situation. When people need to make a decision, they can quickly match the situation to the patterns they have learned and experienced in the past, and in doing so, make rapid decisions. The RPD is represented by the following diagram:
+
+![RPD](img/RPD.png)
