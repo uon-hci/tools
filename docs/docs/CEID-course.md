@@ -518,3 +518,69 @@ In 1997, the naturalist decision-making (NDM) was originated as a means of study
 The recognition-primed decision (RPD) model is the main protocol derived from naturalistic decision making. This model describes how people use their experience in the form of patterns, that hihglight the relevant cues, provide expected outcomes, identify plausible goals and suggest typical types of reactions in that type of situation. When people need to make a decision, they can quickly match the situation to the patterns they have learned and experienced in the past, and in doing so, make rapid decisions. The RPD is represented by the following diagram:
 
 ![RPD](img/RPD.png)
+
+--- 
+
+## Joint Cognitive Systems 
+
+The traditional view of Human-Machine systems tends to distinguish three separate elements: *human*, *machine* and *interface*. While these three are, in essence, different elements, considering a structural separateness implies a separation of processes and functions.  The characteristics of a disintegrated view of Human Machine Interaction present issues such as:
+
+- Actions are treated as discrete events rather than as a continued flow of actions and events,
+- Users are represented as single individuals, disregarding the fact that humans always depend on others,
+- Focus is on response rather than on anticipation (human action si more than a combination of responses),
+- Influence of situation or context is indiret ant limited to what can be considered as inputs,
+- Models are structural and the emphasis is on the structure of the inner processing mechanisms rather tan on their function.
+
+The concept of joint cognitive systems aims to solve many issues by considering HMI as a whole comprising people and technology acting together.
+
+### Realities of work
+
+When considering HMI with a disitingrated view, many cognitive and organisational factors are not taken into account, leading to performance issues, job strain and stress.
+
+#### Yerkes-Dodson Law
+
+In 1908, **Yerkes** and **Dodson** developed a law that is an empirical relationship between arousal and performance. It dictates that performance increases with physiological or mental arousal, but only up to a point. When levels of arousal become too high, performance decreases. Research has found that different tasks require different levels of arousal for optimal performance. For example, difficult or intellectually demanding tasks require a lower level of arousal to facilitate concentration, whereas tasks demanding stamina or persistence may be performed better with higher levels of arousal, to increase motivation. The Yerkes-Dodson law is usally represented by the following bell-shaped curve:
+
+![YerkesDodson](img/YerkesDodson.png)
+
+The upward part of the curve is usually thought of as the energizing effect of arousal, whereas the downward part is caused by negative effects of arousal (or stress) on cognitive processes like attention, memory and problem-solving. This demonstrates the need to see HMI as a whole, rather than distinct elements.
+
+#### Job strain
+
+In 1979, **Karasek** developed the Job Demand Control model, that presents an assesmment of stress and stress factors in the work environment and health promotion in the workplace. This model emphasises two important aspects:
+
+- **Height of strain** (demands): the requirements that are set at work, including work rate, availability, time pressure, effort and difficulty. There are the psychological stressors in the work environment,
+- **Decision latitude** (control): the freedom an employee has to control and organise his own work. This refers to the control employees have about their duties and how they want to perform theses taks. It consists of both competence and decision-making authority.
+
+This model is represented with the following diagram:
+
+![Karasek](img/jobstrain.png)
+
+An active job will lead to new behaviour patterns both on and off the job, while a passive job induces a decline in overall activity, a reduction in general problem solving, and may lead to feelings of learned helplessness. This model shows that the demands themselves do not lead to high psychological stress, it is about the combination of the demandes and the control that the job offers. Once again, seeing HMI as a whole would help limit these issues.
+
+#### Transactional model of stress
+
+In 1981, **Lazarus** and **Folkman** suggested that stress can be thought of as resulting from an imbalance between demands and resources, when pressure exceeds one's perceived ability to cope. Stress management was developed and premised on the idea that stress is not a direct response to a stressor but rather one's resources and ability to cope and mediate the stress response and are amenable to change, thus allowing stress to be controllable. The concept of Cognitive Appraisal, used in this transactional model, is the subjective interpretation made by an individual to stimuli in the environment. It is a component in a variety of theories relating to stress, mental health, coping and emotion. More specifically, cognitive appraisal is defined as the way in which an individual responds to and interprets stressors in life. 
+
+**Cox**, in 1978, presented the concept of transactional of stress with the following diagram:
+
+![Cox](img/cox.png)
+
+### Joint cognitive systems
+
+Joint cognitive systems aim to avoid said issues by seeing the human-machine ensemble as a singe, joint system. This joint system implies harmony and co-operation, allowing for expansion with regard to multiple poeple or machines. This approach removes the need for representation of detailed processes internal to humans and machines. The characteristics of joint systems are:
+
+- Actions are seen together and human behaviour is described as a coherent series of actions rather than as a collection of single responses,
+- Focus on both anticipation and response,
+- Users are seen as parts of the whole. The user and the environment are dynamically coupled, actions and events are mutually dependent,
+- Influence of sitatuion or context is direct and affects the user's way of working, specifically how events are evaluated and how actions are selected.
+
+#### Sensemaking
+
+In 1979, **Weick** presents the concept of Sensemaking, the process by which people give meaning to their collective experiences. It is often formally defined as "the ongoing retrospective development of plausible images that rationalize what people are doing". Sensemaking moves beyond the hypothesis-acceptance/rejection approach to decision making and acknowledges the multiple influences on, ongoing nature and socially embedded character of realistic consideration of complex problems in a work context. Sensemaking can be simplified by the followig diagram:
+
+![Sensemaking](img/sensemaking.jpg)
+
+#### Distributed cognition
+
+Distributed cognition is a concept that proposes that cognition and knowledge are not confined to an individual, rather, it is distributed across objects, individuals, artefacts, and tools in the environment. Proposed by Hutchins in 1995, the goal of distributed cognition is to describe how dstributed units are coordinated by analyzing the interactions between individuals, the representational media used, ad the environment within which the activity takes lace. It is a useful descriptive framework that describes human work systems in informational and computational terms. Distributed cognition has implications for the design of technology in the mediation of the activity, because the system designers will have a stronger, clearer model of the work.
