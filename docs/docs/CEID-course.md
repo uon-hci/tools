@@ -188,7 +188,7 @@ In many taks that require thorough attention, the concept of signal detection pl
 | Signal detected | **Hit** | False alarm
 | Signal not detected | Miss | **Correct rejection**
 
-<!-- --- 
+--- 
 
 ## Fitt's List
 
@@ -216,7 +216,7 @@ Of course, multiple elements of that list are outdated, and hence a more recent 
 | Imagination | Eliminate bias 
 | Dreaming | Endless capacity
 | Abstraction | 
-| Generalisation |  -->
+| Generalisation | 
 
 --- 
 
@@ -331,7 +331,7 @@ In 1983, Rasmussen proposed a framework that defines three types of behaviour of
 
 ###  The knowledge in the head and world
 
-In 1988, **Norman** presented the notion that not all knowledge required for precise behaviour has to be in the head. Instead, that knowledge is distributed, partly in the head, partly in the world, and partly in the constraints of the world. The way the knowledge and its properties are distributed between the head and the world is presented in the following table:
+In 1988, **Norman** presented the notion that not all knowledge required for precise behaviour doesn't have to be in the head. Instead, that knowledge is distributed, partly in the head, partly in the world, and partly in the constraints of the world. The way the knowledge and its properties are distributed between the head and the world is presented in the following table:
 
 | Property | Knowledge in the world | Knowledge in the head 
 | -- | -- | --
