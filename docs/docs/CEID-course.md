@@ -192,7 +192,7 @@ In many taks that require thorough attention, the concept of signal detection pl
 
 ## Fitt's List
 
-The Fitt's List, also known as HABA-MABA (*Humans Are Better At*-*Machines Are Better At*), is a list of statements regarding the abilities of humans and machines, which is used to determine the allocation of task assignment. In others words, it used to determine if a person or a machine could better a function required by a task or a system, with the ultimate goal to increase efficiency, safety, quality and profit-margins.
+The Fitt's List, also known as HABA-MABA (*Humans Are Better At*-*Machines Are Better At*), is a list of statements regarding the abilities of humans and machines, which is used to determine the allocation of task assignment. In others words, it used to determine if a person or a machine could better a function required by a task or a system, with the ultimate goal to increase efficiency, safety, quality and profit-margins. This list is also used to determine if a task should be automated or not.
 
 The first version of that list, from 1951, is the following table:
 
@@ -459,18 +459,23 @@ Biases usually affect decision-making processes. They appear more when the decis
     - Inattention to later cues,
     - Cue salience and prominence
     - Overweighting of unreliable cues,
-2. **Hypothesis generation**
+2. **Hypothesis generation**:
     - Limited number of hypotheses generated,
     - Availability heuristic (recency and frequency),
     - Representativeness heuristic (symptoms),
     - Overconfidence
-3. **Hypothesis evaluation and selection**
-    - Cognitive fixation
-    - Confirmation bias
-4. **Action selection**
+3. **Hypothesis evaluation and selection**:
+    - Cognitive fixation,
+    - Confirmation bias,
+4. **Action selection**:
     - Retrieve a small number of actions (working memory limited),
     - Availability heuristic for actions (recency, frequency, strength),
-    - Availability of possible outcomes.
+    - Availability of possible outcomes,
+5. **Decision making in the real world**:
+    - Transfer effects (positive and negative),
+    - Social context,
+    - Multiple people, artefacts, systems and goals
+
 
 ### Theories
 

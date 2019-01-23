@@ -60,3 +60,11 @@
 
 - **Ericsson** (1991): Expertise theory
 - **Klein** (1997): Naturalist decision-making
+
+---
+
+## Joint cognitive systems
+
+- **Yerkes and Dodson** (1908): Yerkes-Dodson law,
+- **Karasek** (1979): Job demand control,
+- **Lazarus and Folkman** (1981): Transactional model of stress
